@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 48" role="img" aria-labelledby="title desc">
+  <title id="title">AI Product Flow</title>
+  <desc id="desc">Three paths meet at an explicit gate before one path continues.</desc>
+  <g fill="none" stroke="#253832" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="round">
+    <path d="M3 8H15L31 24H43M3 24H43M3 40H15L31 24"/>
+    <path d="M49 24H61"/>
+  </g>
+  <path d="M43 10V38" fill="none" stroke="#a34e32" stroke-width="5"/>
+</svg>

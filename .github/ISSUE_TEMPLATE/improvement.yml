@@ -1,0 +1,56 @@
+name: Improvement proposal
+description: Propose clearer guidance, a useful case study or a test of an AIPF gap.
+title: 'Improvement proposal: '
+labels:
+- improvement
+- triage
+body:
+- type: markdown
+  attributes:
+    value: Issues are public. Do not include confidential, sensitive or personal information.
+- type: input
+  id: gap
+  attributes:
+    label: Guide, case study or gap
+    description: Give the page URL, edition and heading, or describe the missing guidance.
+  validations:
+    required: true
+- type: textarea
+  id: question
+  attributes:
+    label: What should become clearer or more useful?
+    description: Describe the user task or question this proposal addresses.
+  validations:
+    required: true
+- type: textarea
+  id: design
+  attributes:
+    label: Proposed change and how to test it
+    description: Explain the change, who would use it and a practical way to check
+      it.
+  validations:
+    required: true
+- type: textarea
+  id: outcomes
+  attributes:
+    label: Expected outcome
+    description: Describe a useful outcome for readers, not just an activity count.
+  validations:
+    required: true
+- type: textarea
+  id: adverse
+  attributes:
+    label: What would show the change does not help?
+    description: Include limitations, possible harms and results that would leave
+      the proposal unresolved.
+  validations:
+    required: true
+- type: checkboxes
+  id: checks
+  attributes:
+    label: Submission checks
+    options:
+    - label: I have not included confidential, sensitive or personal information.
+      required: true
+    - label: I understand submission does not imply endorsement, funding or acceptance.
+      required: true
