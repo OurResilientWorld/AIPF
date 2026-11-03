@@ -1,0 +1,262 @@
+<!doctype html><html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Keep the evidence that helps you decide, share and improve AI work."><title>Artefact Map · AI Product Flow</title><link rel="stylesheet" href="../assets/site.css"><style>.portfolio-overview { margin:32px 0; padding:24px; background:#f3f5f2; border:1px solid #c5cfc7; border-radius:10px; }
+.overview-purpose { text-align:center; padding:8px 12px 22px; border-bottom:1px solid #b8c6be; }
+.overview-purpose span { display:block; font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:#526257; margin-bottom:8px; }
+.overview-purpose strong { display:block; font:600 24px/1.25 var(--serif); color:#223f35; }
+.overview-cycle { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); list-style:none; padding:0; margin:24px 0 0; gap:10px; }
+.overview-cycle li { margin:0; background:white; border:1px solid #c5cfc7; border-top:4px solid #326957; border-radius:5px; min-width:0; }
+.overview-cycle a { display:block; padding:12px 8px 8px; text-align:center; text-decoration:none; color:#233e34; }
+.overview-cycle a:hover { background:#e5eee8; }
+.overview-cycle strong { display:block; font-size:17px; margin:5px 0; }
+.overview-cycle a>span:last-child { display:block; font-size:13px; line-height:1.4; }
+.overview-number { display:inline-flex; align-items:center; justify-content:center; width:27px; height:27px; border-radius:50%; background:#275343; color:white; font-size:14px; font-weight:700; }
+.overview-cycle p { padding:10px 8px; margin:0; border-top:1px solid #e0e6e1; color:#536056; text-align:center; font-size:12px; line-height:1.5; }
+.overview-return { border-bottom:2px solid #b47b36; padding:12px 0; margin:10px 0 20px; font-size:14px; color:#65491f; text-align:center; }
+.overview-return span { font-size:25px; vertical-align:middle; margin-right:5px; }
+.overview-connections { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+.overview-connections div { background:#e5ece7; border-left:3px solid #658476; padding:13px 15px; }
+.overview-connections strong { font-size:15px; }
+.overview-connections p { font-size:13px; line-height:1.6; margin:8px 0 0; }
+.portfolio-overview figcaption { border-top:1px solid #c5cfc7; margin-top:20px; padding-top:13px; font-size:13px; }
+@media(max-width:1000px) {
+ .portfolio-overview { padding:16px; }
+ .overview-cycle { grid-template-columns:1fr; gap:12px; }
+ .overview-cycle li { display:grid; grid-template-columns:1fr 1fr; border-top:1px solid #c5cfc7; border-left:4px solid #326957; }
+ .overview-cycle a { text-align:left; padding:12px; }
+ .overview-cycle p { border-top:0; border-left:1px solid #e0e6e1; display:flex; align-items:center; justify-content:center; font-size:13px; }
+ .overview-connections { grid-template-columns:1fr; gap:12px; }
+ .overview-purpose strong { font-size:23px; }
+}
+@media print {
+ .portfolio-overview { padding:15px; break-inside:avoid; }
+ .overview-cycle { grid-template-columns:repeat(5,minmax(0,1fr)); }
+ .overview-cycle li { display:block; border-left:1px solid #c5cfc7; border-top:3px solid #326957; }
+ .overview-cycle a { text-align:center; padding:8px 5px; }
+ .overview-cycle strong { font-size:11pt; }
+ .overview-cycle p,.overview-cycle a>span:last-child { font-size:8pt; }
+ .overview-cycle p { display:block; border-left:0; border-top:1px solid #e0e6e1; }
+ .overview-purpose strong { font-size:16pt; }
+ .overview-connections { grid-template-columns:1fr 1fr; }
+ .overview-connections p,.portfolio-overview figcaption { font-size:8pt; }
+}</style></head><body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="header-inner"><a class="brand" href="../index.html"><img src="../assets/aipf-mark.svg" alt="" width="64" height="48"><span><strong>AI Product Flow</strong><small>Guides and case studies</small></span></a><nav aria-label="Primary"><a href="index.html" aria-current="page">Guides</a><a href="../case-studies/index.html">Case studies</a><a href="../feedback/index.html">Feedback</a></nav></div></header><main id="main"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> <span aria-hidden="true">/</span> <a href="index.html">Guides</a> <span aria-hidden="true">/</span> <span>Artefact Map</span></nav><header class="page-intro"><p class="eyebrow">AIPF companion · Edition 1.0</p><h1>Artefact Map</h1><p class="deck">Keep the evidence that helps you decide, share and improve AI work.</p><p class="byline">By Rick Molony and Ghulam Akbar · developed with AI assistance</p></header><div class="reading-layout"><aside class="toc"><nav aria-label="On this page"><strong>On this page</strong><ul><li><a href="#start-here">Start with one decision</a></li><li><a href="#product-records">Product: eight records</a></li><li><a href="#family-records">Family: five records when products share a decision</a></li><li><a href="#portfolio-records">Portfolio: five records for investment choices</a></li><li><a href="#connected-records">Keep the records useful</a></li><li><a href="#review-cycle">Use the records in a portfolio review</a></li></ul></nav></aside><article class="reading"><p>These artefacts help you see what you know, what remains uncertain and who can decide what happens next. They connect tests to decisions, make costs and responsibilities visible, and help teams reuse evidence without losing its limits. Keep only the detail needed for the next decision.</p>
+<h2 id="start-here">Start with one decision</h2>
+<p>An <strong>artefact</strong>, or record, can be a note, prototype, test or view in an existing tool. Start with a real question, name who can decide, and use the relevant records below:</p>
+<ul>
+<li><strong><a href="#product-records">Product</a>:</strong> understand and test one product or workflow.</li>
+<li><strong><a href="#family-records">Family</a>:</strong> coordinate a shared outcome, dependency or reuse decision across products.</li>
+<li><strong><a href="#portfolio-records">Portfolio</a>:</strong> decide how to commit money, people and oversight across AI work.</li>
+</ul>
+<p>The guides name eighteen core records and an optional Pattern. They need not be separate documents. Use the linked definitions for detail; this map adds no new roles or approvals.</p>
+<h2 id="product-records">Product: eight records</h2>
+<p>Use these to understand the need, test an approach and decide its permitted use. Agree maintainers using the <a href="product.html#accountabilities">Product responsibilities</a>.</p>
+<figure class="flow-figure" aria-labelledby="artefact-evidence-caption">
+<p class="figure-label">
+Choose the evidence for the question
+</p>
+<ul class="diagram-columns">
+<li>
+<strong>Concept</strong>Can people understand and react to the idea?<span>A sketch, example or simulation.</span>
+</li>
+<li>
+<strong>Evidence slice</strong>Does this small connected part work as needed?<span>A test of important behaviour, failure and recovery.</span>
+</li>
+<li>
+<strong>MVP</strong>Does a minimum usable product help real users?<span>A small product or release used to test value.</span>
+</li>
+</ul>
+<figcaption id="artefact-evidence-caption">
+Figure 1. A demonstration, a test and a usable product answer different questions. Several tests may be needed before an MVP is justified. Adapted from the <a href="product.html#end-to-end-evidence-slice">Product Guide</a>.
+</figcaption>
+</figure>
+<div class="table-scroll" role="region" aria-label="Scrollable table" tabindex="0"><table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Record</th>
+<th>What to keep</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="product.html#product-intent">Product Intent</a></td>
+<td>People and need, expected outcome, boundaries and signs of success.</td>
+</tr>
+<tr>
+<td><a href="product.html#assumption-and-evidence-map">Assumption and Evidence Map</a></td>
+<td>Claims, sources, uncertainty and contrary findings; a result that could defeat the idea and a useful test.</td>
+</tr>
+<tr>
+<td><a href="product.html#concept-artefact">Concept Artefact</a></td>
+<td>A sketch, example or simulation of the intended experience, shown before building.</td>
+</tr>
+<tr>
+<td><a href="product.html#roadmap-options">Roadmap Options</a></td>
+<td>Credible alternatives, including process change or waiting, with cost, dependencies, checking needs and the next question.</td>
+</tr>
+<tr>
+<td><a href="product.html#ai-model-harness">AI Model Harness</a></td>
+<td>Permitted AI actions, approved sources, tested checks, reviewers, logging, recovery and what must stop or return to the owner. Recheck affected controls after changes.</td>
+</tr>
+<tr>
+<td><a href="product.html#end-to-end-evidence-slice">End-to-End Evidence Slice</a></td>
+<td>A narrow connected test: version, question, cases, criteria, results, failures, recovery and limits. Label simulated parts.</td>
+</tr>
+<tr>
+<td><a href="product.html#acceptance-record">Acceptance Record</a></td>
+<td>Accepted version and use, accepter and authority, evidence, limits, conditions, support and next review.</td>
+</tr>
+<tr>
+<td><a href="product.html#learning-record">Learning Record</a></td>
+<td>A finding, the decision or practice it changes, the change owner and affected work.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="family-records">Family: five records when products share a decision</h2>
+<p>Each product keeps its own acceptance responsibilities. The <a href="product-family.html#evidence-and-its-commitments">Family Guide</a> names record owners; a family may test its own shared boundary or reuse claim.</p>
+<div class="table-scroll" role="region" aria-label="Scrollable table" tabindex="0"><table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Record</th>
+<th>What to keep</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="product-family.html#dependency-and-integration-map">Dependency and Integration Map</a></td>
+<td>Family outline: outcome, products, people and open questions; handoffs, owners, source versions, permissions, checks and failure recovery.</td>
+</tr>
+<tr>
+<td><a href="product-family.html#shared-substrate-map">Shared Substrate Map</a></td>
+<td>Common tools, information, models and controls; owners, supported uses, capacity, costs and recovery.</td>
+</tr>
+<tr>
+<td><a href="product-family.html#coordination-function-map">Coordination Function Map</a></td>
+<td>Who supplies, receives and judges work; waiting decisions, available reviewers, work limits and escalation. Separate AI routing from human decisions.</td>
+</tr>
+<tr>
+<td><a href="product-family.html#cross-product-evidence-ledger">Cross-Product Evidence Ledger</a></td>
+<td>Links to original evidence, tested contexts, versions, methods, contrary findings and permitted reuse.</td>
+</tr>
+<tr>
+<td><a href="product-family.html#family-benefits-map">Family Benefits Map</a></td>
+<td>Expected and observed benefit by product, measure, baseline, period, source, shared costs and extra work or harm. Count shared outcomes once.</td>
+</tr>
+<tr>
+<td><a href="product-family.html#pattern">Pattern — optional</a></td>
+<td>A reusable approach: problem, suitable contexts, variations, trade-offs, evidence, permitted uses and review or retirement conditions. Adoption is not automatic.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="portfolio-records">Portfolio: five records for investment choices</h2>
+<p>A <strong>bet</strong> is a bounded commitment to answer a question. Use the <a href="portfolio.html#accountabilities">Portfolio responsibilities</a> to assign maintenance and judgement.</p>
+<div class="table-scroll" role="region" aria-label="Scrollable table" tabindex="0"><table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Record</th>
+<th>What to keep</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="portfolio.html#ai-bet-ledger">AI Bet Ledger</a></td>
+<td>Purpose, spending owner, evidence, decision, next request and stop/review conditions. Separate actual spending, commitments and forecasts.</td>
+</tr>
+<tr>
+<td><a href="portfolio.html#decision-capacity-ledger">Decision-Capacity Ledger</a></td>
+<td>Review and support demand, skills, available time and work limits. Distinguish waiting for evidence from waiting for judgement.</td>
+</tr>
+<tr>
+<td><a href="portfolio.html#model-and-vendor-concentration-register">Model and Vendor Concentration Register</a></td>
+<td>Shared suppliers, models, sources and checking arrangements, affected bets, owners and response options.</td>
+</tr>
+<tr>
+<td><a href="portfolio.html#benefits-realisation-map">Benefits Realisation Map</a></td>
+<td>Promised versus observed benefits, owners, measures, baselines, periods, sources, costs, extra work or harm. Link product/family results; avoid double counting.</td>
+</tr>
+<tr>
+<td><a href="portfolio.html#autonomy-boundary-map">Autonomy Boundary Map</a></td>
+<td>Permitted AI actions, permission owners, required checks and human intervention. Link tested controls for the actual task.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="connected-records">Keep the records useful</h2>
+<ul>
+<li><strong>Link to one source.</strong> Give important evidence and decisions an identifier, owner, date/version, source and limits. Product and Family retain original findings; Portfolio uses them to reconsider investment. Reuse links rather than copy facts.</li>
+<li><strong>Make uncertainty visible.</strong> Distinguish observations, estimates and AI-generated material. Mark missing information unknown, not yet observed, not supplied or not applicable, with a reason. None of these states means zero or approval.</li>
+<li><strong>Name the authority.</strong> A maintainer does not gain approval rights. The Product owner, Family owner or Portfolio owner (or its board) holds the relevant gate decision—the decision about the next commitment. Spending and AI permissions retain their authorised owners. The maker cannot be the sole accepter.</li>
+<li><strong>Separate decision states.</strong> Progress, evidence, recommendation, funding commitment, release, acceptance and permission to scale are different. Record exactly what was authorised. Scale is available only at Gate 3, the last of three phase gates, when evidence and readiness support it; see the <a href="framework.html#one-evidence-loop-applied-where-the-decision-belongs">Framework</a>.</li>
+<li><strong>Update when learning changes the work.</strong> Preserve earlier versions, identify affected tests and decisions, and ask their owners to reassess. Pause affected use when agreed risk rules require it.</li>
+</ul>
+<p>Use the Framework’s <a href="framework.html#information-specification-and-source-ownership">shared information checklist</a> and <a href="framework.html#product-and-family-handoffs">phase handoffs</a> for more detail. Check AI controls for each intended task; a permission map or a successful test elsewhere does not establish that they work here.</p>
+<h2 id="review-cycle">Use the records in a portfolio review</h2>
+<p>Use this cycle when records feed a portfolio decision. A routine review is not automatically a phase gate. A product can connect directly to Portfolio when no Family decision is needed.</p>
+<figure class="portfolio-overview" aria-labelledby="artefact-cycle-caption">
+<div class="overview-purpose">
+<span>Keep the purpose visible</span><strong>What should improve for people and the organisation?</strong>
+</div>
+<ol class="overview-cycle">
+<li>
+<a href="portfolio-implementation.html#capture-and-screen-a-request"><span class="overview-number">1</span><strong>Capture</strong><span>What are we asking for?</span></a>
+<p>
+One request<br>Named owner
+</p>
+</li>
+<li>
+<a href="portfolio-implementation.html#assess-within-capacity"><span class="overview-number">2</span><strong>Assess</strong><span>What do we know?</span></a>
+<p>
+Sources and options<br>People available
+</p>
+</li>
+<li>
+<a href="portfolio-implementation.html#run-the-portfolio-meeting"><span class="overview-number">3</span><strong>Decide</strong><span>What will we support?</span></a>
+<p>
+Decision and reasons<br>Limits and review date
+</p>
+</li>
+<li>
+<a href="portfolio-implementation.html#record-terms-and-control-release"><span class="overview-number">4</span><strong>Release</strong><span>May the work start?</span></a>
+<p>
+Funding terms<br>Conditions checked
+</p>
+</li>
+<li>
+<a href="portfolio-implementation.html#review-results-and-reconsider-commitment"><span class="overview-number">5</span><strong>Review</strong><span>Did it help?</span></a>
+<p>
+Results and costs<br>Next decision
+</p>
+</li>
+</ol>
+<p class="overview-return">
+<span aria-hidden="true">↶</span> Results can change the request, the plan or an earlier decision. Stop or pause when needed.
+</p>
+<div class="overview-connections">
+<div>
+<strong>Evidence comes from the work</strong>
+<p>
+Product: users, tests, cost and use.<br>Family: handoffs, shared costs and effects.<br>Finance and specialists: verified records and advice.
+</p>
+</div>
+<div>
+<strong>Decisions go back to owners</strong>
+<p>
+What may happen next.<br>Who is responsible and what limits apply.<br>What to report and when to return.
+</p>
+</div>
+</div>
+<figcaption id="artefact-cycle-caption">
+Figure 2. The portfolio review cycle. Select a numbered step for its instructions in the <a href="portfolio-implementation.html#aipf-portfolio-in-one-view">Implementation Guide</a>. Collecting information sits within Assess, and preparing the decision pack within Decide. This is a recurring working routine, not five new AIPF phases. Product and family work may continue within existing authority.
+</figcaption>
+</figure>
+<p>For a worked example, follow <a href="portfolio-implementation.html#worked-example">BET-017 in the Implementation Guide</a>. Its fictional result leads to <strong>Revise</strong>, with benefit still uncertain. Use your own decision to check that another reader can find the evidence, owner, conditions and next allowed action.</p>
+<p>By Rick Molony and Ghulam Akbar, developed with AI assistance. <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: credit the authors and source and indicate changes.</p>
+<section class="article-feedback"><h2>Help improve this page</h2><p>Found a problem or a better way to explain it? <a href="../feedback/index.html?page=https%3A%2F%2Faipf.ourresilient.world%2Fguides%2Fartefact-map.html">Suggest a correction or improvement</a>.</p></section></article></div></main><footer class="site-footer"><div><strong>AI Product Flow</strong><p>Start small. Check results. Decide the next step.</p></div><nav aria-label="Footer"><a href="https://ourresilient.world/">Our Resilient World</a><a href="https://research.ourresilient.world/">AI-Assisted Research</a><a href="../feedback/index.html">Feedback</a><a href="../reuse.html">Reuse and attribution</a></nav><p>Except where otherwise noted, content is licensed <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Cite the named authors, title, edition and source; indicate changes.</p></footer></body></html>
