@@ -1,0 +1,795 @@
+<!doctype html><html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Start with an idea. See how it might work. Test one small part for real. Invest more only when the evidence justifies it."><title>Product Owners AI Guide · AI Product Flow</title><link rel="stylesheet" href="../assets/site.css"></head><body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="header-inner"><a class="brand" href="../index.html"><img src="../assets/aipf-mark.svg" alt="" width="64" height="48"><span><strong>AI Product Flow</strong><small>Guides and case studies</small></span></a><nav aria-label="Primary"><a href="index.html" aria-current="page">Guides</a><a href="../case-studies/index.html">Case studies</a><a href="../feedback/index.html">Feedback</a></nav></div></header><main id="main"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> <span aria-hidden="true">/</span> <a href="index.html">Guides</a> <span aria-hidden="true">/</span> <span>Product Owners AI Guide</span></nav><header class="page-intro"><p class="eyebrow">AI Product Flow · Edition 1.0</p><h1>Product Owners AI Guide</h1><p class="deck">Start with an idea. See how it might work. Test one small part for real. Invest more only when the evidence justifies it.</p><p class="byline">By Rick Molony · developed with AI assistance</p></header><div class="reading-layout"><aside class="toc"><nav aria-label="On this page"><strong>On this page</strong><ul><li><a href="#part-1-understand-the-approach">Part 1 — Understand the Approach</a></li><li><a href="#part-2-how-to-use-the-guide">Part 2 — How to Use the Guide</a></li><li><a href="#part-3-principles-responsibilities-and-reference">Part 3 — Principles, Responsibilities, and Reference</a></li></ul></nav></aside><article class="reading"><h2 id="part-1-understand-the-approach">Part 1 — Understand the Approach</h2>
+<h3 id="why-a-guide-for-product-owners">Why a Guide for Product Owners?</h3>
+<p>Product Owners decide whether to invest in a new product or service. In many Agile projects, teams work towards a Minimum Viable Product (MVP) before the Product Owner can clearly see what is being built. The AIPF approach brings that understanding forward.</p>
+<p>The MVP approach reduced the risks of traditional waterfall projects, where the whole product was specified upfront. However, non-technical Product Owners can still struggle to understand or guide development until substantial work has been done. By the time they see the workflow and user interface, misunderstandings may be costly to correct.</p>
+<p>AI agents offer a different approach. In Phase 1, they can create an interactive HTML simulation of the proposed workflow and user interface <strong>before technical development starts</strong>. The Product Owner can see what is proposed and correct misunderstandings early. More importantly, <em>the Product Owner can decide if this ‘bet’ is worth testing further.</em></p>
+<p>Phase 2 takes this further. Instead of building an MVP, the AI agent and a small team build and test a <strong>steel thread</strong>: one narrow but real end-to-end use case. Unlike approaches that build the front end and back end separately, a steel thread connects the essential parts of the product early. This exposes technical difficulties and likely costs before committing to an MVP.</p>
+<p>AI agents enable Product Owners to run multiple small bets and invest in an MVP only when the evidence justifies it.</p>
+<p><strong>Start with an idea. See how it might work. Test one small part for real. Invest more only when the evidence justifies it.</strong></p>
+<p>This guide is for Product Owners who understand the outcome they want but may not know how to design software, choose technology, or write code. An AI agent can research, draft, simulate, build, and test; the Product Owner decides what is worth funding and accepting.</p>
+<p>The three phases lead to three increasingly informed decisions:</p>
+<ul>
+<li><strong>Phase 1:</strong> Try an HTML workflow and UI simulation, then decide whether to fund a steel thread.</li>
+<li><strong>Phase 2:</strong> Inspect the working steel thread and test evidence, then decide whether the idea merits an MVP or pilot investment proposal.</li>
+<li><strong>Phase 3:</strong> Decide whether to fund that MVP, pilot, or another experiment. The approved product is then built in small Agile increments.</li>
+</ul>
+<p>The guide applies to digital products, services, research tools, campaigns, and workflows. Where HTML is not appropriate, the Phase 1 concept may be a storyboard or service walkthrough instead. <strong>Artefacts</strong> are simply useful outputs—briefs, sketches, simulations, tests, or decisions. Keep them as small as possible.</p>
+<h3 id="ai-product-flow-at-a-glance">AI Product Flow at a Glance</h3>
+<p>The flow has three phases and three <strong>gates</strong>. A gate is simply a decision: has enough been learned to justify the next investment?</p>
+<figure>
+<img src="../figures/ai-product-flow-three-phase-loop.svg" alt="AI Product Flow: Phase 1 Validate, Show, and Set Boundaries; Phase 2 Build the Steel Thread; Phase 3 Decide the Next Investment. Gates allow Proceed, Revise, Defer, or Stop. Scale at Gate 3 requires real-world evidence." />
+<figcaption aria-hidden="true">AI Product Flow: Phase 1 Validate, Show, and Set Boundaries; Phase 2 Build the Steel Thread; Phase 3 Decide the Next Investment. Gates allow Proceed, Revise, Defer, or Stop. Scale at Gate 3 requires real-world evidence.</figcaption>
+</figure>
+<p><em>Figure 1. The three-phase AI Product Flow. New evidence can send the work back to an earlier phase. MVP delivery follows a separate decision, using small Agile increments.</em></p>
+<p>At every gate, the Product Owner records one of these decisions:</p>
+<ul>
+<li><strong>Proceed</strong> — there is enough evidence for the next limited investment or decision step.</li>
+<li><strong>Revise</strong> — change the idea, design, or experiment and try again.</li>
+<li><strong>Defer</strong> — wait for specific information or conditions.</li>
+<li><strong>Stop</strong> — do not invest more; record why.</li>
+<li><strong>Scale</strong> — at Gate 3 only, after appropriate real-user and operating evidence.</li>
+</ul>
+<p>The record need only say <strong>what was decided, why, what remains uncertain, and what happens next</strong>.</p>
+<h2 id="part-2-how-to-use-the-guide">Part 2 — How to Use the Guide</h2>
+<p><strong>Each phase ends with a decision, not a requirement to keep building.</strong> The Product Owner gives the AI agent the intended outcome, reviews its work, and approves the next step. A small team can use the same approach. The essential checks and limits appear in each phase; detailed guidance is in Part 3.</p>
+<div class="table-scroll" role="region" aria-label="Scrollable table" tabindex="0"><table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Main question</th>
+<th>Main result</th>
+<th>Decision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1. Validate, Show, and Set Boundaries</strong></td>
+<td>Does the proposed experience make sense, and is a small real test worthwhile?</td>
+<td>HTML simulation and Steel Thread Investment Brief</td>
+<td>Fund a bounded steel thread, revise, defer, or stop</td>
+</tr>
+<tr>
+<td><strong>2. Build the Steel Thread</strong></td>
+<td>Does the critical end-to-end journey work, and what did it actually cost?</td>
+<td>Working steel thread, tests, and evidence</td>
+<td>Prepare the next investment case, revise, defer, or stop</td>
+</tr>
+<tr>
+<td><strong>3. Decide the Next Investment</strong></td>
+<td>Is the evidence strong enough to fund an MVP, pilot, or another experiment?</td>
+<td>Updated value case, MVP/pilot proposal, risk and operating outline</td>
+<td>Fund the next bounded step, revise, defer, or stop</td>
+</tr>
+</tbody>
+</table></div>
+<p>A private, reversible demonstration needs less evidence and checking than work involving payments, health information, personal data, safety decisions, or public claims.</p>
+<h3 id="phase-1-validate-show-and-set-boundaries">Phase 1 — Validate, Show, and Set Boundaries</h3>
+<p><strong>Goal:</strong> Help the Product Owner <strong>experience the proposed workflow and UI</strong> and understand the likely effort, cost, value, and risk of testing one use case for real.</p>
+<p>The three steps below are designed to be light-touch. The Product Owner supplies the idea and corrects the AI’s assumptions. The AI agent drafts the supporting artefacts and the HTML simulation. Most artefacts can be sections in one short working brief; they do not need separate reports.</p>
+<section id="practice-a-three-step-phase-1-sequence" class="unnumbered unlisted practice">
+<h4 class="unnumbered unlisted">Practice: a three-step Phase 1 sequence</h4>
+<p><strong>Step 1 — Define the idea and the primary use case</strong></p>
+<p>Start with a conversation, not a specification. Give the AI agent the purpose of the idea, the people it is for, and one outcome those people should achieve.</p>
+<p><strong>Essential artefacts:</strong></p>
+<div class="table-scroll" role="region" aria-label="Scrollable table" tabindex="0"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Artefact</th>
+<th>What it contains</th>
+<th>Who prepares it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Product Intent</strong></td>
+<td>Problem, intended benefit, target users, key limits, and what would make the idea worthwhile</td>
+<td>Owner describes; AI drafts; owner approves</td>
+</tr>
+<tr>
+<td><strong>Lightweight Persona</strong></td>
+<td>One representative user, their goal, situation, and constraints; clearly labelled as assumed until checked</td>
+<td>AI drafts; owner corrects</td>
+</tr>
+<tr>
+<td><strong>Primary Use Case</strong></td>
+<td>Trigger, user’s main steps, expected result, and one situation where things go wrong</td>
+<td>AI drafts; owner confirms</td>
+</tr>
+<tr>
+<td><strong>Assumption and Evidence Map</strong></td>
+<td>The 2–3 claims most likely to make the idea fail; what evidence exists; the cheapest way to test each</td>
+<td>AI challenges; owner prioritises</td>
+</tr>
+</tbody>
+</table></div>
+<p>A persona can be a few sentences. A use case can be a short list. Neither needs a lengthy workshop. The AI should mark missing information as <strong>unknown</strong>, not invent it. Where the bet depends on real customer demand, use whatever direct evidence is available or plan a small user check.</p>
+<p><strong>Step 1 output:</strong> One agreed use case and enough context to describe its workflow.</p>
+<p><strong>Step 2 — Sketch the workflow and intended UI</strong></p>
+<p>Ask the AI agent to work backwards from the result the user wants. Keep only the steps needed for the primary use case.</p>
+<p><strong>Essential artefacts:</strong></p>
+<div class="table-scroll" role="region" aria-label="Scrollable table" tabindex="0"><table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Artefact / technique</th>
+<th>What it answers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>User Story Map (small)</strong></td>
+<td>What does the user do, in what order, and which actions belong in the first slice?</td>
+</tr>
+<tr>
+<td><strong>Workflow Sketch</strong></td>
+<td>Where does the journey start, what decisions are made, and what happens on success or failure?</td>
+</tr>
+<tr>
+<td><strong>UI Sketch / Storyboard</strong></td>
+<td>What must the user see, enter, choose, and receive on each screen?</td>
+</tr>
+</tbody>
+</table></div>
+<p>A <strong>lightweight Value Stream Map</strong> is useful <em>only if the product changes an existing process</em>: it can show delays, handoffs, repeated work, and where value is lost. It is not required for every new product. Use <strong>story splitting</strong> to remove optional functions and keep the smallest understandable journey.</p>
+<p>The Product Owner reviews the flow before the agent builds the HTML demonstration. This is the simplest point to correct a misunderstanding.</p>
+<p><strong>Step 2 output:</strong> A short, approved workflow and screen outline for the HTML demonstration.</p>
+<p><strong>Step 3 — Build the HTML simulation and prepare the steel thread decision</strong></p>
+<p>The agent builds a <strong>single, self-contained <code>.html</code> file</strong> using HTML, CSS, JavaScript, sample data, and simulated behaviour. It should be easy for the Product Owner to open in a browser. It does <strong>not</strong> need a server, database, paid service, real AI integration, or production-quality code.</p>
+<p><strong>The simulation must let the Product Owner:</strong></p>
+<ul>
+<li>follow the main use case from start to finish;</li>
+<li>click through the main screens, choices, inputs, and outcomes;</li>
+<li>experience at least one failure or unusual situation;</li>
+<li>see what is <strong>simulated</strong> rather than actually working; and</li>
+<li>judge whether the workflow feels useful and understandable.</li>
+</ul>
+<p>The agent checks that the file opens and the main interactions work. It then presents the simulation for the Product Owner to try. The owner can ask for quick changes, but should avoid turning the simulation into an MVP. <strong>The agent must work within agreed access, spending, and safety limits.</strong></p>
+<p>The agent also prepares a <strong>Steel Thread Investment Brief</strong>. This is a short, evidence-labelled proposal, not a detailed business plan:</p>
+<div class="table-scroll" role="region" aria-label="Scrollable table" tabindex="0"><table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Decision item</th>
+<th>Minimum information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Value and evidence</strong></td>
+<td>Who benefits, how, and what evidence supports that view; what still needs testing with real users</td>
+</tr>
+<tr>
+<td><strong>The proposed steel thread</strong></td>
+<td>The one end-to-end use case to make real; what will be excluded</td>
+</tr>
+<tr>
+<td><strong>How it could be built</strong></td>
+<td>Proposed technology stack, AI tools, essential data and integrations, and a simpler alternative where relevant</td>
+</tr>
+<tr>
+<td><strong>Small business case</strong></td>
+<td>Rough costs and effort for the <strong>experiment</strong> (people, AI usage, services, setup, contingency) compared with the potential benefit and cost of doing nothing</td>
+</tr>
+<tr>
+<td><strong>Risks and feasibility</strong></td>
+<td>Critical technical, usability, privacy, security, legal, or ongoing-cost uncertainties; what remains unproven</td>
+</tr>
+<tr>
+<td><strong>Experiment rules</strong></td>
+<td>Time and spending limits, who does the work, the checks, success criteria, stop conditions, and decision date</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Cost figures should be ranges with clear assumptions</strong>, not invented precision. The brief should distinguish the <strong>cost of testing the steel thread</strong> from the unknown larger cost of an MVP and ongoing operation. Where the technology or costs are uncertain, the proposed experiment should test them.</p>
+<p><strong>Suggested AI agent task instruction:</strong></p>
+<blockquote>
+<p>Use the Product Owners AI Guide, the approved Product Intent, persona, use case, assumptions, and workflow sketch as your context. Create one interactive HTML simulation with mock data, a complete main journey, and one failure path. Label simulated features. Do not connect real accounts or start building the steel thread. Then produce a short Steel Thread Investment Brief covering the smallest real end-to-end test, a possible technology stack, cost and time ranges, risks, acceptance criteria, and stop conditions. List assumptions and missing evidence clearly. Present both outputs to the Product Owner for a decision.</p>
+</blockquote>
+<p><strong>Step 3 output:</strong> A browser-ready HTML simulation, a short investment brief, and a list of open questions or assumptions.</p>
+</section>
+<section id="practice-phase-1-quality-control" class="unnumbered unlisted practice">
+<h4 class="unnumbered unlisted">Practice: Phase 1 quality control</h4>
+<p>Before Gate 1, the Product Owner should be able to answer:</p>
+<ol type="1">
+<li><strong>Who is this for, what problem does it solve, and why might it matter?</strong></li>
+<li><strong>Can I use the HTML simulation to understand the proposed workflow and UI?</strong></li>
+<li><strong>Are the most important assumptions visible, including which ones have no real-world evidence?</strong></li>
+<li><strong>What one end-to-end use case will the steel thread prove?</strong></li>
+<li><strong>Do I understand the proposed technology, likely cost range, major risks, and investment limit?</strong></li>
+<li><strong>What observation or failed test would make us change course or stop?</strong></li>
+<li><strong>Have the simulation and investment brief been reviewed, not merely generated?</strong></li>
+</ol>
+<p>If the Product Owner cannot answer a material question, the agent should show the gap and offer the cheapest useful next check.</p>
+</section>
+<p><strong>Gate 1 — Decide whether to build a steel thread.</strong> Review the <strong>HTML simulation</strong>, <strong>Product Intent and assumptions</strong>, and <strong>Steel Thread Investment Brief</strong>. Record <strong>Proceed, Revise, Defer, or Stop</strong>. Proceed means approving a <strong>small experiment within agreed limits</strong>, not approving an MVP or full product build.</p>
+<h3 id="phase-2-build-the-steel-thread">Phase 2 — Build the Steel Thread</h3>
+<p><strong>Goal:</strong> Find out whether the most important part of the proposed product can actually work, end to end, at a cost and risk worth taking further.</p>
+<p>A <strong>steel thread</strong> is the narrowest realistic path through all the parts needed for one result. Unlike the Phase 1 HTML simulation, it performs the critical work for real (or uses an explicitly justified representative test environment). It is <strong>not yet an MVP</strong> and does not need to support every intended user or feature.</p>
+<p>The Product Owner normally does not need to supply a new specification. The agent starts from the approved Phase 1 artefacts and turns them into a build-and-test brief.</p>
+<p><strong>Essential Phase 2 artefacts:</strong></p>
+<div class="table-scroll" role="region" aria-label="Scrollable table" tabindex="0"><table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Artefact</th>
+<th>What the Product Owner needs to know</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Steel Thread Build Brief</strong></td>
+<td>The approved use case, scope exclusions, technology stack, agent/team roles, budget cap, and timebox</td>
+</tr>
+<tr>
+<td><strong>Acceptance Examples</strong></td>
+<td>A few plain-language examples of what should happen on success, bad input, and failure (often written as <em>Given–When–Then</em>)</td>
+</tr>
+<tr>
+<td><strong>Technical Sketch</strong></td>
+<td>The minimum components, data, external connections, and permissions needed to run the real journey</td>
+</tr>
+<tr>
+<td><strong>AI Model Harness</strong></td>
+<td>What agents may change or access, how outputs are checked, when work must stop, and who accepts results</td>
+</tr>
+<tr>
+<td><strong>Working Steel Thread and Test Evidence</strong></td>
+<td>A demonstrated end-to-end result, test outcomes, failures, actual effort/cost, and unresolved risks</td>
+</tr>
+<tr>
+<td><strong>Learning and Decision Record</strong></td>
+<td>What the team learned and the decision now required</td>
+</tr>
+</tbody>
+</table></div>
+<section id="practice-build-and-test-in-small-increments" class="unnumbered unlisted practice">
+<h4 class="unnumbered unlisted">Practice: build and test in small increments</h4>
+<ol type="1">
+<li><strong>Agree the tests first.</strong> Use a brief <strong>Three Amigos</strong> discussion (Product Owner, builder, and tester roles; AI can perform the latter two) and a few concrete examples. Choose checks that can fail, not just demonstrations that look successful.</li>
+<li><strong>Choose the smallest technical path.</strong> Prefer existing services and simple components. Run a short <strong>spike</strong>—a time-limited investigation—only when a critical technical question cannot be answered otherwise.</li>
+<li><strong>Build one slice at a time.</strong> The agent can use <strong>test-driven development</strong>: write a check, implement the minimum needed to pass, then improve safely. Use automated checks and version control where useful.</li>
+<li><strong>Show working results often.</strong> Compare them with the Phase 1 workflow and acceptance examples. Keep the failure path and recovery in scope.</li>
+<li><strong>Report what happened.</strong> Record actual costs, working integrations, test failures, user observations, unresolved issues, and any change to the original business case.</li>
+</ol>
+<p><strong>Who runs the checks?</strong> An AI agent or automated testing tool can run them; a second employee is not always necessary. The Product Owner approves the acceptance criteria and important risk limits. Use independent evidence for consequential claims. Deliberately include a known error or unsupported assumption in a safe test to check that the harness detects it and stops dependent work. Fix checks that miss it; one successful test does not prove that all errors will be caught.</p>
+<p>Stop or escalate when purpose changes, cost limits are reached, sensitive information is at risk, an important check fails, or a choice exceeds the agreed scope. The agent may fix ordinary technical defects within scope and rerun tests; the Product Owner decides changes to purpose, money, risk, or direction.</p>
+</section>
+<section id="practice-phase-2-quality-control" class="unnumbered unlisted practice">
+<h4 class="unnumbered unlisted">Practice: Phase 2 quality control</h4>
+<p>Before Gate 2, ask:</p>
+<ol type="1">
+<li>Did the selected use case work from beginning to end, including the critical real integration or activity?</li>
+<li>What did the tests show about normal use, errors, and recovery?</li>
+<li>Which assumptions were confirmed, challenged, or left unanswered?</li>
+<li>What did it actually cost in time, AI usage, services, and people?</li>
+<li>What do real users or relevant stakeholders think, if their evidence is needed?</li>
+<li>Do the security, privacy, operating, and maintenance risks still look manageable?</li>
+<li>Is there enough evidence to justify the <strong>next limited investment</strong>, rather than simply continuing because code now exists?</li>
+</ol>
+</section>
+<p><strong>Gate 2 — Decide whether the steel thread has earned the next decision.</strong> The Product Owner reviews the working steel thread, test results, actual costs, and unresolved risks. Record <strong>Proceed, Revise, Defer, or Stop</strong>. <strong>Proceed</strong> means the evidence is strong enough to prepare an MVP or pilot investment decision in Phase 3. It does not authorise building an MVP or scaling the product.</p>
+<h3 id="phase-3-decide-the-next-investment">Phase 3 — Decide the Next Investment</h3>
+<p><strong>Goal:</strong> Decide whether to fund an MVP, a limited pilot, another small experiment, or no further work, using the evidence gained from the steel thread.</p>
+<p>Phase 3 is an <strong>investment decision</strong>, not the stage where the MVP is built. The Product Owner now has a proposed user experience from Phase 1 and evidence of technical feasibility, cost, and risk from Phase 2. The AI agent and small team use this evidence to propose the next investment and explain what remains uncertain.</p>
+<p><strong>Essential Phase 3 artefacts:</strong></p>
+<div class="table-scroll" role="region" aria-label="Scrollable table" tabindex="0"><table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Artefact</th>
+<th>What the Product Owner needs to know</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Updated Product and Value Case</strong></td>
+<td>What the steel thread and any real-user checks revealed about the need, benefits, alternatives, and likely value</td>
+</tr>
+<tr>
+<td><strong>MVP or Pilot Investment Brief</strong></td>
+<td>The smallest useful next release or experiment, scope exclusions, expected effort and costs, team and AI roles, and decision criteria</td>
+</tr>
+<tr>
+<td><strong>Delivery and Operating Outline</strong></td>
+<td>How the MVP could be built in small increments and what hosting, support, security, privacy, maintenance, recovery, and running costs it may require</td>
+</tr>
+<tr>
+<td><strong>Evidence and Risk Summary</strong></td>
+<td>What the steel thread proved, what failed, what is still assumed, and which risks must be resolved before real use</td>
+</tr>
+<tr>
+<td><strong>Acceptance and Learning Record</strong></td>
+<td>The decision, investment limit, responsible owner, next review, and evidence that would change the decision</td>
+</tr>
+</tbody>
+</table></div>
+<p>The Product Owner does not need a detailed product specification. The agent should recommend a <strong>bounded next step</strong>, show credible alternatives, and use cost ranges that state their assumptions. Where real-user demand, security, or operating costs remain uncertain, the next investment should test those questions rather than assume they are solved.</p>
+<section id="practice-phase-3-quality-control" class="unnumbered unlisted practice">
+<h4 class="unnumbered unlisted">Practice: Phase 3 quality control</h4>
+<p>Before Gate 3, ask:</p>
+<ol type="1">
+<li>What did the real steel thread prove, and what does it <strong>not</strong> prove?</li>
+<li>Is there credible evidence that intended users need or value the product, or is that still a test for the MVP?</li>
+<li>What is the smallest MVP, pilot, or further experiment worth funding?</li>
+<li>What would it cost to build and operate, and how reliable are those estimates?</li>
+<li>Who will carry out the work, run the checks, and handle future support and security?</li>
+<li>What risks, spending limits, success criteria, and stop conditions will apply?</li>
+<li>Is the Product Owner satisfied that the next investment is justified by the evidence?</li>
+</ol>
+</section>
+<p><strong>Gate 3 — Decide the next investment.</strong> Record <strong>Proceed, Revise, Defer, or Stop</strong>. Proceed authorises only the agreed MVP, pilot, or further experiment within stated limits. <strong>Scale</strong> is an option at Gate 3 only when real-user and operating evidence—not just a steel thread—supports wider use.</p>
+<p><strong>What happens after Gate 3?</strong> If an MVP is approved, the team builds and tests it through <strong>small Agile increments</strong>, with frequent demonstrations and acceptance checks. Those increments are <strong>not part of Phase 3 itself</strong>. Return to the relevant phase or gate when new evidence, cost, risk, or user feedback changes the decision. Before a pilot or wider release, check that the product can be operated, supported, secured, and recovered at a level appropriate to its use.</p>
+<h3 id="essential-artefacts-across-the-phases">Essential Artefacts Across the Phases</h3>
+<p>This table summarises what is produced, reviewed, and reused. <strong>Create</strong> does not mean “write a long report”; most artefacts can be brief or combined.</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr>
+<th>Artefact</th>
+<th>Phase 1</th>
+<th>Gate 1</th>
+<th>Phase 2</th>
+<th>Gate 2</th>
+<th>Phase 3</th>
+<th>Gate 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Product Intent (including persona and use case)</td>
+<td>Create in Step 1</td>
+<td>Review</td>
+<td>Update if needed</td>
+<td>Review changes</td>
+<td>Update</td>
+<td>Review</td>
+</tr>
+<tr>
+<td>Assumption and Evidence Map</td>
+<td>Create in Step 1</td>
+<td>Review</td>
+<td>Test and update</td>
+<td>Review evidence</td>
+<td>Update</td>
+<td>Review</td>
+</tr>
+<tr>
+<td>Concept Artefact (workflow sketch and HTML simulation)</td>
+<td>Create in Steps 2–3</td>
+<td>Try and review</td>
+<td>Use as a reference</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Roadmap Options / Steel Thread Investment Brief</td>
+<td>Create in Step 3</td>
+<td>Decide on investment</td>
+<td>Update actual effort and choices</td>
+<td>Review findings</td>
+<td>Update value case</td>
+<td>Decide investment</td>
+</tr>
+<tr>
+<td>AI Model Harness</td>
+<td>Set initial limits in Step 3</td>
+<td>Approve limits</td>
+<td>Run and test checks</td>
+<td>Review failures</td>
+<td>Maintain</td>
+<td>Review</td>
+</tr>
+<tr>
+<td>Steel Thread</td>
+<td>Define and cost in Step 3</td>
+<td>Approve scope</td>
+<td>Build and test</td>
+<td>Demonstrate</td>
+<td>Use to plan next investment</td>
+<td>Review</td>
+</tr>
+<tr>
+<td>Acceptance Record</td>
+<td>Prepare</td>
+<td>Record decision</td>
+<td>Update evidence</td>
+<td>Record decision</td>
+<td>Prepare investment choice</td>
+<td>Record decision</td>
+</tr>
+<tr>
+<td>Learning Record</td>
+<td>Start</td>
+<td>Review</td>
+<td>Update</td>
+<td>Review</td>
+<td>Update</td>
+<td>Review</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="part-3-principles-responsibilities-and-reference">Part 3 — Principles, Responsibilities, and Reference</h2>
+<p>The sections below explain the thinking, responsibilities, and controls behind the practical steps. Use them when needed; they are not prerequisites for starting Phase 1.</p>
+<h3 id="definition-of-ai-product-work">Definition of AI Product Work</h3>
+<p>AI product work means using AI to help research, describe, design, build, test, review, or operate a product. An <strong>AI agent</strong> is an AI system that can carry out a set of tasks, sometimes using files, coding tools, and other software.</p>
+<p>AI can help prepare the evidence and do technical work. It cannot be the person accountable for whether the product should exist, whether the evidence is credible, or whether the risks are acceptable.</p>
+<h3 id="the-core-problem">The Core Problem</h3>
+<p>AI can create attractive plans, working screens, and code very quickly. This makes it easy to invest in something that looks convincing but has not been tested against real needs.</p>
+<p>The main risks are:</p>
+<ul>
+<li><strong>Building the wrong thing:</strong> a polished demonstration hides an unclear problem or weak demand.</li>
+<li><strong>Confusing a simulation with a product:</strong> clickable screens may use invented data and contain no real working service.</li>
+<li><strong>Rubber-stamping:</strong> the Product Owner accepts work without seeing how it was tested.</li>
+<li><strong>A closed loop:</strong> AI creates, checks, and praises its own outputs without a trustworthy outside check.</li>
+<li><strong>Hidden costs and risks:</strong> integrations, security, ongoing support, or running costs are discovered after work has begun.</li>
+</ul>
+<p>The answer is not more paperwork. It is a short sequence of useful artefacts, visible demonstrations, meaningful tests, and decisions that can stop unnecessary work.</p>
+<h3 id="ai-product-theory">AI Product Theory</h3>
+<p>Five ideas explain why this approach works:</p>
+<p><strong>Empiricism — learn from evidence.</strong> Prefer something observed or tested to an AI prediction or a confident opinion. A statement such as “users will want this” is an assumption until tested.</p>
+<p><strong>First-principles thinking — start with the problem.</strong> Ask who needs the product, what they are trying to achieve, and what must be true for the idea to work. Do not begin by choosing features or technology.</p>
+<p><strong>Lean thinking — make the next experiment small.</strong> Produce only the artefacts and working parts needed for the next decision. Reuse existing tools. Put a time and cost limit on the work.</p>
+<p><strong>Agile adaptation — inspect and change course.</strong> Work in small steps, demonstrate results early, and change the plan when new evidence appears. Do not treat the first design as a promise.</p>
+<p><strong>DevOps responsibility — consider life after the demo.</strong> Even a small experiment should expose important issues such as security, running costs, reliability, maintenance, and recovery. These do not all need to be solved in Phase 1, but they must not be hidden.</p>
+<h3 id="ai-product-values">AI Product Values</h3>
+<p>The guide uses five values: <strong>Judgement, Evidence, Restraint, Accountability, and Adaptation.</strong></p>
+<p><strong>Judgement:</strong> The Product Owner decides what problem to solve, what is worth paying for, and what to accept.</p>
+<p><strong>Evidence:</strong> Distinguish what real people or systems showed from what AI guessed or simulated.</p>
+<p><strong>Restraint:</strong> Do not build an MVP when a simple workflow simulation or steel thread could first show why the idea will fail.</p>
+<p><strong>Accountability:</strong> Name the person who approves decisions, risks, and spending. AI can help check the work but does not take responsibility for the consequences.</p>
+<p><strong>Adaptation:</strong> Change the product, the tests, or the approach when the evidence changes. Record what was learned.</p>
+<h3 id="accountabilities">Accountabilities</h3>
+<p>These are <strong>responsibilities, not six jobs</strong>. In a small team, one Product Owner and one or more AI agents may do much of the work. Specialists are added only where the risk requires them. The Product Owner remains responsible for the gate decisions.</p>
+<h4 id="product-accountability">Product Accountability</h4>
+<p>The <strong>Product Owner</strong> defines the desired outcome, chooses the target users, agrees the budget and limits, reviews the demonstrations, and decides whether to proceed, revise, defer, or stop. The owner does not need to write code.</p>
+<h4 id="customer-and-user-evidence-accountability">Customer and User Evidence Accountability</h4>
+<p>Someone must check whether the problem matters to actual users. AI can prepare questions and summarise feedback, but imagined personas, synthetic interviews, and AI opinions are <strong>not evidence of demand</strong>. Small tests with real people are preferred whenever possible.</p>
+<h4 id="ai-model-harness-accountability">AI Model Harness Accountability</h4>
+<p>Someone makes sure the AI agent works within agreed limits and that its important outputs are checked. The <strong>AI Model Harness</strong> is the set of instructions, permissions, tests, and stop rules used to control AI-assisted work. It can be simple for a low-risk experiment.</p>
+<h4 id="delivery-accountability">Delivery Accountability</h4>
+<p>The person or agent doing the build must create the agreed output, test it, and show what works and what does not. An AI agent can carry much of this work, but its results must still be checked.</p>
+<h4 id="operations-accountability">Operations Accountability</h4>
+<p>Before a real product is used, someone must know how it will be hosted, kept secure, updated, supported, paid for, and recovered after failure. These matters begin as estimates and become more detailed as the product develops.</p>
+<h4 id="independent-review-accountability">Independent Review Accountability</h4>
+<p>Someone or something must challenge important assumptions and results. This may be the Product Owner, a different person, a second AI, or an automated test. <strong>A second AI opinion alone is not proof</strong>: important checks should use real data, executable tests, direct observation, or another check capable of detecting a different kind of error. For high-risk work, seek suitable human expertise.</p>
+<h3 id="the-ai-model-harness">The AI Model Harness</h3>
+<p>The <strong>AI Model Harness</strong> is a practical set of controls for agents working on the product. Think of it as the brief, boundaries, and checks that stop the agent from quietly taking the project in the wrong direction.</p>
+<p>For Phase 1, keep it simple:</p>
+<ul>
+<li><strong>Purpose:</strong> use the approved Product Intent and use case; do not change them without asking.</li>
+<li><strong>Permissions:</strong> use only approved files and tools; do not connect real accounts or use personal data for a mock simulation.</li>
+<li><strong>Output:</strong> clearly separate verified facts, assumptions, mock data, and simulated features.</li>
+<li><strong>Checks:</strong> confirm the HTML opens, the main journey works, and the failure path is visible.</li>
+<li><strong>Limits:</strong> do not exceed the agreed time, money, scope, or access permissions.</li>
+<li><strong>Escalation:</strong> stop and ask the Product Owner about material changes or risks.</li>
+</ul>
+<p>For Phase 2, add checks for the real integrations, security, data handling, recovery, and any AI behaviour inside the product. Phase 3 uses the test results and remaining risks to set limits on the next investment. Tests should cover normal cases and cases expected to fail. Record tool/model changes that could affect results.</p>
+<section id="practice-triage-and-earned-autonomy" class="unnumbered unlisted practice">
+<h4 class="unnumbered unlisted">Practice: triage and earned autonomy</h4>
+<p>The agent can make routine changes <strong>within agreed limits</strong>, such as adjusting a mock screen or fixing a test failure. It should not decide to spend more, change the product’s purpose, connect sensitive systems, or accept a significant risk.</p>
+<p>Before relying on automated checking, include a safe, known mistake and confirm the checking process detects it. If it does not, improve the check before continuing. The Product Owner samples and reviews results, especially where consequences could be significant.</p>
+</section>
+<p>Six plain-language conditions help keep the harness useful:</p>
+<ol type="1">
+<li><strong>Intent:</strong> the agent knows what it is doing and why.</li>
+<li><strong>Evidence:</strong> it distinguishes real evidence from guesses and generated examples.</li>
+<li><strong>Evaluation:</strong> important claims and behaviour have tests that could fail.</li>
+<li><strong>Safety:</strong> data, permissions, spending, and risky actions are restricted.</li>
+<li><strong>Visibility:</strong> the Product Owner can see decisions, checks, changes, and failures.</li>
+<li><strong>Change control:</strong> new models, tools, inputs, or requirements trigger the right checks again.</li>
+</ol>
+<h3 id="ai-product-acceptance">AI Product Acceptance</h3>
+<p><strong>Generated is not the same as accepted.</strong> A file that exists is not necessarily a useful demonstration. A demo that looks good is not proof that the product can be built. A working steel thread is not proof that people want to use it or pay for it.</p>
+<p>Acceptance means that the Product Owner has inspected what was produced <strong>against the purpose of that phase</strong>.</p>
+<div class="table-scroll" role="region" aria-label="Scrollable table" tabindex="0"><table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Phase</th>
+<th>What “accepted” means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td>The Product Owner understands and can use the simulation, recognises its limitations, and has enough cost/risk information to decide on a steel thread experiment.</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td>The real end-to-end use case passes agreed checks; costs, failures, and unanswered questions are visible.</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td>The evidence, costs, limits, roles, and operating risks justify funding the proposed MVP, pilot, or further test. Scaling needs evidence from actual use.</td>
+</tr>
+</tbody>
+</table></div>
+<p>The maker cannot be the only source of acceptance. AI agents can run tests and report evidence, while the named Product Owner accepts the investment decision and brings in additional expertise where needed. A failed test, missing evidence, or cost breach may require <strong>Revise</strong>, <strong>Defer</strong>, or <strong>Stop</strong>, not automatic approval.</p>
+<h3 id="artefacts-and-their-commitments">Artefacts and Their Commitments</h3>
+<p>An <strong>artefact</strong> is simply something useful that the team can inspect: a short brief, user journey, HTML demo, code, test result, or recorded decision. Each main artefact below has one simple promise, called a <strong>commitment</strong>.</p>
+<p><strong>Keep the paperwork small.</strong> The Product Intent can contain the persona and use case. A Workflow Sketch can contain the story map and wireframes. The Steel Thread Investment Brief can contain the business case, technology choice, and roadmap options. Use separate files only when that makes them easier to work with.</p>
+<h4 id="product-intent">Product Intent</h4>
+<p>A one-page description of the problem, intended users and benefit, main use case, boundaries, and how the Product Owner will judge whether the idea is worth exploring. Include a <strong>lightweight persona</strong>, the main user scenario, and a plain-language value hypothesis.</p>
+<blockquote>
+<p><strong>Commitment:</strong> Another person can understand who it helps, what changes for them, and what evidence might show the idea is wrong.</p>
+</blockquote>
+<h4 id="assumption-and-evidence-map">Assumption and Evidence Map</h4>
+<p>A short list of the most important things that must be true. Label each as <strong>observed</strong>, <strong>supported by a source</strong>, <strong>assumed</strong>, or <strong>unknown</strong>. State the cheapest useful check and a result that would challenge the idea.</p>
+<blockquote>
+<p><strong>Commitment:</strong> At least one important assumption has a clear way to fail and a practical test.</p>
+</blockquote>
+<h4 id="concept-artefact">Concept Artefact</h4>
+<p>For a digital product, this is normally the <strong>interactive HTML workflow simulation</strong> created in Phase 1. Its supporting <strong>Workflow Sketch</strong> combines a tiny user story map, the main and failure paths, and a screen outline. A lightweight value stream map can be added when improving an existing process.</p>
+<p>The simulation uses mock data and simulated behaviour. It lets a Product Owner experience the expected user journey <strong>without</strong> building the working product.</p>
+<blockquote>
+<p><strong>Commitment:</strong> The Product Owner can try the idea in a browser, understand the intended outcome, and see which functions are not yet real.</p>
+</blockquote>
+<h4 id="roadmap-options">Roadmap Options</h4>
+<p>In Phase 1, this is a short <strong>Steel Thread Investment Brief</strong> comparing the next moves: test the proposed thread, test a narrower question, wait for evidence, or stop. In Phase 3, it becomes an MVP or pilot investment choice. It includes a rough value case, a proposed technology stack, essential integrations, costs and time ranges, risk limits, and conditions for deciding what happens next.</p>
+<blockquote>
+<p><strong>Commitment:</strong> The brief shows the cost and uncertainty of the <strong>next bounded investment</strong>, with more than one credible choice; it does not assume the whole product will be built.</p>
+</blockquote>
+<h4 id="ai-model-harness">AI Model Harness</h4>
+<p>Simple, explicit limits and checks for the AI agent: what it may do, which files and tools it may use, what counts as success, who reviews important work, and when it must stop. The checks become stronger when the risk increases.</p>
+<blockquote>
+<p><strong>Commitment:</strong> The agent’s important work can be inspected and tested; it is not accepted just because the agent says it succeeded.</p>
+</blockquote>
+<h4 id="steel-thread">Steel Thread</h4>
+<p>One narrow but <strong>real</strong> end-to-end use case, supported by acceptance examples, tests, and a short record of actual cost and results.</p>
+<blockquote>
+<p><strong>Commitment:</strong> It demonstrates a real outcome and a realistic failure path, not only a polished front screen.</p>
+</blockquote>
+<h4 id="acceptance-record">Acceptance Record</h4>
+<p>A short note stating the decision, who made it, the evidence used, remaining limitations, the allowed next spend or activity, and the next review point.</p>
+<blockquote>
+<p><strong>Commitment:</strong> The person accountable for acceptance is not relying only on the AI or person that produced the result to declare it good enough.</p>
+</blockquote>
+<h4 id="learning-record">Learning Record</h4>
+<p>A short running log of surprises, failures, user reactions, costs, and changes to the product or testing approach. It may be part of the decision record.</p>
+<blockquote>
+<p><strong>Commitment:</strong> Each important learning point changes a decision, assumption, test, or next action.</p>
+</blockquote>
+<h3 id="choosing-the-artefact-set">Choosing the Artefact Set</h3>
+<p><strong>Use the smallest set that makes the next decision safe and clear.</strong> Do not ask a non-technical Product Owner to produce technical documents that the AI agent can draft.</p>
+<div class="table-scroll" role="region" aria-label="Scrollable table" tabindex="0"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Technique or supporting artefact</th>
+<th>Use it when…</th>
+<th>Keep it light by…</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Lightweight persona</strong></td>
+<td>A specific user’s needs or limitations shape the UI</td>
+<td>Describing one realistic person in a few sentences</td>
+</tr>
+<tr>
+<td><strong>User Story Mapping</strong></td>
+<td>You need to choose the smallest complete user journey</td>
+<td>Mapping one use case rather than the whole future product</td>
+</tr>
+<tr>
+<td><strong>Example Mapping / Given–When–Then</strong></td>
+<td>Expected behaviour or business rules could be misunderstood</td>
+<td>Writing 2–4 practical examples</td>
+</tr>
+<tr>
+<td><strong>Value Stream Mapping</strong></td>
+<td>You are changing an existing process with delays or handoffs</td>
+<td>Sketching only the steps and time losses relevant to the use case</td>
+</tr>
+<tr>
+<td><strong>UI wireframe or storyboard</strong></td>
+<td>The Product Owner needs to see screen flow before simulation</td>
+<td>Using rough screens; no detailed branding needed</td>
+</tr>
+<tr>
+<td><strong>Technical sketch or stack decision</strong></td>
+<td>An integration, data source, platform, or operating cost affects feasibility</td>
+<td>Comparing only the credible options for the steel thread</td>
+</tr>
+<tr>
+<td><strong>Timeboxed spike</strong></td>
+<td>A single technical uncertainty could kill the idea</td>
+<td>Setting one question, a time limit, and a pass/fail result</td>
+</tr>
+<tr>
+<td><strong>User interview or observation</strong></td>
+<td>Demand, usability, or benefit cannot be established from existing evidence</td>
+<td>Testing a few focused questions with real people</td>
+</tr>
+</tbody>
+</table></div>
+<p>A small team may also use <strong>Three Amigos</strong>, <strong>story splitting</strong>, <strong>test-driven development</strong>, and <strong>show-and-tell reviews</strong>. These are ways to improve understanding and quality, not extra paperwork.</p>
+<p>When an artefact is intentionally omitted, the team should be able to explain why. The depth of analysis should rise with the consequence of getting the decision wrong.</p>
+<h3 id="scaling-the-guide">Scaling the Guide</h3>
+<p>The same decisions apply to small and large organisations; the people involved and level of evidence change.</p>
+<div class="table-scroll" role="region" aria-label="Scrollable table" tabindex="0"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Context</th>
+<th>Typical way of working</th>
+<th>What changes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Solo Product Owner + AI agent</strong></td>
+<td>Owner defines outcomes and approves gates; AI drafts artefacts, builds, and tests</td>
+<td>Keep files short; use direct observations and independent checks for significant risks</td>
+</tr>
+<tr>
+<td><strong>Small Agile/Lean team + AI</strong></td>
+<td>Product Owner, builder, and tester collaborate; AI accelerates drafting, coding, and checking</td>
+<td>Use brief Three Amigos discussions, examples, and regular demonstrations</td>
+</tr>
+<tr>
+<td><strong>Medium organisation</strong></td>
+<td>Existing product, design, engineering, security, and operations staff share specialist work</td>
+<td>Link artefacts to current tools and decision processes</td>
+</tr>
+<tr>
+<td><strong>Large or regulated organisation</strong></td>
+<td>Specialist approval and evidence are needed for higher-consequence decisions</td>
+<td>Add formal safety, legal, privacy, audit, and operating evidence where required</td>
+</tr>
+</tbody>
+</table></div>
+<p>A higher-risk product can need stronger controls even when its team is small.</p>
+<h3 id="relationship-to-other-frameworks">Relationship to Other Frameworks</h3>
+<p>This guide draws on established methods but does not require a team to adopt every ceremony or document from them.</p>
+<div class="table-scroll" role="region" aria-label="Scrollable table" tabindex="0"><table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Approach</th>
+<th>Useful contribution here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Scrum</strong></td>
+<td>Product Owner accountability, inspection, adaptation, increments, and Definition of Done</td>
+</tr>
+<tr>
+<td><strong>Agile</strong></td>
+<td>Small slices, clear user stories, frequent demonstration, and learning</td>
+</tr>
+<tr>
+<td><strong>Lean / Lean Startup</strong></td>
+<td>Cheap experiments, assumption testing, value-stream thinking, and decisions to continue or stop</td>
+</tr>
+<tr>
+<td><strong>Lean UX</strong></td>
+<td>Lightweight personas, storyboards, clickable concepts, and user feedback</td>
+</tr>
+<tr>
+<td><strong>Behaviour-Driven Development</strong></td>
+<td>Concrete acceptance examples, often using Given–When–Then</td>
+</tr>
+<tr>
+<td><strong>DevOps</strong></td>
+<td>Automated tests, secure delivery, monitoring, recovery, and responsibility after launch</td>
+</tr>
+</tbody>
+</table></div>
+<p>Use whichever practices help answer the next question. The framework is meant to reduce waste, not add a new layer of ceremonies.</p>
+<h3 id="status-and-limits-of-this-guide">Status and Limits of this Guide</h3>
+<p>This guide is a <strong>working hypothesis</strong>, not a guarantee of product success. Test whether it improves decisions, shortens the time to useful evidence, and reduces investment in ideas that do not work.</p>
+<p>The three phases answer different questions. <strong>The HTML simulation tests understanding and appeal, not feasibility. The steel thread tests the critical real workflow, not the full business model. Funding an MVP requires a value and cost case; operating or scaling it requires wider evidence and support.</strong></p>
+<p>AI estimates can be wrong. Mock users cannot establish demand. A technology proposal is not proof that an integration will work. A passing test does not prove there are no defects. Legal, privacy, accessibility, security, and safety questions may require specialist advice.</p>
+<p>The guide should change when experience reveals that an artefact, test, or decision gate is missing or unnecessary. Do not remove a useful safeguard without replacing the protection it provided.</p>
+<h3 id="end-note">End Note</h3>
+<p>The Product Owners AI Guide is designed to help Product Owners work confidently with AI without needing to become technical experts.</p>
+<p>Its central principle is:</p>
+<p><strong>Describe the outcome. Experience it in a low-cost simulation. Test the critical path for real. Invest further only when the evidence earns it.</strong></p>
+<h3 id="glossary">Glossary</h3>
+<p><strong>Acceptance Criteria</strong> — short, observable conditions that show whether a use case behaved as expected.</p>
+<p><strong>Acceptance Record</strong> — the written decision at a gate, with evidence, limitations, and the next step.</p>
+<p><strong>AI Agent</strong> — an AI system that can carry out assigned tasks, sometimes using tools and files.</p>
+<p><strong>AI Model Harness</strong> — the instructions, permissions, tests, limits, and review rules for AI-assisted work.</p>
+<p><strong>Closed loop</strong> — relying on AI to make and approve its own claims without a trustworthy independent check.</p>
+<p><strong>Concept Artefact</strong> — a temporary demonstration of the intended user experience; in this guide, normally an interactive HTML simulation.</p>
+<p><strong>Gate</strong> — a point where the Product Owner chooses to proceed, revise, defer, or stop. Scaling also requires real-world evidence.</p>
+<p><strong>HTML Simulation</strong> — a browser-based example of the proposed workflow and screens, usually using mock data and simulated actions.</p>
+<p><strong>MVP (Minimum Viable Product)</strong> — a minimal usable product released to learn from real use; it normally needs more reliability and support than a steel thread. It is built after a separate investment decision, in small Agile increments.</p>
+<p><strong>Persona</strong> — a short description of a representative user and their needs, labelled as assumed until supported by evidence.</p>
+<p><strong>MVP or Pilot Investment Brief</strong> — a short proposal for what to build next, why, by whom, at what cost and risk, and how to judge success.</p>
+<p><strong>Product Intent</strong> — the problem, people, expected benefit, use case, and boundaries of the idea.</p>
+<p><strong>Steel Thread</strong> — the smallest real end-to-end path through the product or process that can test a critical assumption.</p>
+<p><strong>Steel Thread Investment Brief</strong> — a short case for the next experiment, including what to build, how, cost, risks, and success/stop conditions.</p>
+<p><strong>User Story Map</strong> — a simple picture or list of the user’s activities in order, used to choose a small complete journey.</p>
+<p><strong>Value Stream Map</strong> — a picture of the work, handoffs, delays, and value in an existing process.</p>
+<h3 id="acknowledgements">Acknowledgements</h3>
+<h4 id="authors">Authors</h4>
+<p>This draft is based on the <em>AI Product Guide</em> developed by Rick Molony with AI assistance. The original structure was modelled on the pattern—not the content—of the Scrum Guide by Ken Schwaber and Jeff Sutherland. This revision reframes that structure as a practical guide for a non-technical Product Owner, with an explicit HTML simulation and steel-thread investment decision in Phase 1, and a separate MVP investment decision after the steel thread.</p>
+<h4 id="licence">Licence</h4>
+<p>This guide is offered under the <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International licence</a>. A <a href="https://creativecommons.org/licenses/by-sa/4.0/">plain-language summary</a> is also available.</p>
+<h3 id="guide-history">Guide History</h3>
+<div class="table-scroll" role="region" aria-label="Scrollable table" tabindex="0"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Material change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>0.8.0</strong></td>
+<td><strong>2026-11-08</strong></td>
+<td>Moved the practical three-phase process ahead of theory and detailed controls; combined the introduction; moved the cross-phase artefact table into the instructions; clarified that Phase 3 funds the next step while MVP delivery happens later in Agile increments; updated the diagram.</td>
+</tr>
+<tr>
+<td><strong>0.7.0</strong></td>
+<td><strong>2026-11-08</strong></td>
+<td>Renamed <em>Product Owners AI Guide</em>; rewritten in plain English; reorganised Phase 1 around Product Intent and use case, workflow/UI sketch, HTML simulation, and Steel Thread Investment Brief; clarified the key artefacts, agent tasks, safeguards, costs, and decisions across all three phases.</td>
+</tr>
+<tr>
+<td>0.6.0</td>
+<td>2026-08-29</td>
+<td>Source draft: three-phase structure, gates, accountabilities, core artefacts, and AI Model Harness.</td>
+</tr>
+<tr>
+<td>0.5.8</td>
+<td>2026-07-14</td>
+<td>Earlier baseline.</td>
+</tr>
+</tbody>
+</table></div>
+<section class="article-feedback"><h2>Help improve this page</h2><p>Found a problem or a better way to explain it? <a href="../feedback/index.html?page=https%3A%2F%2Faipf.ourresilient.world%2Fguides%2Fproduct-owners-ai-guide.html">Suggest a correction or improvement</a>.</p></section></article></div></main><footer class="site-footer"><div><strong>AI Product Flow</strong><p>Start small. Check results. Decide the next step.</p></div><nav aria-label="Footer"><a href="https://ourresilient.world/">Our Resilient World</a><a href="https://research.ourresilient.world/">AI-Assisted Research</a><a href="../feedback/index.html">Feedback</a><a href="../reuse.html">Reuse and attribution</a></nav><p>This guide is licensed <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. Cite the named authors, title, edition and source; indicate changes.</p></footer></body></html>
