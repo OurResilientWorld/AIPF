@@ -1,272 +1,646 @@
-<!doctype html><html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Start with the shared ideas and choose the decision you need to make."><title>Framework · AI Product Flow</title><link rel="stylesheet" href="../assets/site.css"></head><body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="header-inner"><a class="brand" href="../index.html"><img src="../assets/aipf-mark.svg" alt="" width="64" height="48"><span><strong>AI Product Flow</strong><small>Guides and case studies</small></span></a><nav aria-label="Primary"><a href="index.html" aria-current="page">Guides</a><a href="../case-studies/index.html">Case studies</a><a href="../feedback/index.html">Feedback</a></nav></div></header><main id="main"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> <span aria-hidden="true">/</span> <a href="index.html">Guides</a> <span aria-hidden="true">/</span> <span>Framework</span></nav><header class="page-intro"><p class="eyebrow">AI Product Flow · Edition 1.0</p><h1>Framework</h1><p class="deck">Start with the shared ideas and choose the decision you need to make.</p><p class="byline">By Rick Molony and Ghulam Akbar · developed with AI assistance</p></header><div class="reading-layout"><aside class="toc"><nav aria-label="On this page"><strong>On this page</strong><ul><li><a href="#the-problem-we-need-to-solve">The problem we need to solve</a></li><li><a href="#what-ai-product-flow-connects">What AI Product Flow connects</a></li><li><a href="#treat-uncertain-work-as-a-bet">Treat uncertain work as a bet</a></li><li><a href="#fund-learning-in-increments">Fund learning in increments</a></li><li><a href="#manage-live-bets-as-a-flow">Manage live bets as a flow</a></li><li><a href="#one-philosophy-at-three-decision-scopes">Three connected decisions</a></li><li><a href="#one-evidence-loop-applied-where-the-decision-belongs">Three phases for learning and deciding</a></li><li><a href="#use-ai-to-shorten-the-path-to-evidence">Use AI to shorten the path to evidence</a></li><li><a href="#what-the-guides-are-not">Where the guides fit</a></li><li><a href="#use-the-guides-at-the-decision-point">Choose the guide for your next decision</a></li><li><a href="#shared-information-and-handoffs">Shared information and handoffs</a></li><li><a href="#acknowledgements">Acknowledgements</a></li></ul></nav></aside><article class="reading"><h2 id="the-problem-we-need-to-solve">The problem we need to solve</h2>
-<p>AI can help people produce ideas, plans and product changes quickly. Someone still needs to check whether that work is useful, trustworthy and worth continuing. Producing more work can leave less time to make those decisions well.</p>
-<p>When AI produces work faster than people can judge it, approval can become a way to clear a queue. AIPF aims to keep evidence, human judgement and accountability effective as AI increases the speed, volume and autonomy of work.</p>
-<p>AI Product Flow (AIPF) offers a simple response: <strong>start small, check what happened, and decide the next step</strong>. Give each piece of uncertain work a clear purpose, an owner and a limit. Increase the commitment when the results support it.</p>
-<p>For example, an organisation wants to improve its customer service. AI can write an impressive plan or a quick answer. Neither shows whether customers get the right help. The organisation needs to test the complete experience, including the work people do to check and correct the answer.</p>
-<p>AIPF is a proposed approach. Its case studies are still building evidence. Treat its use in your organisation as something to learn from and improve.</p>
-<h2 id="what-ai-product-flow-connects">What AI Product Flow connects</h2>
-<p>AIPF connects three kinds of decisions:</p>
+<!doctype html>
+<html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Helping product owners and organisations manage the rapidly increasing capacity AI enables, so more of that capacity delivers useful results."><meta name="source-sha256" content="f573aa92517fc93a8eb361782dc988d35fcbebcf3c5bd779697978aa58120814"><link rel="canonical" href="https://aipf.ourresilient.world/guides/framework.html"><title>Framework Guide · AI Product Flow</title><link rel="stylesheet" href="../assets/site.css"><style>
+/* Framework-only extensions; site.css remains the shared design system. */
+#framework-app{margin:2rem 0 3rem;min-width:0}
+#framework-app .toolbar{display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between;padding:0 0 1.2rem;border-bottom:1px solid var(--line)}
+.framework-tabs{display:flex;flex-wrap:wrap;gap:.4rem}.framework-tabs a{display:block;padding:.55rem 1rem;border:1px solid var(--line);text-decoration:none;background:var(--paper);font-weight:600;font-size:15px}.framework-tabs a[aria-selected=true]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+#framework-app button{font:600 14px var(--sans);padding:.65rem 1rem;border:1px solid var(--ink);background:var(--paper);color:var(--ink);cursor:pointer}#framework-app button:hover{background:var(--soft)}
+#framework-app .hint{font-size:13px;color:var(--muted);margin:1rem 0 2rem}#framework-app .panel{padding:1rem 0 2rem;min-width:0}#framework-app .panel[hidden]{display:none}#framework-app .panel>h2{margin-top:0}#framework-app .panel>p,#framework-app .panel>ul{max-width:85ch}#framework-app .panel>p:has(>strong:first-child){border-left:3px solid var(--accent);padding-left:1rem}
+#framework-app .js-only{display:none}.enhanced #framework-app .js-only{display:flex}#framework-app table{table-layout:fixed}#framework-app table th:first-child,#framework-app table td:first-child{width:28%}#framework-app th,#framework-app td{overflow-wrap:anywhere;min-width:0}
+#framework-app .summary-graphic,#framework-app .diagram-scroll{margin:2rem 0;overflow-x:auto;border-top:3px solid var(--accent);padding-top:1rem}#framework-app .summary-graphic svg,#framework-app .diagram-scroll svg{display:block;width:100%;min-width:740px;height:auto}#framework-app .flow-graphic a:hover rect{fill:var(--soft)}#framework-app .flow-graphic a:focus-visible rect{stroke:var(--accent);stroke-width:4}
+#framework-app .comparison-wrap{overflow:auto;border:1px solid var(--line);margin:1.5rem 0}#framework-app .comparison-wrap table{min-width:1050px}#framework-app .comparison-wrap caption{text-align:left;font-weight:700;padding:1rem}#framework-app .comparison-wrap th:first-child{width:26%}#framework-app .comparison-wrap tbody th{position:sticky;left:0;background:var(--soft);font-weight:400;z-index:1}#framework-app .comparison-wrap thead th{vertical-align:bottom}
+.framework-acknowledgements{border-top:1px solid var(--line);padding-top:1rem;max-width:85ch}.legacy-anchor{display:block;scroll-margin-top:1rem}
+@media(max-width:600px){#framework-app .summary-graphic{margin-left:0;margin-right:0}#framework-app td,#framework-app th{padding:.6rem;font-size:13px}.framework-tabs a{padding:.55rem .7rem;font-size:14px}}
+@media print{#framework-app .toolbar,#framework-app .hint{display:none!important}#framework-app .panel,#framework-app .panel[hidden]{display:block!important;break-before:page;padding:0}#framework-app .summary-graphic,#framework-app .diagram-scroll{overflow:visible;break-inside:avoid}#framework-app .summary-graphic svg,#framework-app .diagram-scroll svg{min-width:0;max-height:220mm}#framework-app .comparison-wrap{overflow:visible;border:0}#framework-app .comparison-wrap table{min-width:0;font-size:8pt}#framework-app .comparison-wrap th,#framework-app .comparison-wrap td{padding:.35rem;font-size:8pt}#framework-app .comparison-wrap tbody th{position:static}.framework-acknowledgements{max-width:none;break-before:page}}
+</style></head><body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="header-inner"><a class="brand" href="../index.html"><img src="../assets/aipf-mark.svg" alt="" width="64" height="48"><span><strong>AI Product Flow</strong><small>Guides and case studies</small></span></a><nav aria-label="Primary"><a href="index.html" aria-current="page">Guides</a><a href="../case-studies/index.html">Case studies</a><a href="../feedback/index.html">Feedback</a></nav></div></header><main id="main"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> <span aria-hidden="true">/</span> <a href="index.html">Guides</a> <span aria-hidden="true">/</span> <span>Framework</span></nav><header class="page-intro"><p class="eyebrow">AI Product Flow · Edition 1.1</p><h1>Framework Guide</h1><p class="deck">Helping product owners and organisations manage the rapidly increasing capacity AI enables, so more of that capacity delivers useful results.</p><p class="byline">By Rick Molony and Ghulam Akbar · developed with AI assistance</p></header><div id="framework-app"><div class="toolbar"><nav class="framework-tabs" aria-label="Framework sections"><a id="tab-purpose" href="#purpose" data-tab="purpose">Purpose</a><a id="tab-principles" href="#principles" data-tab="principles">Principles</a><a id="tab-practices" href="#practices" data-tab="practices">Practices</a><a id="tab-artefacts" href="#artefacts" data-tab="artefacts">Artefacts</a><a id="tab-glossary" href="#glossary" data-tab="glossary">Glossary</a></nav><div class="tools js-only"><button id="show-all" aria-pressed="false">Read all tabs</button></div></div><p class="hint">Choose a tab to explore why and how to use AIPF. Use Left/Right arrows to switch focused tabs. Read all tabs or print the whole guide.</p><section class="panel" id="purpose" aria-labelledby="heading-purpose"><h2 id="heading-purpose">Purpose</h2><span id="the-problem-we-need-to-solve" class="legacy-anchor" aria-hidden="true"></span><h3 id="purpose-make-better-use-of-what-ai-makes-possible">Make better use of what AI makes possible</h3>
+<p><strong>AIPF helps product owners and organisations manage the rapidly increasing capacity AI enables, so more of that capacity delivers useful results.</strong></p>
+<p>AI rapidly increases the capacity to explore ideas, analyse information and produce work. <strong>Human capacity to judge usefulness, check evidence, absorb change and support the result does not grow at the same rate. This gap is the core problem AIPF addresses.</strong> Product owners and organisations must direct the extra capacity towards useful work and keep its demands within what people can check, use and support.</p>
+<span id="treat-uncertain-work-as-a-bet" class="legacy-anchor" aria-hidden="true"></span><h3 id="purpose-why-use-the-guides">Why use the guides?</h3>
+<p>The gap between production and human capacity creates a growing load of suggestions, reviews, unfinished work and changes to absorb. Producing more work without managing that load consumes attention needed to make the work useful. AIPF helps product owners and organisations choose what deserves effort, limit the work in progress and direct AI’s growing capacity towards better products, better services and the outcomes that matter.</p>
+<p>The guides help you answer three practical questions:</p>
 <ul>
-<li><strong>Portfolio:</strong> which work should receive our time, money and attention?</li>
-<li><strong>Product family:</strong> how should related products work together?</li>
-<li><strong>Product:</strong> does this product help people, and is it fit to use?</li>
+<li><strong>What is worth doing?</strong> Choose work that addresses a real need and fits your priorities.</li>
+<li><strong>How much should we do next?</strong> Start with enough work to learn something useful, within a time and cost you can afford.</li>
+<li><strong>Can people use and support the result?</strong> Include checking, adoption, maintenance and the work created for others.</li>
 </ul>
-<p>A product may be a service, a staff tool or a workflow, as well as software sold to customers. A family is useful when distinct products need shared decisions. Several teams working on one product do not automatically form a product family.</p>
-<p>Use the guides alongside the way you already plan, build and run things. Keep useful agile practices: short cycles, ordered work lists, feedback from users and regular conversations about improving the work. AIPF adds clear questions, evidence and responsibility at the points where a decision matters.</p>
-<p>Read this Framework for the shared ideas. Then choose the guide for the decision you face; you do not have to start every initiative at product level.</p>
-<h2 id="treat-uncertain-work-as-a-bet">Treat uncertain work as a bet</h2>
-<p>A <strong>bet</strong> is a limited commitment to find out whether an idea is worth pursuing. It has a named owner, a question to answer and a condition for stopping. The word reminds us that the result is uncertain.</p>
-<p>Before starting, write down:</p>
-<ul>
-<li>who needs help and what should improve;</li>
-<li>what you believe, and what you still need to find out;</li>
-<li>the smallest useful test and the result that would change your mind;</li>
-<li>the available time, money and people;</li>
-<li>who decides next, when they will review, and when the work must stop.</li>
-</ul>
-<p><strong>Example:</strong> allow a small team two weeks to test whether AI summaries help staff handle service requests. Include time to check the summaries. Stop the test if important facts are repeatedly missing. These are illustrative limits; choose limits that fit your situation.</p>
-<p>A bet can fund research before any product is chosen. Record what the research found, including reasons not to proceed. Having invested in research does not automatically justify building something.</p>
-<p>Value can mean better service, less risk, public benefit, revenue or meeting an obligation. Choose measures that fit the purpose.</p>
-<h2 id="fund-learning-in-increments">Fund learning in increments</h2>
-<p>Commit enough resources to answer the next important question. Review the result before committing more. A useful test can support another step, suggest a change or show that the work should end.</p>
-<p>Anyone may propose an idea. The people responsible for spending, information access, risk and live use still make those decisions. Funding a test does not give automatic permission to release a product or use restricted information.</p>
-<p>In the service example, a promising summary test might justify a trial with a few staff. It does not yet justify use across every service. Record the next allowance and its conditions, such as continued human checking.</p>
-<p>Stopping unsuccessful work preserves learning and frees people for something more useful. For required work, such as meeting an existing obligation, test better ways to meet it; the obligation itself remains. Existing budgeting and accounting rules still apply.</p>
-<h2 id="manage-live-bets-as-a-flow">Manage live bets as a flow</h2>
-<p>Limit how much work is active at once. Count work waiting for review as well as work being produced. Reviewers, specialists and support staff all need enough time to do their part.</p>
-<p>A simple work list can show ideas, allowed tests, work waiting for a decision and decisions made. Use your existing board or records if they already do this well. A <strong>work-in-progress limit</strong> is the maximum amount of active work the group agrees it can handle.</p>
-<p>When reviews pile up, finish or stop existing work before starting more. Check whether old evidence is still reliable after a change to the product, information or AI tool.</p>
-<p>Make a stop decision practical: tell the people affected, end the authorised work, deal with continuing service needs and retain what was learned. If you defer work, record who will reconsider it and what would trigger that review.</p>
-<h2 id="one-philosophy-at-three-decision-scopes">Three connected decisions</h2>
-<p>The three levels look at the same work from different viewpoints. They should use the same facts, with enough context to understand what those facts mean.</p>
-<figure class="flow-figure" aria-labelledby="scope-figure-caption">
-<p class="figure-label">
-Three connected decisions
-</p>
-<div class="diagram-band">
-Purpose, resources and conditions <span>↓ reach the people doing the work</span>
-</div>
-<ul class="diagram-columns">
-<li>
-<strong>Portfolio</strong>What should we support next?<span>Compare expected value, results, costs and available people. Decide the next commitment.</span>
-</li>
-<li>
-<strong>Product family</strong>How should the products work together?<span>Check the complete experience, shared information and handoffs. Agree who owns each part.</span>
-</li>
-<li>
-<strong>Product</strong>Does this help, and is it fit to use?<span>Learn from users, test a small working path and check the support needed.</span>
-</li>
-</ul>
-<div class="diagram-band">
-Findings, costs and remaining questions <span>↑ inform the next decision</span>
-</div>
-<figcaption id="scope-figure-caption">
-Figure 1. Decisions reach the work; findings return to the people deciding. These are viewpoints, not required management layers. A product can connect directly to the portfolio when no family decision is needed.
+<p>An uncertain piece of work is called a <strong>bet</strong>: something you think is worth trying, with an owner, agreed time and cost limits, and a point at which you decide whether to continue. That might be research, a small product change or a trial of a new service. A suggestion from an AI agent becomes an active bet only when someone agrees to take it on.</p>
+<p>AIPF applies when AI helps create the work, even if the finished product contains no AI. Use the guides alongside the ways you already plan, build and run things.</p>
+<span id="what-the-guides-are-not" class="legacy-anchor" aria-hidden="true"></span><h3 id="purpose-how-to-use-this-framework">How to use this Framework</h3>
+<p>The five tabs explain why AIPF is needed, how to make choices and how to put those choices into practice. Start with the question you need to answer; you do not have to read every tab in order. Select a tab name below to go straight to it. The Glossary explains terms, while Artefacts shows the records used by the four decision guides.</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Tab</th>
+<th>Question it answers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#purpose">Purpose</a></td>
+<td>Why use AIPF to manage the capacity AI enables?</td>
+</tr>
+<tr>
+<td><a href="#principles">Principles</a></td>
+<td>What should guide our choices as more work becomes possible?</td>
+</tr>
+<tr>
+<td><a href="#practices">Practices</a></td>
+<td>How do we choose, test and improve the work?</td>
+</tr>
+<tr>
+<td><a href="#artefacts">Artefacts</a></td>
+<td>What information helps people understand the work and act on it?</td>
+</tr>
+<tr>
+<td><a href="#glossary">Glossary</a></td>
+<td>What do the shared AIPF terms mean?</td>
+</tr>
+</tbody>
+</table>
+<span id="one-evidence-loop-applied-where-the-decision-belongs" class="legacy-anchor" aria-hidden="true"></span><h3 id="purpose-how-the-framework-works-as-a-learning-loop">How the Framework works as a learning loop</h3>
+<p>Purpose identifies the improvement you want. Principles guide the choices you make, and practices turn those choices into work. Artefacts keep the evidence visible so people can decide what happens next. The return arrow matters: use what you learn to reconsider the purpose, improve the approach or choose a different next step. The principles apply throughout; the boxes show relationships, not separate approval stages.</p>
+<figure class="summary-graphic flow-graphic" tabindex="0" aria-label="AIPF learning loop; scroll horizontally on a small screen">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 485" role="img" aria-label="Purpose guides principles, principles guide practices, practices create artefacts and evidence, and evidence informs the next decision. Learning returns to improve purpose, principles and practices. Each box links to its explanation.">
+<rect x="0" y="0" width="960" height="485" rx="16" fill="#efeee5"/> <a href="#purpose" aria-label="Read about Purpose"> <rect x="20" y="30" width="290" height="114" rx="12" fill="white" stroke="#715237" stroke-width="2"/> <text x="36" y="62" font-family="sans-serif" font-size="21" font-weight="700" fill="#715237">1. Purpose</text> <text x="36" y="95" font-family="sans-serif" font-size="19" fill="#25312c">Who should benefit?</text> <text x="36" y="123" font-family="sans-serif" font-size="19" fill="#25312c">What should improve?</text> </a> <a href="#principles" aria-label="Read about Principles"> <rect x="335" y="30" width="290" height="114" rx="12" fill="white" stroke="#715237" stroke-width="2"/> <text x="351" y="62" font-family="sans-serif" font-size="21" font-weight="700" fill="#715237">2. Principles</text> <text x="351" y="95" font-family="sans-serif" font-size="19" fill="#25312c">Use the five principles</text> <text x="351" y="123" font-family="sans-serif" font-size="19" fill="#25312c">to guide choices.</text> </a> <a href="#practices" aria-label="Read about Practices"> <rect x="650" y="30" width="290" height="114" rx="12" fill="white" stroke="#715237" stroke-width="2"/> <text x="666" y="62" font-family="sans-serif" font-size="21" font-weight="700" fill="#715237">3. Practices</text> <text x="666" y="95" font-family="sans-serif" font-size="19" fill="#25312c">Try small, check results</text> <text x="666" y="123" font-family="sans-serif" font-size="19" fill="#25312c">and manage the work.</text> </a> <a href="#artefacts" aria-label="Read about Artefacts and evidence"> <rect x="650" y="300" width="290" height="114" rx="12" fill="white" stroke="#715237" stroke-width="2"/> <text x="666" y="332" font-family="sans-serif" font-size="21" font-weight="700" fill="#715237">4. Artefacts and evidence</text> <text x="666" y="365" font-family="sans-serif" font-size="19" fill="#25312c">Keep what was tried,</text> <text x="666" y="393" font-family="sans-serif" font-size="19" fill="#25312c">observed and decided.</text> </a> <a href="#practices-decide-what-happens-next" aria-label="Read about Next decision"> <rect x="20" y="300" width="290" height="114" rx="12" fill="white" stroke="#715237" stroke-width="2"/> <text x="36" y="332" font-family="sans-serif" font-size="21" font-weight="700" fill="#715237">5. Next decision</text> <text x="36" y="365" font-family="sans-serif" font-size="19" fill="#25312c">Continue, change,</text> <text x="36" y="393" font-family="sans-serif" font-size="19" fill="#25312c">wait or stop.</text> </a> <g fill="none" stroke="#a34e32" stroke-width="3"><path d="M310 87 H335 M325 80 L335 87 L325 94"/><path d="M625 87 H650 M640 80 L650 87 L640 94"/><path d="M795 144 V300 M788 290 L795 300 L802 290"/><path d="M650 357 H310 M320 350 L310 357 L320 364"/><path d="M165 300 V144 M158 154 L165 144 L172 154"/></g> <text x="365" y="214" font-family="sans-serif" font-size="25" font-weight="700" fill="#715237">Learn and improve</text> <text x="344" y="245" font-family="sans-serif" font-size="19" fill="#25312c">Revisit what matters, how you</text> <text x="347" y="272" font-family="sans-serif" font-size="19" fill="#25312c">work and what you try next.</text> <text x="28" y="211" font-family="sans-serif" font-size="18" fill="#715237">Use learning</text> <text x="28" y="237" font-family="sans-serif" font-size="18" fill="#715237">to improve</text> <text x="30" y="458" font-family="sans-serif" font-size="21" font-weight="700" fill="#715237">Use each cycle to make better use of the capacity AI enables.</text>
+</svg>
+<figcaption>
+Read across the top, down to the evidence, then back through the decision and learning. Select a box to read its explanation.
 </figcaption>
 </figure>
-<p>In the service example, the portfolio chooses whether to invest in better request handling. A family might bring together intake, knowledge and response products. Each product has a purpose and an owner. The family checks whether a request reaches a useful answer across all three.</p>
-<p>Start with the whole intended experience before dividing the work into products. A <strong>journey map</strong> shows what a person is trying to do, the steps they take and where they need help. A simple product map shows which product supports each part. A <strong>value stream</strong> follows the work from the original need to its result; it can cross family boundaries.</p>
-<p>Keep records short and connected. Each important result or decision needs a stable identifier, owner, date or version, source link and relevant limits. Products keep the original findings. Families add the effect across products. Portfolios use that information to choose the next investment. Count a shared benefit once.</p>
-<p>Decisions travel back with the allowed scope, conditions and next review point. Product owners update their work lists and checks. If a source is corrected, identify the affected tests and decisions and ask their owners to reconsider them. Do not silently rewrite the history.</p>
-<h2 id="one-evidence-loop-applied-where-the-decision-belongs">Three phases for learning and deciding</h2>
-<p>All three guides use the same three phases. The questions differ according to who needs to decide.</p>
-<p>These are not Phase 1 at Portfolio, Phase 2 at Family and Phase 3 at Product. Each scope uses all three phases for its own decision. In Phase 2, Product tests a product path, Family tests a shared boundary and its suitability in participating contexts, and Portfolio uses the evidence those slices produce to judge the next investment; it does not run a product slice of its own. A separate evidence slice may test the portfolio process itself; that does not prove the investments it oversees.</p>
-<div class="table-scroll" role="region" aria-label="Scrollable table" tabindex="0"><table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr>
-<th>Phase</th>
-<th>In everyday language</th>
-<th>What you should have at the end</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1 — Validate, Show, and Set Boundaries</td>
-<td>Understand the need and show what success could look like.</td>
-<td>A visible concept, key questions, owners and limits for the next test.</td>
-</tr>
-<tr>
-<td>2 — Prove the End-to-End Evidence Slice</td>
-<td>Try a small complete path and check the result.</td>
-<td>Findings linked to the test, its costs, limitations and remaining questions.</td>
-</tr>
-<tr>
-<td>3 — Decide and Operationalise</td>
-<td>Decide what happens next and who will look after it.</td>
-<td>A recorded decision, conditions for use or investment, support responsibilities and a review point.</td>
-</tr>
-</tbody>
-</table></div>
-<p>A <strong>Concept Artefact</strong> makes an idea visible. It might be a sketch, storyboard or example of the intended experience. An <strong>artefact</strong> simply means a useful record or example of the work.</p>
-<p>An <strong>End-to-End Evidence Slice</strong>, also called a <strong>steel thread</strong>, is a small working test across a complete path. For example: receive a request, find relevant information, draft an answer and have a person check it. The test may use representative conditions; record those limits.</p>
-<p>A <strong>Minimum Viable Product (MVP)</strong> is a minimum usable product or release for learning with users. A narrow working test is not automatically an MVP. Several tests may be needed before a usable release is ready.</p>
-<p>Each phase ends with a <strong>gate</strong>: a decision about the next commitment. The options are <strong>Proceed</strong>, <strong>Revise</strong>, <strong>Defer</strong> or <strong>Stop</strong>. A family can also <strong>Limit</strong> where something is shared or <strong>Split</strong> it into separate approaches. A portfolio can <strong>Merge</strong> overlapping bets or <strong>Rebalance</strong> resources between them. <strong>Scale</strong> is an option at Gate 3 when the evidence and readiness for wider use support it.</p>
-<p>Each scope names one owner for its gate decision: the Product owner at product level, the Family owner at family level and the Portfolio owner, or a portfolio board acting for them, at portfolio level. Specialists advise within their expertise; the gate owner records the decision.</p>
-<p>A bet’s phase and gate follow the bet’s own question. When one bet supports several products at different stages, record each product’s phase separately; the bet reaches its gate when the evidence answers the bet’s question. Merge and Rebalance affect several bets, so they can be made at any portfolio review and are recorded against each affected bet’s current gate.</p>
-<p>Keep these <strong>decision states</strong> distinct in every record: <strong>progress</strong> (work done), <strong>evidence</strong> (what was found), <strong>recommendation</strong> (what someone advises), <strong>funding commitment</strong> (permission to commit resources), <strong>release</strong> (permission to make funds available or start the affected work), <strong>acceptance</strong> (a result accepted for a stated use) and <strong>permission to scale</strong>. One decision may grant several of these when the decision-maker has the authority and records each one.</p>
-<p>These are learning cycles, not a requirement for three new committees. Use existing reviews where they fit. Routine work inside an agreed permission can continue. Changes to purpose, spending limits, important risks or acceptance go back to the responsible person.</p>
-<h2 id="use-ai-to-shorten-the-path-to-evidence">Use AI to shorten the path to evidence</h2>
-<p>AI can help find questions, compare options, organise observations and prepare a decision note. Keep actual observations separate from AI suggestions, invented examples and forecasts. A confident summary still needs sources that someone can check.</p>
-<p>The <strong>AI Model Harness</strong> means the working rules and checks around AI use. It explains what the AI may do, which information and tools it may use, what must be prevented, how people check results, how they notice problems and what must be rechecked after a change. The Product Guide explains these controls in more detail.</p>
-<p>Controls apply wherever AI acts, including Portfolio analysis and Family coordination. Shared controls can be reused, but each use needs an owner, permitted actions, suitable evaluation and a way to detect problems and stop. This does not require three separate harness documents.</p>
-<p>Name the people who can pause or narrow AI use. Greater automation needs suitable checks and evidence. People remain responsible for purpose, investment, acceptance and consequences.</p>
-<h2 id="what-the-guides-are-not">Where the guides fit</h2>
-<p>AIPF does not require a new department, software tool or reporting hierarchy. It works alongside product management, agile delivery, finance, risk and operations. Keep existing responsibilities clear.</p>
-<p>The guides help people decide and learn. They cannot by themselves establish that a product is secure, lawful or suitable for a particular service. Use the relevant specialist checks and operating requirements as part of the work.</p>
-<p>The shared values are <strong>judgement, evidence, restraint, accountability and adaptation</strong>. In everyday language: think carefully, check what happened, limit the next commitment, name the owner and change course when needed.</p>
-<h2 id="use-the-guides-at-the-decision-point">Choose the guide for your next decision</h2>
-<div class="table-scroll" role="region" aria-label="Scrollable table" tabindex="0"><table>
+<span id="what-ai-product-flow-connects" class="legacy-anchor" aria-hidden="true"></span><span id="one-philosophy-at-three-decision-scopes" class="legacy-anchor" aria-hidden="true"></span><span id="scope-figure-caption" class="legacy-anchor" aria-hidden="true"></span><span id="use-the-guides-at-the-decision-point" class="legacy-anchor" aria-hidden="true"></span><h3 id="purpose-different-responsibilities-the-same-aim">Different responsibilities, the same aim</h3>
+<p>All the guides help people make better use of AI’s growing capacity, but they address different responsibilities. A product owner asks whether a product helps its users. A family owner asks whether related products work together. Portfolio decision-makers ask which work deserves the organisation’s money, people and attention. The table below helps you choose the guide for the responsibility you hold and the question in front of you.</p>
+<p>For example, when improving customer service, the product decision concerns whether an AI summary helps a staff member answer a request. The family decision concerns how intake, knowledge and response products connect. The portfolio decision concerns whether to invest in this improvement ahead of other work. Each uses the results of the same work to answer a different practical question.</p>
+<table>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
 </colgroup>
 <thead>
 <tr>
-<th>Your next question</th>
-<th>Guide to use</th>
+<th>Guide</th>
+<th>Use it to…</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Which ideas or existing commitments deserve resources?</td>
-<td><a href="portfolio.html">AI Portfolio Guide</a></td>
+<td><a href="#purpose">Framework</a></td>
+<td>Understand the shared purpose, principles and practices, and choose which guide to use.</td>
 </tr>
 <tr>
-<td>Which products are needed for the whole experience, and what should they share?</td>
-<td><a href="product-family.html">AI Product Family Guide</a></td>
+<td><a href="https://aipf.ourresilient.world/guides/product-owners-ai-guide.html">Product Owners AI Guide</a></td>
+<td>Explore an idea with AI, experience a simulation, test a small working path and decide whether to invest further. Written especially for a non-technical Product Owner.</td>
 </tr>
 <tr>
-<td>What should one product test, build or put into use?</td>
-<td><a href="product.html">AI Product Guide</a></td>
+<td><a href="https://aipf.ourresilient.world/guides/product.html">Agile Product Guide</a></td>
+<td>Help a product team use AI within Agile delivery, learn through small working changes and judge whether a product is ready for use.</td>
 </tr>
 <tr>
-<td>How do we run the investment process and connect its records?</td>
-<td><a href="portfolio-implementation.html">AI Portfolio Implementation Guide</a></td>
+<td><a href="https://aipf.ourresilient.world/guides/product-family.html">Product Family Guide</a></td>
+<td>Make related products work together and judge what they should share.</td>
+</tr>
+<tr>
+<td><a href="https://aipf.ourresilient.world/guides/portfolio.html">Portfolio Guide</a></td>
+<td>Choose where to invest money, people and attention across competing work.</td>
+</tr>
+<tr>
+<td><a href="https://aipf.ourresilient.world/guides/portfolio-implementation.html">Portfolio Implementation Guide</a></td>
+<td>Organise portfolio requests, reviews, records, spending conditions and follow-up.</td>
 </tr>
 </tbody>
-</table></div>
-<p>For a broad initiative, start with the portfolio purpose and investment limits. Use the family view to outline the whole experience and related products. Then use the Product Guide to test each part. For a change within one existing product, begin there and involve the other levels when a shared or investment decision is needed.</p>
-<p>All three levels use the shared information checklist and phase handoffs below. Use those common fields in existing records rather than maintaining separate copies of the same facts. The AI Portfolio Implementation Guide shows how to run the investment cycle with them, with a graphical overview and worked example.</p>
-<h2 id="shared-information-and-handoffs">Shared information and handoffs</h2>
-<h3 id="information-specification-and-source-ownership">Agree what each piece of information means</h3>
-<p>Use the same meanings at product, family and portfolio level. Link each fact to its agreed source; do not create competing versions in each guide or system.</p>
-<div class="table-scroll" role="region" aria-label="Scrollable table" tabindex="0"><table>
+</table>
+<p>The two product guides adapt the same ideas to different audiences. Choose the approach that fits your situation; they are alternatives at the product level, not successive stages. A product can connect directly to the portfolio when no product-family decision is needed.</p>
+<p>Across the guides, useful work begins with a clear need, is checked through a small test and is reconsidered when results arrive. People retain responsibility for choosing and accepting the work. The detail changes with the responsibility: product testing, shared-product coordination or investment across the organisation. Use the relevant guide’s instructions and link the findings so each person can understand the reasons for the next step.</p>
+</section><section class="panel" id="principles" aria-labelledby="heading-principles"><h2 id="heading-principles">Principles</h2><h3 id="principles-keep-extra-capacity-focused-on-work-that-helps-people">Keep extra capacity focused on work that helps people</h3>
+<p><strong>Use these principles to make good choices as AI expands what you can do.</strong> They help you spend less effort on work that does not help, spot problems earlier and keep people able to use the results.</p>
+<figure class="summary-graphic">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 528" role="img" aria-label="Five principles help extra AI capacity produce useful work: choose well, check claims, start small, name owners and learn.">
+<rect x="0" y="0" width="960" height="528" rx="16" fill="#efeee5"/> <rect x="30.0" y="24" width="434.0" height="124" rx="10" fill="white" stroke="#d4d6cb"/> <text x="46.0" y="59" font-family="sans-serif" font-size="22" font-weight="700" fill="#715237">Judgement</text> <text x="46.0" y="93" font-family="sans-serif" font-size="19" fill="#25312c">Choose work that</text> <text x="46.0" y="122" font-family="sans-serif" font-size="19" fill="#25312c">helps people.</text> <rect x="480.0" y="24" width="434.0" height="124" rx="10" fill="white" stroke="#d4d6cb"/> <text x="496.0" y="59" font-family="sans-serif" font-size="22" font-weight="700" fill="#715237">Evidence</text> <text x="496.0" y="93" font-family="sans-serif" font-size="19" fill="#25312c">Check what is true</text> <text x="496.0" y="122" font-family="sans-serif" font-size="19" fill="#25312c">before spending more.</text> <rect x="30.0" y="168" width="434.0" height="124" rx="10" fill="white" stroke="#d4d6cb"/> <text x="46.0" y="203" font-family="sans-serif" font-size="22" font-weight="700" fill="#715237">Restraint</text> <text x="46.0" y="237" font-family="sans-serif" font-size="19" fill="#25312c">Start only what people</text> <text x="46.0" y="266" font-family="sans-serif" font-size="19" fill="#25312c">can check and support.</text> <rect x="480.0" y="168" width="434.0" height="124" rx="10" fill="white" stroke="#d4d6cb"/> <text x="496.0" y="203" font-family="sans-serif" font-size="22" font-weight="700" fill="#715237">Accountability</text> <text x="496.0" y="237" font-family="sans-serif" font-size="19" fill="#25312c">Make someone</text> <text x="496.0" y="266" font-family="sans-serif" font-size="19" fill="#25312c">responsible for results.</text> <rect x="30.0" y="312" width="434.0" height="124" rx="10" fill="white" stroke="#d4d6cb"/> <text x="46.0" y="347" font-family="sans-serif" font-size="22" font-weight="700" fill="#715237">Adaptation</text> <text x="46.0" y="381" font-family="sans-serif" font-size="19" fill="#25312c">Use learning to change</text> <text x="46.0" y="410" font-family="sans-serif" font-size="19" fill="#25312c">what happens next.</text> <text x="46" y="500" font-family="sans-serif" font-size="22" font-weight="700" fill="#715237">Why: keep growing capacity focused on useful results.</text>
+</svg>
+<figcaption>
+Five principles help extra AI capacity produce useful work: choose well, check claims, start small, name owners and learn.
+</figcaption>
+</figure>
+<h3 id="principles-judgement-choose-work-that-matters">Judgement: choose work that matters</h3>
+<p>Start with the people who need help and the improvement you want to make. Compare the options, including improving something that already exists. AI can suggest many possibilities; people decide which deserve their time and money.</p>
+<h3 id="principles-evidence-check-before-investing-more">Evidence: check before investing more</h3>
+<p>Look for observations and test results that show whether the idea works. Include results that challenge it. A convincing explanation or attractive demonstration can help people understand an idea, but it does not show that the idea will work in practice. Checking early helps avoid expensive mistakes.</p>
+<span id="fund-learning-in-increments" class="legacy-anchor" aria-hidden="true"></span><h3 id="principles-restraint-start-only-what-you-can-properly-finish">Restraint: start only what you can properly finish</h3>
+<p>Agree how much time and money to spend on the next step. Limit the amount of work active at once, including work waiting for review. Leave room for testing, training and support. This keeps growing AI output from overwhelming the people who must make it useful.</p>
+<h3 id="principles-accountability-make-someone-responsible-for-the-result">Accountability: make someone responsible for the result</h3>
+<p>Name the person who owns the work and the people who can approve spending or use. Give AI agents clear instructions about what they may do and when they must ask for help. People need to know who will resolve a problem and look after the result after delivery.</p>
+<h3 id="principles-adaptation-use-what-you-learn">Adaptation: use what you learn</h3>
+<p>Change the work when results, costs or user needs change. Continue what helps; revise, postpone or stop what does not. Keep the learning so people and agents can avoid repeating the same mistakes and put their capacity to better use.</p>
+</section><section class="panel" id="practices" aria-labelledby="heading-practices"><h2 id="heading-practices">Practices</h2><h3 id="practices-use-growing-capacity-without-overwhelming-people">Use growing capacity without overwhelming people</h3>
+<p><strong>Use these practices to learn sooner, reduce wasted work and make improvements people can use and support.</strong> Apply them to a single product, a group of related products or a portfolio of investments.</p>
+<figure class="summary-graphic">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 384" role="img" aria-label="Choose useful work, try a small part, check the result, then continue, change or stop. Repeat as learning changes the work.">
+<rect x="0" y="0" width="960" height="384" rx="16" fill="#efeee5"/> <rect x="30.0" y="24" width="434.0" height="124" rx="10" fill="white" stroke="#d4d6cb"/> <text x="46.0" y="59" font-family="sans-serif" font-size="22" font-weight="700" fill="#715237">1 · Choose</text> <text x="46.0" y="93" font-family="sans-serif" font-size="19" fill="#25312c">Who needs help?</text> <text x="46.0" y="122" font-family="sans-serif" font-size="19" fill="#25312c">What should improve?</text> <rect x="480.0" y="24" width="434.0" height="124" rx="10" fill="white" stroke="#d4d6cb"/> <text x="496.0" y="59" font-family="sans-serif" font-size="22" font-weight="700" fill="#715237">2 · Try</text> <text x="496.0" y="93" font-family="sans-serif" font-size="19" fill="#25312c">Test a small part.</text> <text x="496.0" y="122" font-family="sans-serif" font-size="19" fill="#25312c">Set time and cost limits.</text> <rect x="30.0" y="168" width="434.0" height="124" rx="10" fill="white" stroke="#d4d6cb"/> <text x="46.0" y="203" font-family="sans-serif" font-size="22" font-weight="700" fill="#715237">3 · Check</text> <text x="46.0" y="237" font-family="sans-serif" font-size="19" fill="#25312c">Did it help?</text> <text x="46.0" y="266" font-family="sans-serif" font-size="19" fill="#25312c">What failed or surprised us?</text> <rect x="480.0" y="168" width="434.0" height="124" rx="10" fill="white" stroke="#d4d6cb"/> <text x="496.0" y="203" font-family="sans-serif" font-size="22" font-weight="700" fill="#715237">4 · Decide</text> <text x="496.0" y="237" font-family="sans-serif" font-size="19" fill="#25312c">Continue, change or stop.</text> <text x="496.0" y="266" font-family="sans-serif" font-size="19" fill="#25312c">Use the learning next time.</text> <text x="46" y="356" font-family="sans-serif" font-size="22" font-weight="700" fill="#715237">Why: learn early and avoid spending more on work that does not help.</text>
+</svg>
+<figcaption>
+Choose useful work, try a small part, check the result, then continue, change or stop. Repeat as learning changes the work.
+</figcaption>
+</figure>
+<span id="manage-live-bets-as-a-flow" class="legacy-anchor" aria-hidden="true"></span><h3 id="practices-choose-a-useful-next-step">Choose a useful next step</h3>
+<p>State who needs help, what should improve and who owns the work. Identify the most important unknown and the smallest test that would help answer it. Agree the time, cost, people and conditions for stopping. Check whether reviewers and support staff have room for the work before starting it.</p>
+<h3 id="practices-make-the-idea-understandable-then-try-it">Make the idea understandable, then try it</h3>
+<p>Use a sketch, example or simulation so people can understand the proposed experience. Then test a small connected path through the real work, including what happens when something goes wrong. Make clear which parts are real and which are simulated.</p>
+<p>For example, an AI summary may look convincing on screen. A useful test checks whether a staff member can use it to handle a real request, whether important facts are missing and how an error is corrected.</p>
+<span id="use-ai-to-shorten-the-path-to-evidence" class="legacy-anchor" aria-hidden="true"></span><h3 id="practices-check-the-result-and-the-effort-it-creates">Check the result and the effort it creates</h3>
+<p>Compare what happened with what you expected. Include user feedback, failed cases and the effort needed to check, integrate, adopt and support the result. Test important AI claims against sources or checks that can reveal mistakes. Keep the agent’s permissions and stopping rules clear.</p>
+<p>Record enough for someone else to understand what was tried, what happened and what remains unknown. The Artefacts tab shows how the guides organise that information without requiring a separate document for every item.</p>
+<h3 id="practices-decide-what-happens-next">Decide what happens next</h3>
+<p>Compare the next options: continue, change the approach, wait or stop. Say who decides, what work or spending is allowed, what conditions apply and when you will review again. Approval to run a test does not automatically permit a live release or wider use.</p>
+<p>Review the results after people start using the product. Revisit the decision when benefits fall short, costs rise, an incident occurs or the AI’s behaviour changes. If work stops, tell those affected, handle continuing service needs and keep what was learned.</p>
+<h3 id="practices-follow-the-route-that-fits-your-audience">Follow the route that fits your audience</h3>
+<p><strong>Product Owners AI Guide:</strong> experience the idea in a simulation, test the smallest real path through the work—a <em>steel thread</em>—then decide whether to fund an MVP, pilot or further test. An approved MVP is built after that investment decision.</p>
+<p><strong>Agile Product Guide:</strong> explore the need, test a small connected part and deliver through Agile increments. An MVP is normally built after the second decision point and assessed for ongoing use at the third.</p>
+<p>Both approaches help people use AI capacity wisely. Follow the chosen guide’s instructions and state what the next decision actually permits, rather than relying on a phase number alone.</p>
+</section><section class="panel" id="artefacts" aria-labelledby="heading-artefacts"><h2 id="heading-artefacts">Artefacts</h2><span id="shared-information-and-handoffs" class="legacy-anchor" aria-hidden="true"></span><span id="product-and-family-handoffs" class="legacy-anchor" aria-hidden="true"></span><h3 id="artefacts-keep-the-information-people-need-as-more-work-gets-done">Keep the information people need as more work gets done</h3>
+<p><strong>These records help people find the important facts, avoid repeated explanations and connect work across teams.</strong> An artefact is simply something you can inspect: a brief, map, working example, test result or recorded decision. Use the smallest set that helps people understand the work and act on it.</p>
+<div class="diagram-scroll">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1020 990" role="img" aria-label="Portfolio records connect investment choices and evidence with optional product-family records and either of two audience-specific product guides. Products can connect directly to the portfolio. Portfolio Implementation operates the portfolio cycle; Framework supplies shared purpose, principles, practices and vocabulary.">
+<style>.box{fill:#efeee5;stroke:#715237;stroke-width:2}.title{font:700 24px system-ui;fill:#163e3f}.label{font:18px system-ui;fill:#25312c}.small{font:16px system-ui;fill:#59625b}.arrow{stroke:#a34e32;stroke-width:3;fill:none}.bypass{stroke:#715237;stroke-width:3;fill:none;stroke-dasharray:9 6}</style>
+<rect x="10" y="10" width="1000" height="72" rx="14" fill="#25312c"/> <text x="32" y="41" fill="white" font-family="system-ui" font-size="24" font-weight="700">AIPF: make better use of the capacity AI enables</text> <text x="32" y="66" fill="#faf8f2" font-family="system-ui" font-size="17">Choose useful work, connect the teams involved and learn from results.</text> <rect class="box" x="35" y="110" width="900" height="164" rx="14"/> <text class="title" x="60" y="144">Portfolio Guide — choose where to invest</text> <text class="label" x="60" y="178">AI Bet Ledger · Decision Capacity Ledger</text> <text class="label" x="60" y="206">Model and Vendor Concentration Register</text> <text class="label" x="60" y="234">Benefits Realisation Map · Autonomy Boundary Map</text> <text class="small" x="60" y="258">Portfolio Implementation runs the requests, evidence, decisions and returns.</text> <path class="arrow" d="M260 282 V327 M252 317 L260 327 L268 317 M700 327 V282 M692 292 L700 282 L708 292"/> <text class="small" x="40" y="305">Decisions and conditions</text> <text class="small" x="720" y="305">Evidence and results</text> <rect class="box" x="35" y="340" width="900" height="166" rx="14"/> <text class="title" x="60" y="374">Product Family Guide — coordinate related products</text> <text class="label" x="60" y="407">Dependency and Integration Map · Shared Substrate Map</text> <text class="label" x="60" y="436">Coordination Function Map · Cross-Product Evidence Ledger</text> <text class="label" x="60" y="465">Family Benefits Map · optional Pattern</text> <text class="small" x="60" y="490">Use this scope when a shared outcome, dependency or reuse needs a decision.</text> <path class="arrow" d="M260 513 V557 M252 547 L260 557 L268 547 M700 557 V513 M692 523 L700 513 L708 523"/> <text class="small" x="40" y="537">Shared scope and limits</text> <text class="small" x="720" y="537">Tests, costs and limits</text> <path class="bypass" d="M935 192 H980 V550 H960 V572 M952 562 L960 572 L968 562 M945 184 L935 192 L945 200"/> <text class="small" transform="translate(1005 530) rotate(-90)">Direct product ↔︎ portfolio (family optional)</text> <rect x="10" y="572" width="1000" height="294" rx="14" fill="#f2e9dc" stroke="#715237" stroke-width="2"/> <text class="title" x="35" y="609">Product scope — choose the audience-appropriate guide</text> <rect x="30" y="628" width="465" height="217" rx="10" fill="white" stroke="#d4d6cb"/> <rect x="515" y="628" width="465" height="217" rx="10" fill="white" stroke="#d4d6cb"/> <text class="title" x="49" y="662">Product Owners AI Guide</text> <text class="label" x="49" y="694">Owner-led investment journey</text> <text class="label" x="49" y="724">Simulation → steel thread →</text> <text class="label" x="49" y="750">MVP / pilot investment decision</text> <text class="small" x="49" y="788">8 core records; practical briefs and tests</text> <text class="small" x="49" y="817">Approved MVP build follows the decision.</text> <text class="title" x="535" y="662">Agile Product Guide</text> <text class="label" x="535" y="694">Agile product-team delivery</text> <text class="label" x="535" y="724">Intent → evidence slice →</text> <text class="label" x="535" y="750">product acceptance and ongoing use</text> <text class="small" x="535" y="788">8 core records; incremental delivery</text> <text class="small" x="535" y="817">MVP normally follows Gate 2; judged at 3.</text> <text class="label" x="30" y="902">Both routes link intent, assumptions, concept, options, AI controls,</text> <text class="label" x="30" y="929">connected test evidence, acceptance and learning to the same bet.</text> <text class="small" x="30" y="965">Solid arrows: decisions down / evidence up. Dashed route: family scope can be bypassed.</text>
+</svg>
+</div>
+<p>Portfolio choices set the direction and resources. Product-family records connect related products where needed. Either product guide supplies the product’s purpose, test results and decisions. Findings and costs inform the wider choices; priorities and spending limits guide the next work. A product can go directly to the portfolio when no family decision is needed.</p>
+<span id="information-specification-and-source-ownership" class="legacy-anchor" aria-hidden="true"></span><h3 id="artefacts-compare-the-four-guides">Compare the four guides</h3>
+<p>This table compares what the four guides ask people to keep visible. Read down a column to see one guide’s records, or across a row to compare related forms. Each entry explains the record’s job. <strong>—</strong> means it is not a named artefact in that guide; its information may still be used there. Combine related records when that makes them easier to understand instead of creating one file per row.</p>
+<div class="comparison-wrap" role="region" aria-label="Artefact comparison across four guides" tabindex="0">
+<table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<caption>Artefacts across the four AIPF guides</caption><thead>
+<tr>
+<th scope="col">Artefact / what it helps you see</th>
+<th scope="col"><a href="https://aipf.ourresilient.world/guides/product-owners-ai-guide.html#artefacts-and-their-commitments">Product Owners AI Guide</a></th>
+<th scope="col"><a href="https://aipf.ourresilient.world/guides/product.html#evidence-and-its-commitments">Agile Product Guide</a></th>
+<th scope="col"><a href="https://aipf.ourresilient.world/guides/product-family.html#evidence-and-its-commitments">Product Family Guide</a></th>
+<th scope="col"><a href="https://aipf.ourresilient.world/guides/portfolio.html#evidence-and-its-commitments">Portfolio Guide</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row"><strong>Product Intent</strong> — who it helps and why</th>
+<td>Problem, persona, use case and expected value</td>
+<td>Users, outcome and boundaries</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<th scope="row"><strong>Assumption and Evidence Map</strong> — what needs checking</th>
+<td>Short list of unknowns and useful tests</td>
+<td>Claims, supporting and contrary results</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<th scope="row"><strong>Concept Artefact</strong> — what the experience could be</th>
+<td>HTML simulation; workflow, story map and screen sketches</td>
+<td>Sketch, example or demonstration</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<th scope="row"><strong>Roadmap Options</strong> — what to invest in next</th>
+<td>Steel Thread and MVP / Pilot Investment Briefs; value case and operating outline</td>
+<td>Alternative next steps, costs and dependencies</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<th scope="row"><strong>AI Model Harness</strong> — how AI work is controlled</th>
+<td>Agent instructions, permissions and checks</td>
+<td>Tested controls and review rules</td>
+<td>Shared controls, with local checks</td>
+<td>Linked controls for actual AI tasks</td>
+</tr>
+<tr>
+<th scope="row"><strong>Steel Thread / End-to-End Evidence Slice</strong> — what works in practice</th>
+<td>Steel Thread, build brief, examples and test results</td>
+<td>End-to-End Evidence Slice and results</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<th scope="row"><strong>Acceptance Record</strong> — what is allowed next</th>
+<td>Decision, limits and next review</td>
+<td>Accepted use, conditions and responsibilities</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<th scope="row"><strong>Learning Record</strong> — what should change</th>
+<td>Findings, costs and next actions</td>
+<td>Learning that changes product or practice</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<th scope="row"><strong>Dependency and Integration Map</strong> — how products connect</th>
+<td>—</td>
+<td>—</td>
+<td>Handoffs, dependencies and owners</td>
+<td>—</td>
+</tr>
+<tr>
+<th scope="row"><strong>Shared Substrate Map</strong> — what products share</th>
+<td>—</td>
+<td>—</td>
+<td>Common data, models, services and support</td>
+<td>—</td>
+</tr>
+<tr>
+<th scope="row"><strong>Coordination Function Map</strong> — who handles shared decisions</th>
+<td>—</td>
+<td>—</td>
+<td>Responsibilities between products</td>
+<td>—</td>
+</tr>
+<tr>
+<th scope="row"><strong>Cross-Product Evidence Ledger</strong> — where results can be reused</th>
+<td>—</td>
+<td>—</td>
+<td>Evidence, context and limits on reuse</td>
+<td>—</td>
+</tr>
+<tr>
+<th scope="row"><strong>Family Benefits Map</strong> — how sharing helps each product</th>
+<td>—</td>
+<td>—</td>
+<td>Benefits and costs across products</td>
+<td>—</td>
+</tr>
+<tr>
+<th scope="row"><strong>Pattern</strong> — a reusable approach</th>
+<td>—</td>
+<td>—</td>
+<td>Optional; suitable uses, evidence and limits</td>
+<td>—</td>
+</tr>
+<tr>
+<th scope="row"><strong>AI Bet Ledger</strong> — which work is being considered or funded</th>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>Purpose, owner, evidence and next review</td>
+</tr>
+<tr>
+<th scope="row"><strong>Decision Capacity Ledger</strong> — whether people can handle more work</th>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>Delivery, review, adoption and support capacity</td>
+</tr>
+<tr>
+<th scope="row"><strong>Model and Vendor Concentration Register</strong> — shared exposure</th>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>Dependence on common models and vendors</td>
+</tr>
+<tr>
+<th scope="row"><strong>Benefits Realisation Map</strong> — whether value is being delivered</th>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>Expected and observed benefits, owners and costs</td>
+</tr>
+<tr>
+<th scope="row"><strong>Autonomy Boundary Map</strong> — what agents may do</th>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>Permissions, checks and human intervention</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Supporting material can sit inside these records: personas and use cases in Product Intent; workflow sketches, story maps, wireframes and an optional Value Stream Map alongside the concept; technical choices, risk summaries and delivery plans alongside the investment brief. Family work may begin with a short outline of the shared outcome. These are aids to understanding, not an extra paperwork requirement.</p>
+<p>The <a href="https://aipf.ourresilient.world/guides/portfolio-implementation.html#operating-procedures">Portfolio Implementation Guide</a> adds practical record patterns: an operating charter, requests, source registers and checked snapshots, recommendation and decision packs, funding terms, release records and results. Its templates and setup checks help people and AI agents use those records consistently.</p>
+</section><section class="panel" id="glossary" aria-labelledby="heading-glossary"><h2 id="heading-glossary">Glossary</h2><h3 id="glossary-use-shared-meanings-to-reduce-confusion-and-repeated-work">Use shared meanings to reduce confusion and repeated work</h3>
+<p><strong>As AI enables more work and more handoffs, clear language helps people and agents understand what is expected.</strong> Use familiar words in everyday work. Use this glossary when a guide’s term needs a precise meaning.</p>
+<figure class="summary-graphic">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 384" role="img" aria-label="Four ideas connect the language: a bet is work worth testing, evidence is what we can check, a decision says what happens next, and learning says what should change.">
+<rect x="0" y="0" width="960" height="384" rx="16" fill="#efeee5"/> <rect x="30.0" y="24" width="434.0" height="124" rx="10" fill="white" stroke="#d4d6cb"/> <text x="46.0" y="59" font-family="sans-serif" font-size="22" font-weight="700" fill="#715237">Bet</text> <text x="46.0" y="93" font-family="sans-serif" font-size="19" fill="#25312c">Work we think is worth</text> <text x="46.0" y="122" font-family="sans-serif" font-size="19" fill="#25312c">trying, within agreed limits.</text> <rect x="480.0" y="24" width="434.0" height="124" rx="10" fill="white" stroke="#d4d6cb"/> <text x="496.0" y="59" font-family="sans-serif" font-size="22" font-weight="700" fill="#715237">Evidence</text> <text x="496.0" y="93" font-family="sans-serif" font-size="19" fill="#25312c">What we observed</text> <text x="496.0" y="122" font-family="sans-serif" font-size="19" fill="#25312c">and can check.</text> <rect x="30.0" y="168" width="434.0" height="124" rx="10" fill="white" stroke="#d4d6cb"/> <text x="46.0" y="203" font-family="sans-serif" font-size="22" font-weight="700" fill="#715237">Decision</text> <text x="46.0" y="237" font-family="sans-serif" font-size="19" fill="#25312c">What may happen next,</text> <text x="46.0" y="266" font-family="sans-serif" font-size="19" fill="#25312c">who owns it and why.</text> <rect x="480.0" y="168" width="434.0" height="124" rx="10" fill="white" stroke="#d4d6cb"/> <text x="496.0" y="203" font-family="sans-serif" font-size="22" font-weight="700" fill="#715237">Learning</text> <text x="496.0" y="237" font-family="sans-serif" font-size="19" fill="#25312c">What the results tell us</text> <text x="496.0" y="266" font-family="sans-serif" font-size="19" fill="#25312c">to change or keep.</text> <text x="46" y="356" font-family="sans-serif" font-size="22" font-weight="700" fill="#715237">Why: shared meanings reduce confusion, delays and repeated work.</text>
+</svg>
+<figcaption>
+Four ideas connect the language: a bet is work worth testing, evidence is what we can check, a decision says what happens next, and learning says what should change.
+</figcaption>
+</figure>
+<h3 id="glossary-the-main-terms">The main terms</h3>
+<p>These terms describe the capacity problem and the information used to manage it. Read them as practical working language: who owns a bet, what time and money it has been given, and what has actually been checked. Use the same meanings in instructions to people and AI agents so a proposal is not mistaken for approved work.</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
 </colgroup>
 <thead>
 <tr>
-<th>Information</th>
-<th>Keep clear</th>
-<th>Main source owner</th>
+<th>Term</th>
+<th>Plain-English meaning</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Identity and purpose</td>
-<td>Bet, product and family references where needed; current version; outcome, people, obligation, boundary and next question.</td>
-<td>Product or sponsor; Integration owner for the family view.</td>
+<td><strong>AIPF — AI Product Flow</strong></td>
+<td>Guides to help product owners and organisations manage the rapidly increasing capacity AI enables and use it for worthwhile outcomes.</td>
 </tr>
 <tr>
-<td>Evidence</td>
-<td>Claim reference, source/date, method, setting, result, uncertainty, contrary findings and limits on reuse. Distinguish observations, estimates and AI-generated material.</td>
-<td>Evidence source and product owner.</td>
+<td><strong>AI agent</strong></td>
+<td>An AI system that carries out assigned work, sometimes using tools and files, within agreed permissions.</td>
 </tr>
 <tr>
-<td>Decision and authority</td>
-<td>Exact decision, gate, accepted version/use, decision-maker, authority, conditions, date and next review. Keep the decision states distinct.</td>
-<td>Relevant gate owner; expenditure owner for spending.</td>
+<td><strong>AI product work</strong></td>
+<td>Work in which AI helps shape analysis, decisions or delivery. The finished product does not have to contain AI.</td>
 </tr>
 <tr>
-<td>Money, effort and capacity</td>
-<td>Actual spending, outstanding commitments, current request, forecasts, ongoing cost, units, period, shared costs and people needed.</td>
-<td>Finance, expenditure and resource owners.</td>
+<td><strong>Artefact</strong></td>
+<td>Something people can inspect, such as a brief, map, working example, test result or decision record.</td>
 </tr>
 <tr>
-<td>Benefit and burden</td>
-<td>Benefit reference, owner, measure, starting position, period, observed result, contribution, extra work and harm.</td>
-<td>Benefit/product owner; Integration for the combined view.</td>
+<td><strong>Bet</strong></td>
+<td>Work you think is worth trying, with an owner, time and cost limits, and a point at which you decide whether to continue.</td>
 </tr>
 <tr>
-<td>Dependencies and AI rules</td>
-<td>Supplier/receiver, source/version, shared tools, permissions, acceptance checks, failure/recovery and owners.</td>
-<td>Product, Integration and Platform/Substrate owners.</td>
+<td><strong>Capacity</strong></td>
+<td>How much work people, agents and systems can do. AI increases production capacity faster than human capacity to judge, check, adopt and support the work. Managing that gap is central to AIPF.</td>
 </tr>
 <tr>
-<td>Next action and history</td>
-<td>Owner, due date, question, stop/review trigger, previous decisions, open conditions and affected records.</td>
-<td>Supporting team and action owners.</td>
+<td><strong>Commitment</strong></td>
+<td>The time, money or activity someone has agreed to provide. State the actual amount and conditions.</td>
+</tr>
+<tr>
+<td><strong>Evidence</strong></td>
+<td>Observations, results or sourced information that someone can check, with enough context to understand their limits.</td>
+</tr>
+<tr>
+<td><strong>Assumption</strong></td>
+<td>Something believed to be true that still needs checking in the situation at hand.</td>
+</tr>
+<tr>
+<td><strong>Value hypothesis</strong></td>
+<td>An explanation of who should benefit and how, which a test can support or challenge.</td>
+</tr>
+<tr>
+<td><strong>Accountability</strong></td>
+<td>Being responsible for a decision or result and for dealing with its consequences.</td>
+</tr>
+<tr>
+<td><strong>Decision capacity</strong></td>
+<td>The time and expertise people have to check work and decide what should happen next.</td>
+</tr>
+<tr>
+<td><strong>Work in progress — WIP</strong></td>
+<td>Work already started but not finished, including work waiting for review. A WIP limit sets how much can be active at once.</td>
 </tr>
 </tbody>
-</table></div>
-<p>For each field, agree its meaning, source, owner, unit, reporting period, update timing and permitted use. Say when it is <strong>unknown</strong>, <strong>not yet observed</strong>, <strong>not supplied</strong> or <strong>not applicable</strong>, with a reason. None of these states means zero or approved. Decide which gaps block a particular decision and which can stay within a limited test.</p>
-<h3 id="product-and-family-handoffs">Connect records across the three levels</h3>
-<p>The activities below are suggested working steps within the three phases. Repeat or combine them as the work requires. They are not extra gates. The table shows a bet that supports one product; when a bet supports several products, its gate follows the bet’s own question.</p>
-<div class="table-scroll" role="region" aria-label="Scrollable table" tabindex="0"><table>
+</table>
+<h3 id="glossary-products-tests-and-learning">Products, tests and learning</h3>
+<p>These terms help distinguish an idea from a working test and a product people can use. They also explain how work connects across products. Use them to state what has been demonstrated and what still needs checking, especially when someone else will rely on a result or reuse it in a different setting.</p>
+<table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col style="width: 50%" />
+<col style="width: 50%" />
 </colgroup>
 <thead>
 <tr>
-<th>Product activity</th>
-<th>Record updated</th>
-<th>Family use, where relevant</th>
-<th>Portfolio use and return</th>
+<th>Term</th>
+<th>Plain-English meaning</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Phase 1: understand people and needs</td>
-<td>Intent, assumptions, persona/role and journey findings.</td>
-<td>Frame the whole outcome and shared needs.</td>
-<td>Assess the purpose and question worth funding.</td>
+<td><strong>Product</strong></td>
+<td>Something intended to help people, such as a service, staff tool, workflow or software product.</td>
 </tr>
 <tr>
-<td>Phase 1: show the idea and compare options</td>
-<td>Concept, included/deferred scope, options, effort and AI rules.</td>
-<td>Check boundaries and the next shared test.</td>
-<td>Gate 1: return the allowed step, owner, limits and evidence due.</td>
+<td><strong>Product Owner</strong></td>
+<td>The person responsible for the product’s purpose, priorities and acceptance, involving specialists and respecting others’ spending or release authority.</td>
 </tr>
 <tr>
-<td>Phase 2: define a test</td>
-<td>Version, question, cases, comparison and criteria.</td>
-<td>Agree the handoff and settings to examine.</td>
-<td>See what the test can answer and who can review it.</td>
+<td><strong>Product family</strong></td>
+<td>Related products that need shared decisions about their combined outcome, dependencies or common foundations. Several teams on one product do not automatically form a family.</td>
 </tr>
 <tr>
-<td>Phase 2: run the path and examine failures</td>
-<td>Evidence Slice, AI checks, results, costs and uncertainty.</td>
-<td>Judge connection and reuse; Limit or Split when needed.</td>
-<td>Gate 2: return the next decision and conditions.</td>
+<td><strong>Portfolio</strong></td>
+<td>Work considered together when deciding where to put money, people and attention and how to manage risks across it.</td>
 </tr>
 <tr>
-<td>Phase 3: assess use and support</td>
-<td>Acceptance, benefit/burden, support and review triggers.</td>
-<td>Combine results and shared responsibilities.</td>
-<td>Gate 3: decide continued or wider use within authority.</td>
+<td><strong>Persona</strong></td>
+<td>A short description of a representative user’s needs and context. Label assumed characteristics until supported by evidence.</td>
 </tr>
 <tr>
-<td>Phase 3 and continuing use: learn and adjust</td>
-<td>Learning, incidents, corrected sources and affected records.</td>
-<td>Notify consumers and revisit affected shared decisions.</td>
-<td>Reconsider investment when the change matters; return revised conditions.</td>
+<td><strong>User Story Map</strong></td>
+<td>User activities shown in order to help choose a small complete journey to build or test.</td>
+</tr>
+<tr>
+<td><strong>Value Stream Map</strong></td>
+<td>A view of the work, handoffs and delays in an existing process.</td>
+</tr>
+<tr>
+<td><strong>HTML simulation</strong></td>
+<td>An interactive example of the proposed experience, normally using mock data and simulated actions. It helps people understand an idea; it is not a working product.</td>
+</tr>
+<tr>
+<td><strong>Steel Thread</strong></td>
+<td>The smallest real path through a product or process that can test an important assumption, including what happens when it fails.</td>
+</tr>
+<tr>
+<td><strong>End-to-End Evidence Slice</strong></td>
+<td>The Agile Product Guide’s narrow connected test, with results, failures and limits. It serves a similar purpose to the Product Owners guide’s steel thread.</td>
+</tr>
+<tr>
+<td><strong>MVP — Minimum Viable Product</strong></td>
+<td>A minimal usable product for learning from real use, with suitable reliability and support. Follow the chosen product guide for when its build is authorised.</td>
+</tr>
+<tr>
+<td><strong>Pilot</strong></td>
+<td>A limited real-world trial with clear participants, responsibilities, learning goals and conditions.</td>
+</tr>
+<tr>
+<td><strong>Acceptance criteria</strong></td>
+<td>Observable conditions used to check whether the result behaves as expected.</td>
+</tr>
+<tr>
+<td><strong>Independent checking</strong></td>
+<td>A check capable of finding mistakes the producer missed. Another AI agreeing with the first is not automatically an independent check.</td>
+</tr>
+<tr>
+<td><strong>Learning</strong></td>
+<td>What results tell you to change or keep in the product, assumptions, tests or way of working.</td>
+</tr>
+<tr>
+<td><strong>Pattern</strong></td>
+<td>A reusable approach, with evidence about where it helps, where it does not and who looks after it.</td>
+</tr>
+<tr>
+<td><strong>Shared substrate</strong></td>
+<td>A common foundation used by products, such as data, a model, infrastructure or a service.</td>
+</tr>
+<tr>
+<td><strong>Transfer evidence</strong></td>
+<td>A check that something which worked in one product or setting also works in another.</td>
 </tr>
 </tbody>
-</table></div>
-<p>Keep claims attached to their sources, context and limits. When something important changes, identify affected decisions and tell their owners. Preserve history. Pause or restrict affected work when its rules require it; unaffected work can continue.</p>
-<h2 id="acknowledgements">Acknowledgements</h2>
-<h3 id="authors">Authors</h3>
-<p>Written by Rick Molony and Ghulam Akbar, with AI assistance.</p>
-<h3 id="licence">Licence</h3>
-<p>This Framework is offered under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International licence</a>.</p>
-<section class="article-feedback"><h2>Help improve this page</h2><p>Found a problem or a better way to explain it? <a href="../feedback/index.html?page=https%3A%2F%2Faipf.ourresilient.world%2Fguides%2Fframework.html">Suggest a correction or improvement</a>.</p></section></article></div></main><footer class="site-footer"><div><strong>AI Product Flow</strong><p>Start small. Check results. Decide the next step.</p></div><nav aria-label="Footer"><a href="https://ourresilient.world/">Our Resilient World</a><a href="https://research.ourresilient.world/">AI-Assisted Research</a><a href="../feedback/index.html">Feedback</a><a href="../reuse.html">Reuse and attribution</a></nav><p>Except where otherwise noted, content is licensed <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Cite the named authors, title, edition and source; indicate changes.</p></footer></body></html>
+</table>
+<h3 id="glossary-decisions-permissions-and-follow-up">Decisions, permissions and follow-up</h3>
+<p>These terms describe what people may do after a review and who remains responsible. A completed test, a decision to spend and permission to release are different things. Use the table to make the next action clear, then record the actual work, limits, conditions and owner rather than relying on a label or gate number alone.</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Term</th>
+<th>Plain-English meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Phase</strong></td>
+<td>A period of work organised around a question to answer. The two product guides adapt their phases to different audiences.</td>
+</tr>
+<tr>
+<td><strong>Gate</strong></td>
+<td>A point at which someone decides what happens next. Record the allowed work and conditions; a gate number alone does not explain permission.</td>
+</tr>
+<tr>
+<td><strong>Proceed / Revise / Defer / Stop</strong></td>
+<td>Continue with the agreed next step; change the work; wait for a stated condition; or end the authorised work and handle what remains.</td>
+</tr>
+<tr>
+<td><strong>Limit / Split</strong></td>
+<td>Family choices to restrict shared use or separate products’ approaches when one shared solution does not fit.</td>
+</tr>
+<tr>
+<td><strong>Merge / Rebalance</strong></td>
+<td>Portfolio choices to combine related bets or move resources between them.</td>
+</tr>
+<tr>
+<td><strong>Scale</strong></td>
+<td>Extend use or investment when results and support justify it. The portfolio procedure allows this decision at Gate 3.</td>
+</tr>
+<tr>
+<td><strong>Acceptance</strong></td>
+<td>A person with the right responsibility decides that the result meets the stated need or supports the next step, within recorded limits.</td>
+</tr>
+<tr>
+<td><strong>Release</strong></td>
+<td>Permission to make funds available, start work or put something into use. Specify which permission is meant and check its conditions.</td>
+</tr>
+<tr>
+<td><strong>AI Model Harness</strong></td>
+<td>Instructions, permissions, tests and review rules that help keep AI work within agreed limits.</td>
+</tr>
+<tr>
+<td><strong>Autonomy boundary</strong></td>
+<td>The line between what an agent may do on its own and what needs human involvement.</td>
+</tr>
+<tr>
+<td><strong>Handoff</strong></td>
+<td>Passing work or information to someone else with its purpose, owner, results, limits and expected next action.</td>
+</tr>
+<tr>
+<td><strong>Source of truth</strong></td>
+<td>The agreed original record for a fact. Link to it so people do not maintain conflicting copies.</td>
+</tr>
+<tr>
+<td><strong>Benefits realisation</strong></td>
+<td>Checking whether the intended improvement actually happened, for whom and at what cost.</td>
+</tr>
+<tr>
+<td><strong>Concentration risk</strong></td>
+<td>Exposure created when several pieces of work depend on the same model, vendor or other shared component.</td>
+</tr>
+<tr>
+<td><strong>Stop condition</strong></td>
+<td>A result or event that requires work to pause or end, such as a failed test, cost limit or safety problem.</td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="#artefacts">Artefacts tab</a> describes the named maps, briefs, ledgers and records used by the four guides.</p>
+</section></div><section class="framework-acknowledgements" id="acknowledgements"><h2>Acknowledgements</h2><span id="authors" class="legacy-anchor" aria-hidden="true"></span><h3 id="acknowledgements-authors">Authors</h3>
+<p>This Framework Guide was developed by <strong>Rick Molony and Ghulam Akbar, with AI assistance</strong>. It brings together the shared purpose, principles and practices of the AIPF guides to help product owners and organisations manage the rapidly increasing capacity AI enables.</p>
+<p>The original AI Product Guide structure was modelled on the pattern of the <a href="https://scrumguides.org/scrum-guide.html">Scrum Guide</a> by Ken Schwaber and Jeff Sutherland. The Framework develops that foundation for product, product-family and portfolio responsibilities, including the two product guides’ different audiences. The learning-loop diagram is an original AIPF illustration informed by Scrum’s inspection and adaptation cycle and <a href="https://theleanstartup.com/principles">Lean Startup’s Build–Measure–Learn approach</a>.</p>
+<span id="licence" class="legacy-anchor" aria-hidden="true"></span><h3 id="acknowledgements-licence">Licence</h3>
+<p>This guide is offered under the <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">Creative Commons Attribution-ShareAlike 4.0 International licence</a>. A <a href="https://creativecommons.org/licenses/by-sa/4.0/">plain-language summary</a> is also available.</p>
+</section><section class="article-feedback"><h2>Help improve this page</h2><p>Found a problem or a better way to explain it? <a href="../feedback/index.html?page=https%3A%2F%2Faipf.ourresilient.world%2Fguides%2Fframework.html">Suggest a correction or improvement</a>.</p></section></main><footer class="site-footer"><div><strong>AI Product Flow</strong><p>Start small. Check results. Decide the next step.</p></div><nav aria-label="Footer"><a href="https://ourresilient.world/">Our Resilient World</a><a href="https://research.ourresilient.world/">AI-Assisted Research</a><a href="../feedback/index.html">Feedback</a><a href="../reuse.html">Reuse and attribution</a></nav><p>Except where otherwise noted, content is licensed <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Cite the named authors, title, edition and source; indicate changes.</p></footer><script>
+(() => {
+  const tabs = [...document.querySelectorAll('[data-tab]')];
+  const panels = [...document.querySelectorAll('.panel')];
+  const nav = document.querySelector('.framework-tabs');
+  const allButton = document.getElementById('show-all');
+  let active = 'purpose';
+  let showingAll = false;
+  let savedPrintState = null;
+  function activate(key, focus=false) {
+    if (!panels.some(p => p.id === key)) key = 'purpose';
+    active = key; showingAll = false;
+    tabs.forEach(t => { const selected=t.dataset.tab===key; t.setAttribute('aria-selected',String(selected)); t.tabIndex=selected?0:-1; });
+    panels.forEach(p => {p.hidden=p.id!==key;});
+    allButton.setAttribute('aria-pressed','false');
+    if (focus) tabs.find(t=>t.dataset.tab===key).focus();
+  }
+  function applyHash() {
+    const target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    const panel = target && (target.classList.contains('panel') ? target : target.closest('.panel'));
+    if (panel) activate(panel.id); else if (!target) activate('purpose');
+    if (target && target!==panel) target.scrollIntoView();
+  }
+  nav.setAttribute('role','tablist');
+  tabs.forEach((t,index) => {
+    t.setAttribute('role','tab'); t.setAttribute('aria-controls',t.dataset.tab);
+    t.addEventListener('click',e=>{e.preventDefault(); activate(t.dataset.tab); history.replaceState(null,'','#'+t.dataset.tab);});
+    t.addEventListener('keydown',e=>{
+      let next=index;
+      if(e.key==='ArrowRight') next=(index+1)%tabs.length;
+      else if(e.key==='ArrowLeft') next=(index+tabs.length-1)%tabs.length;
+      else if(e.key==='Home') next=0;
+      else if(e.key==='End') next=tabs.length-1;
+      else if(e.key===' ') {e.preventDefault();t.click();return;}
+      else return;
+      e.preventDefault();activate(tabs[next].dataset.tab,true);history.replaceState(null,'','#'+tabs[next].dataset.tab);
+    });
+  });
+  panels.forEach(p=>{p.setAttribute('role','tabpanel');p.setAttribute('aria-labelledby','tab-'+p.id);p.tabIndex=0;});
+  allButton.addEventListener('click',()=>{
+    if(showingAll){activate(active);return;}
+    showingAll=true;panels.forEach(p=>p.hidden=false);allButton.setAttribute('aria-pressed','true');
+  });
+  document.querySelector('main').addEventListener('click', e => {
+    const link = e.target.closest('a[href^="#"]');
+    if (!link || link.hasAttribute('data-tab') || e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) return;
+    const href = link.getAttribute('href');
+    const target = document.getElementById(decodeURIComponent(href.slice(1)));
+    const panel = target && (target.classList.contains('panel') ? target : target.closest('.panel'));
+    if (!panel) return;
+    e.preventDefault();
+    activate(panel.id);
+    history.pushState(null,'',href);
+    panel.focus({preventScroll:true});
+    target.scrollIntoView({block:'start'});
+  });
+  window.addEventListener('hashchange',applyHash);
+  window.addEventListener('beforeprint',()=>{
+    savedPrintState={all:showingAll,details:[...document.querySelectorAll('details')].map(d=>d.open)};
+    panels.forEach(p=>p.hidden=false);document.querySelectorAll('details').forEach(d=>d.open=true);
+  });
+  window.addEventListener('afterprint',()=>{
+    if(!savedPrintState)return;
+    if(savedPrintState.all){panels.forEach(p=>p.hidden=false);}else activate(active);
+    document.querySelectorAll('details').forEach((d,i)=>d.open=savedPrintState.details[i]);savedPrintState=null;
+  });
+  activate('purpose'); applyHash(); document.documentElement.classList.add('enhanced');
+})();
+</script></body></html>
