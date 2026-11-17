@@ -1,96 +1,774 @@
-<!doctype html><html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Decide what related products should share and how their handoffs work."><title>Product Family Guide · AI Product Flow</title><link rel="stylesheet" href="../assets/site.css"></head><body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="header-inner"><a class="brand" href="../index.html"><img src="../assets/aipf-mark.svg" alt="" width="64" height="48"><span><strong>AI Product Flow</strong><small>Guides and case studies</small></span></a><nav aria-label="Primary"><a href="index.html" aria-current="page">Guides</a><a href="../case-studies/index.html">Case studies</a><a href="../feedback/index.html">Feedback</a></nav></div></header><main id="main"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> <span aria-hidden="true">/</span> <a href="index.html">Guides</a> <span aria-hidden="true">/</span> <span>Product Family Guide</span></nav><header class="page-intro"><p class="eyebrow">AI Product Flow · Edition 1.0</p><h1>Product Family Guide</h1><p class="deck">Decide what related products should share and how their handoffs work.</p><p class="byline">By Rick Molony and Ghulam Akbar · developed with AI assistance</p></header><div class="reading-layout"><aside class="toc"><nav aria-label="On this page"><strong>On this page</strong><ul><li><a href="#purpose-of-the-guide">Make the whole experience work</a></li><li><a href="#definition-of-a-product-family">When do you need a product family?</a></li><li><a href="#the-family-guide-at-a-glance">Start with the whole outcome, then choose a small test</a></li><li><a href="#what-family-management-must-protect">Six habits for working across products</a></li><li><a href="#family-decisions">Decide what to share and what to do next</a></li><li><a href="#accountabilities">Give shared responsibilities named owners</a></li><li><a href="#evidence-and-its-commitments">Keep five core records; add a Pattern when useful</a></li><li><a href="#shared-ai-controls">Share AI controls safely</a></li><li><a href="#relationship-to-the-other-guides">Send findings up and decisions back</a></li><li><a href="#conclusion">Work with agile methods without adding needless layers</a></li><li><a href="#sources">Sources</a></li><li><a href="#acknowledgements">Acknowledgements</a></li></ul></nav></aside><article class="reading"><h2 id="purpose-of-the-guide">Make the whole experience work</h2>
-<p>Related products can help or hinder one another through shared information, services or scarce people. Customers should not have to repair the gaps, and sharing should allow differences that meet their needs.</p>
-<p>This guide helps you decide what products share, how they connect and who handles problems between them. AI can spread a weak assumption through reused prompts, models or components.</p>
-<p>Use it alongside the <a href="product.html">Product Guide</a> and <a href="framework.html">AI Product Flow Framework</a>, within your existing teams and tools.</p>
-<h2 id="definition-of-a-product-family">When do you need a product family?</h2>
-<p>A <strong>product family</strong> is a group of related products, services or workflows where a choice in one can help or harm another. They may serve the same people, use common information or rely on shared services.</p>
-<p>Use a family view when shared choices need an owner. Products may retain different audiences, brands, channels and technology; shared content or review capacity can justify coordination without one application or customer journey.</p>
-<p><strong>Example used throughout:</strong> a service organisation wants people to get a correct answer without repeating their request. It may need intake, knowledge and response services. Each has a purpose and an owner. The family view shows how they fit together. This is an invented example, not a report of results.</p>
-<p>A capability is something you need to do, not automatically a product or application. Establish its users, outcome and owner. Products may share an application; several teams may serve one product.</p>
-<p>A <strong>value stream</strong> follows a need through to its outcome—for example, from asking for help to getting the problem resolved. It may cross more than one family. Use the journey to understand people’s experience and the family view to manage shared decisions.</p>
-<h2 id="the-family-guide-at-a-glance">Start with the whole outcome, then choose a small test</h2>
-<figure class="flow-figure" aria-labelledby="family-figure-caption">
-<p class="figure-label">
-One experience, connected responsibilities
+<!doctype html><html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Manage growing AI-enabled work across related products, shared services and the people who connect them."><title>AI Product Family Guide · AI Product Flow</title><link rel="stylesheet" href="../assets/site.css">
+<link rel="canonical" href="https://aipf.ourresilient.world/guides/product-family.html"><meta name="source-sha256" content="84dc164b646b44b3c76fff574b4a4743778056e9575a220eeb03dec8c28112be"><style>#po-guide {
+  --ink: #25312c; --muted: #59625b; --paper: #faf8f2; --line: #d4d6cb;
+  --soft: #efeee5; --accent: #a34e32;
+  --serif: Georgia, "Times New Roman", serif;
+  --sans: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+}
+#po-guide[data-guide-scope="product"] { --accent: #375d72; }
+#po-guide[data-guide-scope="family"] { --accent: #376353; }
+#po-guide[data-guide-scope="portfolio"] { --accent: #715237; }
+#po-guide * { box-sizing: border-box; }
+#po-guide { color-scheme: light; scroll-behavior: smooth; }
+#po-guide { margin: 0; color: var(--ink); background: var(--paper); font: 17px/1.75 var(--sans); }
+#po-guide a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em; }
+#po-guide a:hover { color: var(--accent); }
+#po-guide :focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+#po-guide .skip-link { position: absolute; top: 8px; left: 8px; z-index: 100; padding: 10px 16px; background: var(--ink); color: white; transform: translateY(-180%); }
+#po-guide .skip-link:focus { transform: none; }
+#po-guide .header-shell, #po-guide .document-shell, #po-guide .footer-shell { width: min(1180px, calc(100% - 80px)); margin-inline: auto; }
+#po-guide .site-header { border-top: 5px solid var(--ink); border-bottom: 1px solid var(--line); }
+#po-guide .header-shell { min-height: 110px; display: flex; gap: 30px; align-items: center; justify-content: space-between; }
+#po-guide .brand-lockup { display: inline-flex; align-items: center; gap: 15px; text-decoration: none; flex-shrink: 0; }
+#po-guide .flow-mark { width: 58px; height: 44px; }
+#po-guide .brand-text strong { display: block; font: 600 23px/1.2 var(--serif); letter-spacing: -.5px; }
+#po-guide .brand-text small { display: block; margin-top: 5px; font: 11px/1.4 var(--sans); color: var(--muted); }
+#po-guide .series-nav { display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 13px; }
+#po-guide .series-nav a { padding-block: 10px; border-bottom: 2px solid transparent; text-decoration: none; }
+#po-guide .series-nav a[aria-current="page"] { border-color: var(--accent); color: var(--accent); font-weight: 700; }
+#po-guide .publication-banner { display: grid; grid-template-columns: minmax(0, 1fr) 150px; gap: 60px; padding: 66px 0 45px; }
+#po-guide .eyebrow { margin: 0 0 19px; color: var(--accent); font: 600 11px/1.5 var(--sans); text-transform: uppercase; letter-spacing: .14em; }
+#po-guide h1 { max-width: 850px; margin: 0; font: 400 clamp(42px, 4.6vw, 65px)/1.06 var(--serif); letter-spacing: -.045em; text-wrap: balance; }
+#po-guide .guide-deck { max-width: 620px; margin: 25px 0 0; font: 19px/1.55 var(--sans); color: var(--muted); }
+#po-guide .edition { display: flex; flex-direction: column; align-items: flex-start; border-left: 1px solid var(--line); padding-left: 27px; font-size: 11px; line-height: 1.9; color: var(--muted); }
+#po-guide .edition-number { display: block; color: var(--accent); font: 400 76px/1 var(--serif); letter-spacing: -.06em; margin-bottom: 24px; }
+#po-guide .stage-badge { color: var(--ink); font-weight: 700; }
+#po-guide .preview-notice { display: flex; justify-content: space-between; gap: 18px; border-block: 1px solid var(--line); padding: 12px 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
+#po-guide .preview-notice p { margin: 0; }
+#po-guide .preview-notice a { flex-shrink: 0; }
+#po-guide .document-layout { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 64px; align-items: start; padding: 48px 0 80px; }
+#po-guide .desktop-toc { position: sticky; top: 24px; max-height: calc(100vh - 48px); overflow-y: auto; padding-right: 25px; border-right: 1px solid var(--line); scrollbar-width: thin; }
+#po-guide .desktop-toc nav > strong { display: block; margin-bottom: 16px; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+#po-guide .desktop-toc ul, #po-guide .mobile-toc ul { margin: 0; padding: 0; list-style: none; }
+#po-guide .desktop-toc ul ul, #po-guide .mobile-toc ul ul { margin: 6px 0; }
+#po-guide .desktop-toc > nav > ul > li > a, #po-guide .mobile-toc nav > ul > li > a { font-weight: 700; }
+#po-guide .desktop-toc ul ul ul { padding-left: 18px; border-left: 1px solid var(--line); margin-left: 4px; }
+#po-guide .desktop-toc li, #po-guide .mobile-toc li { font-size: 12px; line-height: 1.45; }
+#po-guide .desktop-toc a, #po-guide .mobile-toc a { display: block; padding: 5px 0; color: var(--muted); text-decoration: none; }
+#po-guide .desktop-toc a:hover, #po-guide .mobile-toc a:hover { color: var(--accent); text-decoration: underline; }
+#po-guide .desktop-toc .back-top { margin-top: 22px; font-size: 11px; }
+#po-guide .toc-section-number { display: inline-block; color: var(--accent); font-size: .9em; min-width: 1.6em; font-variant-numeric: tabular-nums; }
+#po-guide .mobile-toc { display: none; }
+#po-guide .document-content { min-width: 0; max-width: 74ch; }
+#po-guide .document-content p { margin: 0 0 1.05em; }
+#po-guide h2, #po-guide h3, #po-guide h4, #po-guide section[id], #po-guide details[id] { scroll-margin-top: 26px; }
+#po-guide h2, #po-guide h3, #po-guide h4 { color: var(--ink); text-wrap: balance; }
+#po-guide h2 { margin: 0 0 22px; padding-top: 25px; border-top: 1px solid var(--line); font: 400 clamp(26px, 2.5vw, 34px)/1.18 var(--serif); letter-spacing: -.025em; }
+#po-guide .document-content section.level2 { margin-bottom: 50px; }
+#po-guide .document-content section.level2:first-of-type > h2 { border-top: 0; padding-top: 0; }
+#po-guide h3 { margin: 30px 0 13px; font: 600 20px/1.35 var(--sans); letter-spacing: -.025em; }
+#po-guide h4 { font: 600 17px/1.4 var(--sans); margin: 25px 0 12px; }
+#po-guide .header-section-number { margin-right: 10px; color: var(--accent); font: 400 12px/1 var(--mono); vertical-align: middle; }
+#po-guide h3 .header-section-number { color: var(--muted); font-size: 10px; }
+#po-guide .heading-link { color: var(--muted); font: 12px var(--sans); margin-left: 8px; opacity: 0; text-decoration: none; }
+#po-guide h2:hover .heading-link, #po-guide h3:hover .heading-link, #po-guide .heading-link:focus-visible { opacity: 1; }
+#po-guide ul, #po-guide ol { padding-left: 24px; margin: 18px 0 24px; }
+#po-guide li { padding-left: 3px; margin-block: 7px; }
+#po-guide li::marker { color: var(--accent); }
+#po-guide strong { font-weight: 650; }
+#po-guide blockquote { margin: 28px 0; border-left: 3px solid var(--accent); padding: 4px 0 4px 22px; font-family: var(--serif); font-size: 21px; }
+#po-guide code, #po-guide pre { font-family: var(--mono); font-size: .86em; }
+#po-guide code { background: var(--soft); padding: 2px 4px; overflow-wrap: anywhere; }
+#po-guide pre { padding: 20px; overflow: auto; background: var(--soft); }
+#po-guide pre code { padding: 0; }
+#po-guide hr { border: 0; border-top: 1px solid var(--line); margin-block: 35px; }
+#po-guide .table-scroll { max-width: 100%; overflow-x: auto; margin: 25px 0; scrollbar-width: thin; }
+#po-guide table { border-collapse: collapse; width: 100%; font-size: 14px; line-height: 1.6; }
+#po-guide th, #po-guide td { padding: 14px 16px 14px 0; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; min-width: 115px; }
+#po-guide th { padding-top: 10px; border-block: 1px solid var(--ink); font-size: 11px; letter-spacing: .035em; color: var(--muted); }
+#po-guide td:first-child { width: 25%; }
+#po-guide tbody tr:nth-child(even) { background: #efeee540; }
+#po-guide img, #po-guide svg { max-width: 100%; height: auto; }
+#po-guide figure { margin: 34px 0; }
+#po-guide figure img { display: block; width: 100%; }
+#po-guide figcaption { padding-top: 12px; margin-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; line-height: 1.6; }
+#po-guide .flow-figure { border-top: 3px solid var(--accent); padding-top: 18px; }
+#po-guide .figure-label { margin: 0 0 18px !important; font: 600 11px/1.4 var(--sans); letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+#po-guide .diagram-columns { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 0; padding: 0; list-style: none; }
+#po-guide .diagram-columns > li { padding: 5px 18px; margin: 0; border-left: 1px solid var(--line); font-size: 13px; line-height: 1.55; }
+#po-guide .diagram-columns > li:first-child { border-left: 0; padding-left: 0; }
+#po-guide .diagram-columns > li:last-child { padding-right: 0; }
+#po-guide .diagram-columns strong { display: block; margin-bottom: 9px; font: 400 23px/1.15 var(--serif); letter-spacing: -.02em; }
+#po-guide .diagram-columns span { display: block; margin-top: 10px; color: var(--muted); font-size: 12px; }
+#po-guide .diagram-band { display: flex; gap: 12px; justify-content: space-between; padding: 12px 0; margin: 18px 0 0; border-block: 1px solid var(--line); font-size: 12px; }
+#po-guide .diagram-band span { color: var(--accent); }
+#po-guide .diagram-route { display: grid; grid-template-columns: 1fr 36px 1fr; align-items: center; margin: 12px 0 20px; font-size: 13px; line-height: 1.5; }
+#po-guide .diagram-route > div { padding: 16px; border: 1px solid var(--line); }
+#po-guide .diagram-route strong { display: block; color: var(--accent); margin-bottom: 4px; }
+#po-guide .diagram-arrow { color: var(--accent); text-align: center; font-size: 24px; }
+#po-guide .diagram-outcomes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; border-top: 1px solid var(--line); padding-top: 18px; }
+#po-guide .diagram-outcomes p { font-size: 12px; line-height: 1.5; margin: 0; }
+#po-guide .diagram-outcomes strong { display: block; color: var(--accent); font-size: 14px; margin-bottom: 5px; }
+#po-guide .evidence-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 26px; }
+#po-guide .evidence-grid div { padding: 15px 0; border-bottom: 1px solid var(--line); }
+#po-guide .evidence-grid strong { display: block; font: 400 23px/1.2 var(--serif); margin-bottom: 7px; }
+#po-guide .evidence-grid p { margin: 0; font-size: 13px; line-height: 1.6; }
+#po-guide .decision-line { margin: 0 !important; padding: 18px 0 2px; text-align: center; font-size: 13px; }
+#po-guide .decision-line strong { display: block; color: var(--accent); font: 400 25px/1.4 var(--serif); }
+#po-guide .practice, #po-guide .framework-rule { margin: 28px 0; padding: 20px; border-left: 3px solid var(--accent); background: var(--soft); }
+#po-guide .site-footer { border-top: 3px solid var(--ink); background: var(--soft); }
+#po-guide .footer-shell { display: grid; grid-template-columns: 1fr 260px; gap: 35px 70px; padding-block: 44px 28px; }
+#po-guide .footer-lead > p { margin: 0; font-size: 12px; color: var(--muted); }
+#po-guide .footer-lead .eyebrow { margin-bottom: 14px; color: var(--accent); font-size: 10px; }
+#po-guide .footer-lead .footer-statement { font: 400 clamp(24px, 3vw, 34px)/1.22 var(--serif); color: var(--ink); margin-bottom: 15px; letter-spacing: -.025em; }
+#po-guide .footer-nav { font-size: 12px; }
+#po-guide .footer-nav strong { display: block; margin-bottom: 12px; color: var(--muted); }
+#po-guide .footer-nav a { display: flex; gap: 18px; padding-block: 5px; text-decoration: none; color: var(--muted); font-size: 11px; }
+#po-guide .footer-nav a span { color: var(--ink); font-size: 13px; }
+#po-guide .footer-nav a:hover span { text-decoration: underline; }
+#po-guide .footer-bottom { grid-column: 1 / -1; display: flex; gap: 20px; justify-content: space-between; border-top: 1px solid var(--line); padding-top: 18px; font-size: 11px; color: var(--muted); }
+#po-guide .footer-bottom p { margin: 0; }
+#po-guide .source-details { grid-column: 1 / -1; margin-top: -15px; font-size: 11px; color: var(--muted); scroll-margin-top: 20px; }
+#po-guide summary { cursor: pointer; }
+#po-guide .source-details p { max-width: 70ch; }
+#po-guide .source-details dl { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 6px 18px; }
+#po-guide .source-details dt, #po-guide .source-details dd { margin: 0; overflow-wrap: anywhere; }
+#po-guide .source-identity { font-family: var(--mono); font-size: 10px; }
+@media (max-width: 1000px) {#po-guide .header-shell, #po-guide .document-shell, #po-guide .footer-shell { width: calc(100% - 48px); }
+#po-guide .header-shell { flex-wrap: wrap; gap: 15px; padding-block: 20px 12px; }
+#po-guide .series-nav { gap: 8px 20px; }
+#po-guide .publication-banner { padding-top: 42px; gap: 28px; }
+#po-guide .document-layout { grid-template-columns: 195px minmax(0, 1fr); gap: 30px; }
+#po-guide .desktop-toc { padding-right: 15px; }
+#po-guide .diagram-columns strong { font-size: 20px; }}
+@media (max-width: 760px) {#po-guide { font-size: 16px; line-height: 1.7; }
+#po-guide .publication-banner { grid-template-columns: 1fr; gap: 25px; padding-bottom: 28px; }
+#po-guide .edition { flex-direction: row; flex-wrap: wrap; gap: 5px 16px; border: 0; padding: 0; align-items: baseline; }
+#po-guide .edition-number { font: 400 21px var(--serif); margin: 0; }
+#po-guide .guide-deck { font-size: 17px; margin-top: 18px; }
+#po-guide .preview-notice { flex-direction: column; gap: 4px; font-size: 11px; }
+#po-guide .document-layout { display: block; padding-block: 30px 35px; }
+#po-guide .desktop-toc { display: none; }
+#po-guide .mobile-toc { display: block; border-bottom: 1px solid var(--line); font-size: 13px; }
+#po-guide .mobile-toc summary { padding-block: 17px; font-weight: 600; }
+#po-guide .mobile-toc nav { padding: 0 5px 20px; }
+#po-guide .mobile-toc ul ul ul { padding-left: 18px; }
+#po-guide .document-content section.level2 { margin-bottom: 36px; }
+#po-guide h2 { font-size: 27px; }
+#po-guide h3 { font-size: 19px; }
+#po-guide .heading-link { opacity: 1; }
+#po-guide th, #po-guide td { min-width: 120px; padding: 12px 14px 12px 0; }
+#po-guide table { font-size: 13px; }
+#po-guide .footer-shell { grid-template-columns: 1fr 180px; gap: 30px; }}
+@media (max-width: 480px) {#po-guide .header-shell, #po-guide .document-shell, #po-guide .footer-shell { width: calc(100% - 36px); }
+#po-guide .header-shell { gap: 17px; }
+#po-guide .brand-text strong { font-size: 22px; }
+#po-guide .series-nav { width: 100%; justify-content: space-between; gap: 5px; font-size: 12px; }
+#po-guide .series-nav a { padding-block: 5px; }
+#po-guide .publication-banner { padding-top: 33px; }
+#po-guide h1 { font-size: 42px; }
+#po-guide .eyebrow { font-size: 10px; }
+#po-guide .diagram-columns { display: block; }
+#po-guide .diagram-columns > li, #po-guide .diagram-columns > li:first-child, #po-guide .diagram-columns > li:last-child { border: 0; padding: 14px 0; border-bottom: 1px solid var(--line); }
+#po-guide .diagram-columns > li:first-child { padding-top: 0; }
+#po-guide .diagram-columns strong { font-size: 23px; }
+#po-guide .diagram-columns span { margin-top: 5px; }
+#po-guide .diagram-band { display: block; }
+#po-guide .diagram-band span { display: block; }
+#po-guide .diagram-route { grid-template-columns: 1fr; gap: 4px; }
+#po-guide .diagram-arrow { transform: rotate(90deg); }
+#po-guide .diagram-outcomes { grid-template-columns: 1fr; gap: 16px; }
+#po-guide .evidence-grid { grid-template-columns: 1fr; }
+#po-guide .footer-shell { grid-template-columns: 1fr; }
+#po-guide .footer-bottom { flex-direction: column; gap: 10px; }
+#po-guide .source-details dl { grid-template-columns: 1fr; gap: 4px; }
+#po-guide .source-details dd { margin-bottom: 10px; }}
+@media print {#po-guide { scroll-behavior: auto; }
+#po-guide { background: white; color: #202820; font-size: 10.5pt; line-height: 1.5; }
+#po-guide .header-shell, #po-guide .document-shell, #po-guide .footer-shell { width: 100%; }
+#po-guide .site-header { border-top-width: 2px; }
+#po-guide .header-shell { min-height: 0; padding-block: 0 10px; }
+#po-guide .brand-text strong { font-size: 17pt; }
+#po-guide .brand-text small { font-size: 8pt; }
+#po-guide .flow-mark { width: 39px; height: 30px; }
+#po-guide .series-nav, #po-guide .desktop-toc, #po-guide .mobile-toc, #po-guide .heading-link, #po-guide .skip-link, #po-guide .preview-notice, #po-guide .footer-nav, #po-guide .footer-bottom a, #po-guide .source-details { display: none; }
+#po-guide .publication-banner { display: grid; grid-template-columns: 1fr 100px; padding: 26px 0 24px; gap: 25px; border-bottom: 1px solid var(--line); }
+#po-guide h1 { font-size: 32pt; max-width: none; }
+#po-guide .eyebrow { font-size: 8pt; margin-bottom: 12px; }
+#po-guide .guide-deck { font-size: 12pt; margin-top: 16px; }
+#po-guide .edition { display: flex; flex-direction: column; padding-left: 18px; border-left: 1px solid var(--line); font-size: 8pt; gap: 0; }
+#po-guide .edition-number { font-size: 42pt; margin-bottom: 12px; }
+#po-guide .document-layout { display: block; padding: 25px 0 0; }
+#po-guide .document-content { max-width: none; padding: 0; }
+#po-guide .document-content section.level2 { margin-bottom: 23px; }
+#po-guide h2 { font-size: 20pt; padding-top: 16px; margin-bottom: 14px; }
+#po-guide h3 { font-size: 12pt; margin: 20px 0 10px; }
+#po-guide h2, #po-guide h3, #po-guide h4 { break-after: avoid; }
+#po-guide p { orphans: 3; widows: 3; break-inside: avoid; }
+#po-guide figure, #po-guide .diagram-route, #po-guide .diagram-outcomes, #po-guide .evidence-grid, #po-guide tr { break-inside: avoid; }
+#po-guide .table-scroll { overflow: visible; margin-block: 16px; }
+#po-guide table { display: table; font-size: 9pt; line-height: 1.45; }
+#po-guide th, #po-guide td { min-width: 0; padding: 8px 12px 8px 0; }
+#po-guide thead { display: table-header-group; }
+#po-guide figure { margin: 22px 0; }
+#po-guide .diagram-columns { display: grid; grid-template-columns: repeat(3, 1fr); }
+#po-guide .diagram-columns > li { font-size: 9pt; }
+#po-guide .diagram-columns strong, #po-guide .evidence-grid strong { font-size: 15pt; }
+#po-guide .diagram-columns span, #po-guide .diagram-band, #po-guide .diagram-outcomes p, #po-guide figcaption { font-size: 8pt; }
+#po-guide .diagram-route, #po-guide .evidence-grid p, #po-guide .decision-line { font-size: 9pt; }
+#po-guide .flow-figure { border-top-width: 2px; }
+#po-guide .footer-shell { display: block; padding: 14px 0 0; }
+#po-guide .site-footer { margin-top: 22px; background: none; border-top-width: 1px; break-inside: avoid; }
+#po-guide .footer-lead .eyebrow, #po-guide .footer-lead > p:last-child { display: none; }
+#po-guide .footer-lead .footer-statement { font-size: 12pt; margin: 0; }
+#po-guide .footer-statement br { display: none; }
+#po-guide .footer-statement br::after { content: " "; }
+#po-guide .footer-bottom { display: block; border: 0; margin: 0; padding-top: 6px; font-size: 8pt; }
+#po-guide a { color: inherit; }}
+@media (prefers-reduced-motion: reduce) {#po-guide { scroll-behavior: auto; }}
+#po-guide .start-page .document-layout { display:block; }
+#po-guide .start-page .desktop-toc, #po-guide .start-page .mobile-toc { display:none; }
+#po-guide .start-page .document-content { max-width:100%; }
+#po-guide .start-page .document-content h2 { font-size:24px; margin-top:24px; }
+#po-guide .start-page .guide-deck { font-size:clamp(22px,3vw,34px); }
+#po-guide .start-page .diagram-columns { margin:30px 0; }
+#po-guide .start-flow { margin:28px 0; padding:20px 24px; background:#eef3ef; border-left:4px solid #315f55; }
+#po-guide .start-flow p { margin:6px 0; }
+#po-guide .start-flow-label { font-size:12px; text-transform:uppercase; letter-spacing:.09em; }
+#po-guide .start-actions { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:26px 0; }
+#po-guide .start-actions a { display:block; padding:18px 22px; border:1px solid #24463f; border-radius:8px; text-decoration:none; }
+#po-guide .start-actions a:first-child { background:#24463f; color:#fff; }
+#po-guide .start-actions strong, #po-guide .start-actions span { display:block; }
+#po-guide .start-actions strong { font-size:20px; }
+#po-guide .start-actions span { margin-top:5px; font-size:14px; }
+#po-guide .start-actions a:hover { outline:2px solid #708e82; outline-offset:2px; }
+@media(max-width:640px) {#po-guide .start-actions { grid-template-columns:1fr; }
+#po-guide .start-flow { padding:16px; }}
+@media print {#po-guide .start-actions { break-inside:avoid; }}
+#po-guide .portfolio-overview { margin:32px 0; padding:24px; background:#f3f5f2; border:1px solid #c5cfc7; border-radius:10px; }
+#po-guide .overview-purpose { text-align:center; padding:8px 12px 22px; border-bottom:1px solid #b8c6be; }
+#po-guide .overview-purpose span { display:block; font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:#526257; margin-bottom:8px; }
+#po-guide .overview-purpose strong { display:block; font:600 24px/1.25 var(--serif); color:#223f35; }
+#po-guide .overview-cycle { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); list-style:none; padding:0; margin:24px 0 0; gap:10px; }
+#po-guide .overview-cycle li { margin:0; background:white; border:1px solid #c5cfc7; border-top:4px solid #326957; border-radius:5px; min-width:0; }
+#po-guide .overview-cycle a { display:block; padding:12px 8px 8px; text-align:center; text-decoration:none; color:#233e34; }
+#po-guide .overview-cycle a:hover { background:#e5eee8; }
+#po-guide .overview-cycle strong { display:block; font-size:17px; margin:5px 0; }
+#po-guide .overview-cycle a>span:last-child { display:block; font-size:13px; line-height:1.4; }
+#po-guide .overview-number { display:inline-flex; align-items:center; justify-content:center; width:27px; height:27px; border-radius:50%; background:#275343; color:white; font-size:14px; font-weight:700; }
+#po-guide .overview-cycle p { padding:10px 8px; margin:0; border-top:1px solid #e0e6e1; color:#536056; text-align:center; font-size:12px; line-height:1.5; }
+#po-guide .overview-return { border-bottom:2px solid #b47b36; padding:12px 0; margin:10px 0 20px; font-size:14px; color:#65491f; text-align:center; }
+#po-guide .overview-return span { font-size:25px; vertical-align:middle; margin-right:5px; }
+#po-guide .overview-connections { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+#po-guide .overview-connections div { background:#e5ece7; border-left:3px solid #658476; padding:13px 15px; }
+#po-guide .overview-connections strong { font-size:15px; }
+#po-guide .overview-connections p { font-size:13px; line-height:1.6; margin:8px 0 0; }
+#po-guide .portfolio-overview figcaption { border-top:1px solid #c5cfc7; margin-top:20px; padding-top:13px; font-size:13px; }
+@media(max-width:700px) {#po-guide .portfolio-overview { padding:16px; }
+#po-guide .overview-cycle { grid-template-columns:1fr; gap:12px; }
+#po-guide .overview-cycle li { display:grid; grid-template-columns:1fr 1fr; border-top:1px solid #c5cfc7; border-left:4px solid #326957; }
+#po-guide .overview-cycle a { text-align:left; padding:12px; }
+#po-guide .overview-cycle p { border-top:0; border-left:1px solid #e0e6e1; display:flex; align-items:center; justify-content:center; font-size:13px; }
+#po-guide .overview-connections { grid-template-columns:1fr; gap:12px; }
+#po-guide .overview-purpose strong { font-size:23px; }}
+@media print {#po-guide .portfolio-overview { padding:15px; break-inside:avoid; }
+#po-guide .overview-cycle { grid-template-columns:repeat(5,minmax(0,1fr)); }
+#po-guide .overview-cycle li { display:block; border-left:1px solid #c5cfc7; border-top:3px solid #326957; }
+#po-guide .overview-cycle a { text-align:center; padding:8px 5px; }
+#po-guide .overview-cycle strong { font-size:11pt; }
+#po-guide .overview-cycle p, #po-guide .overview-cycle a>span:last-child { font-size:8pt; }
+#po-guide .overview-cycle p { display:block; border-left:0; border-top:1px solid #e0e6e1; }
+#po-guide .overview-purpose strong { font-size:16pt; }
+#po-guide .overview-connections { grid-template-columns:1fr 1fr; }
+#po-guide .overview-connections p, #po-guide .portfolio-overview figcaption { font-size:8pt; }}
+#po-guide[data-guide-tabs] .document-layout { display: block; padding: 24px 0 56px; }
+#po-guide[data-guide-tabs] .desktop-toc, #po-guide[data-guide-tabs] .mobile-toc { display: none; }
+#po-guide[data-guide-tabs] .document-content { max-width: 100%; }
+#po-guide .guide-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 14px; border-bottom: 2px solid var(--line); padding-bottom: 12px; }
+#po-guide .guide-tabs a { flex: 1 1 180px; padding: 12px 16px; border: 1px solid var(--line); border-radius: 5px; text-align: center; color: var(--ink); text-decoration: none; font: 600 15px/1.4 var(--sans); }
+#po-guide .guide-tabs a[aria-selected="true"] { color: white; background: var(--accent); border-color: var(--accent); }
+#po-guide .guide-tabs a:hover, #po-guide .guide-tabs a:focus-visible, #po-guide .guide-read-all:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+#po-guide .guide-read-all { border: 1px solid var(--line); background: transparent; color: var(--ink); border-radius: 4px; padding: 8px 12px; font: inherit; cursor: pointer; margin-bottom: 18px; }
+#po-guide section.guide-tab[hidden] { display: none; }
+#po-guide .guide-tab h2 { margin-top: 16px; }
+#po-guide .guide-tab h3, #po-guide .guide-tab [id] { scroll-margin-top: 24px; }
+#po-guide .guide-section-links { padding: 14px 20px; border: 1px solid var(--line); border-radius: 5px; margin: 18px 0 24px; }
+#po-guide .guide-section-links .guide-section-label { font-weight: 600; }
+#po-guide .guide-section-links ul { columns: 2; column-gap: 30px; padding-left: 18px; }
+#po-guide .guide-section-links li { break-inside: avoid; padding: 3px 0; }
+@media(max-width: 640px) {#po-guide .guide-section-links ul { columns: 1; }
+#po-guide .guide-tabs a { flex-basis: 100%; }}
+@media print {#po-guide .guide-tabs, #po-guide .guide-read-all, #po-guide .guide-section-links { display: none !important; }
+#po-guide section.guide-tab[hidden] { display: block !important; }}
+#po-guide .po-flow { margin: 22px 0; padding: 20px; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); }
+#po-guide .po-flow-title { font: 600 20px/1.35 var(--serif); margin-bottom: 18px; }
+#po-guide .po-flow .po-flow-steps { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); gap: 28px; list-style: none; margin: 0; padding: 0; }
+#po-guide .po-flow-steps > li { position: relative; display: flex; flex-direction: column; gap: 8px; padding: 16px; margin: 0; border: 1px solid var(--line); border-radius: 6px; background: var(--soft); min-width: 0; font-size: 15px; line-height: 1.5; }
+#po-guide .po-flow-steps > li:not(:last-child)::after { content: "→"; position: absolute; right: -25px; top: 45%; color: var(--accent); font-size: 24px; font-weight: 700; }
+#po-guide .po-flow-label { font-size: 11px; letter-spacing: .05em; font-weight: 700; color: var(--accent); }
+#po-guide .po-flow-steps strong { font-size: 17px; line-height: 1.35; }
+#po-guide .po-flow-return { margin: 16px 0 0; padding: 10px 12px; border-left: 3px solid var(--accent); background: var(--soft); font-size: 14px; }
+#po-guide .po-flow figcaption { margin-top: 14px; font-size: 14px; line-height: 1.5; }
+#po-guide .po-gate { border-left: 4px solid var(--accent); background: var(--soft); padding: 12px 18px; margin: 18px 0; }
+#po-guide .po-gate p { margin: 0; }
+#po-guide .po-detail { margin: 16px 0 28px; padding: 0 18px; border: 1px solid var(--line); border-radius: 6px; }
+#po-guide .po-detail > summary { cursor: pointer; padding: 14px 0; color: var(--accent); font-weight: 600; line-height: 1.5; }
+#po-guide .po-detail[open] > summary { border-bottom: 1px solid var(--line); margin-bottom: 16px; }
+#po-guide .po-detail > summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+#po-guide .po-principle-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 20px 0; }
+#po-guide .po-principle { padding: 16px 20px; background: var(--soft); border-left: 3px solid var(--accent); }
+#po-guide .po-principle p { margin: 0; }
+@media(max-width: 760px) {#po-guide .po-flow .po-flow-steps { grid-auto-flow: row; grid-template-columns: 1fr; gap: 28px; }
+#po-guide .po-flow-steps > li:not(:last-child)::after { content: "↓"; right: 50%; top: auto; bottom: -29px; }
+#po-guide .po-principle-grid { grid-template-columns: 1fr; }
+#po-guide .po-flow { padding: 14px; }}
+@media print {#po-guide .po-detail { border: 0; padding: 0; }
+#po-guide .po-detail > summary { color: var(--ink); }
+#po-guide .po-detail > :not(summary) { display: block !important; }
+#po-guide .po-detail::details-content { display: block; content-visibility: visible; }
+#po-guide .po-flow { break-inside: avoid; padding: 10px; }
+#po-guide .po-flow .po-flow-steps { gap: 22px; }
+#po-guide .po-flow-steps > li { padding: 10px; font-size: 11px; }
+#po-guide .po-flow-steps strong { font-size: 13px; }
+#po-guide .po-flow-steps > li:not(:last-child)::after { right: -20px; font-size: 18px; }
+#po-guide .po-flow-label { font-size: 9px; }}</style></head><body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="header-inner"><a class="brand" href="../index.html" target="_blank" rel="noopener"><img src="../assets/aipf-mark.svg" alt="" width="64" height="48"><span><strong>AI Product Flow</strong><small>Guides and case studies</small></span></a><nav aria-label="Primary"><a href="index.html" aria-current="page" target="_blank" rel="noopener">Guides</a><a href="../case-studies/index.html" target="_blank" rel="noopener">Case studies</a><a href="../feedback/index.html" target="_blank" rel="noopener">Feedback</a></nav></div></header><main id="main"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../index.html" target="_blank" rel="noopener">Home</a> <span aria-hidden="true">/</span> <a href="index.html" target="_blank" rel="noopener">Guides</a> <span aria-hidden="true">/</span> <span>AI Product Family Guide</span></nav><header class="page-intro"><p class="eyebrow">AI Product Flow · Edition 1.1</p><h1 id="ai-product-family-guide">AI Product Family Guide</h1><p class="deck">Manage growing AI-enabled work across related products, shared services and the people who connect them.</p><p class="byline">By Rick Molony and Ghulam Akbar · developed with AI assistance</p></header><div id="po-guide" data-guide-tabs="true" data-guide-scope="family"><article class="document-content" id="guide-content" data-source-sha256="84dc164b646b44b3c76fff574b4a4743778056e9575a220eeb03dec8c28112be">
+<nav class="guide-tabs" aria-label="Guide sections"><a href="#part-1-understand-the-approach">Understand the Approach</a><a href="#part-2-how-to-use-the-guide">How to Use the Guide</a><a href="#part-3-principles-responsibilities-and-reference">Principles &amp; Responsibilities</a></nav><button class="guide-read-all" type="button" hidden aria-pressed="false">Read all sections</button><section class="guide-body">
+<section id="part-1-understand-the-approach" class="level2 guide-tab"
+data-number="1" data-tab-label="Understand the Approach">
+<h2 class="guide-tab" data-number="1"
+data-tab-label="Understand the Approach"><span
+class="header-section-number">1</span> Part 1 — Understand the
+Approach</h2>
+<section id="purpose-of-the-guide" class="level3" data-number="1.1">
+<h3 data-number="1.1"><span class="header-section-number">1.1</span>
+Make the whole experience work<a class="heading-link" href="#purpose-of-the-guide" aria-label="Link to this section">#</a></h3>
+<p>Related products can help or hinder one another through shared
+information, services or scarce people. Customers should not have to
+repair the gaps, and sharing should allow differences that meet their
+needs.</p>
+<p>This guide helps you decide what products share, how they connect and
+who handles problems between them. AI can spread a weak assumption
+through reused prompts, models or components.</p>
+<p>Use it alongside the <a
+href="https://aipf.ourresilient.world/guides/product.html" target="_blank" rel="noopener">Agile Product
+Guide</a> and <a
+href="https://aipf.ourresilient.world/guides/framework.html" target="_blank" rel="noopener">AI Product
+Flow Framework</a>, within your existing teams and tools.</p>
+<p>AI rapidly increases the amount of work that products can generate.
+Human capacity to review shared changes, integrate them and support
+their effects does not grow at the same rate. Use the family view to
+manage that pressure at the connections between products.</p>
+<p>Use the <a
+href="https://aipf.ourresilient.world/guides/framework.html#purpose" target="_blank" rel="noopener">Framework
+Purpose</a> for the shared rationale and the <a
+href="https://aipf.ourresilient.world/guides/framework.html#glossary" target="_blank" rel="noopener">Framework
+Glossary</a> for unfamiliar terms.</p>
+</section>
+<section id="definition-of-a-product-family" class="level3"
+data-number="1.2">
+<h3 data-number="1.2"><span class="header-section-number">1.2</span>
+When do you need a product family?<a class="heading-link" href="#definition-of-a-product-family" aria-label="Link to this section">#</a></h3>
+<p>A <strong>product family</strong> is a group of related products,
+services or workflows where a choice in one can help or harm another.
+They may serve the same people, use common information or rely on shared
+services.</p>
+<p>Use a family view when shared choices need an owner. Products may
+retain different audiences, brands, channels and technology; shared
+content or review capacity can justify coordination without one
+application or customer journey.</p>
+<p><strong>Example used throughout:</strong> a service organisation
+wants people to get a correct answer without repeating their request. It
+may need intake, knowledge and response services. Each has a purpose and
+an owner. The family view shows how they fit together. This is an
+invented example, not a report of results.</p>
+<p>A capability is something you need to do, not automatically a product
+or application. Establish its users, outcome and owner. Products may
+share an application; several teams may serve one product.</p>
+<p>A <strong>value stream</strong> follows a need through to its
+outcome—for example, from asking for help to getting the problem
+resolved. It may cross more than one family. Use the journey to
+understand people’s experience and the family view to manage shared
+decisions.</p>
+</section>
+<section id="the-family-guide-at-a-glance" class="level3"
+data-number="1.3">
+<h3 data-number="1.3"><span class="header-section-number">1.3</span>
+AI Product Family Flow at a Glance<a class="heading-link" href="#the-family-guide-at-a-glance" aria-label="Link to this section">#</a></h3>
+<p>The family uses three phases and three gates to manage shared work as
+AI increases what products can produce. At each gate, the Family owner
+decides which connections and reuse the evidence supports, within the
+capacity to integrate, review and maintain them.</p>
+<figure class="po-flow" aria-labelledby="family-figure-caption">
+<div class="overview-purpose">
+<span>Manage growing AI-enabled capacity</span><strong>How should
+related products work together to improve the whole outcome?</strong>
+</div>
+<ol class="po-flow-steps" style="margin-top:24px">
+<li style="border-top:4px solid var(--accent)">
+<span class="po-flow-label">PHASE
+1</span><strong><a href="#phase-1-validate-show-and-set-boundaries">Validate,
+Show and Set Boundaries</a></strong><span>Agree the shared outcome,
+product boundaries, handoffs, owners and next test.</span><span
+class="po-flow-label"
+style="border-top:1px solid var(--line); padding-top:12px">GATE
+1</span><strong>What shared discovery or test may
+proceed?</strong><span>Proceed · Revise · Defer · Stop · Limit ·
+Split</span>
+</li>
+<li style="border-top:4px solid var(--accent)">
+<span class="po-flow-label">PHASE
+2</span><strong><a href="#phase-2-prove-the-end-to-end-evidence-slice">Prove
+the End-to-End Evidence Slice</a></strong><span>Test a meaningful
+handoff or reuse claim in named settings, including failure and
+recovery.</span><span class="po-flow-label"
+style="border-top:1px solid var(--line); padding-top:12px">GATE
+2</span><strong>Where does the connection or reuse
+work?</strong><span>Proceed · Revise · Defer · Stop · Limit ·
+Split</span>
+</li>
+<li style="border-top:4px solid var(--accent)">
+<span class="po-flow-label">PHASE
+3</span><strong><a href="#phase-3-decide-and-operationalise">Decide and
+Operationalise</a></strong><span>Compare benefits by product, shared
+costs and support; agree where the approach may be used.</span><span
+class="po-flow-label"
+style="border-top:1px solid var(--line); padding-top:12px">GATE
+3</span><strong>How far should supported shared use
+extend?</strong><span>Proceed · Revise · Defer · Stop · Limit · Split ·
+Scale</span>
+</li>
+</ol>
+<p class="overview-return">
+<span aria-hidden="true">↶</span> New evidence or changed conditions →
+return to an earlier phase, review and revise. Stop or pause when
+needed.
 </p>
-<ul class="diagram-columns">
-<li>
-<strong>Explain the need</strong>Intake service<span>Pass on the request without losing its meaning.</span>
-</li>
-<li>
-<strong>Find reliable information</strong>Knowledge service<span>Supply a current source and its limits.</span>
-</li>
-<li>
-<strong>Resolve the request</strong>Response service<span>Check the answer and whether it helped.</span>
-</li>
-</ul>
-<p class="decision-line">
-<strong>Test one important connection first</strong>Can the next service use the information correctly, including exceptions?
+<div class="overview-connections">
+<div>
+<strong>Products bring local evidence</strong>
+<p>
+Owners supply user findings, test results, benefits and burdens. The
+family checks the effects across products.
 </p>
+</div>
+<div>
+<strong>Shared decisions return to products</strong>
+<p>
+Name supported uses, constraints, owners and review points. Each product
+owner still accepts their own use.
+</p>
+</div>
+</div>
 <figcaption id="family-figure-caption">
-Figure 1. Understand the complete journey before choosing a small part to test. These responsibilities need not be separate applications.
+A family evidence slice tests a shared boundary or reuse claim. Family
+decisions do not replace product acceptance or spending authority. Only
+Gate 3 can authorise Scale. Select a phase heading for its working
+guidance.
 </figcaption>
 </figure>
-<p>Write a short <strong>family outline</strong> as the opening section of the Dependency and Integration Map. Show the intended outcome, people affected, possible products, owners, shared needs and unanswered questions. Mark what the next test includes and what it leaves for later.</p>
-<p>Use journey maps for experiences and handoffs, personas for people’s needs and context, and concept maps for information dependencies. Label untested personas as assumptions.</p>
-<p>Link product intent, concept and evidence rather than copying them. The outline stays within the Dependency and Integration Map; the optional Pattern below serves a different purpose.</p>
-<p>For a <strong>new family</strong>, agree boundaries and shared constraints before authorising its first product commitment. For a <strong>new product joining an existing family</strong>, check compatibility, capacity and effects on current products. Neither route requires completing the family’s whole lifecycle first.</p>
-<h2 id="what-family-management-must-protect">Six habits for working across products</h2>
-<h3 id="coherence-across-products">Judge the combined result</h3>
-<p>Check the whole experience with users and people on both sides of a handoff. Remove avoidable dependencies and duplicate work; retain differences that improve access or outcomes. This is <strong>Judgement</strong>: assess the combined result.</p>
-<h3 id="reuse-supported-by-transfer-evidence">Check before reusing an approach</h3>
-<p>A <strong>pattern</strong> describes an approach to a recurring problem in a stated context. Different people, information, permissions or consequences may require <strong>Limit</strong> or <strong>Split</strong>. This is <strong>Evidence</strong>: test reuse in each new setting; agreement among AI tools does not establish it.</p>
-<h3 id="commitment-proportionate-to-uncertainty">Count the cost of sharing</h3>
-<p>Include adoption, training, integration, review and support. Start with a small test. Past effort does not justify further investment; stopping a shared approach need not stop its products. This is <strong>Restraint</strong>: match commitment to evidence.</p>
-<h3 id="capacity-for-integration-and-verification">Keep shared work within people’s capacity</h3>
-<p><strong>Integration</strong> means making the parts work together. Set a work-in-progress limit including checking and waiting decisions. Order work around scarce reviewers; coordination can itself become a bottleneck. This is <strong>Restraint</strong>: AI output cannot create review capacity.</p>
-<h3 id="a-shared-foundation-that-remains-supportable">Make the shared foundation dependable</h3>
-<p>The <strong>shared substrate</strong> is the common information, models, tools and checks. Name owners and recovery arrangements. <strong>Transfer drift</strong> means reuse changes meaning, behaviour or safeguards. This is <strong>Adaptation</strong>: recheck affected products when shared sources change.</p>
-<h3 id="benefits-that-remain-visible-in-each-product">Check who benefits and who carries extra work</h3>
-<p>Track benefit, cost, accessibility and harm in each product. Count a shared outcome once. Adoption or a working connection does not establish sustained value. This is <strong>Accountability</strong>: product owners answer for local effects; Integration maintains the combined view.</p>
-<h2 id="family-decisions">Decide what to share and what to do next</h2>
-<p>The three AIPF phases help you ask different questions. Each ends with a <strong>gate</strong>: a decision by someone with authority. Use existing reviews where they fit.</p>
-<div class="table-scroll" role="region" aria-label="Scrollable table" tabindex="0"><table>
+<p>In the service example, intake passes on the request, the knowledge
+service supplies a current source and its limits, and the response
+service checks whether the answer helps. Test one important connection
+first; these responsibilities need not be separate applications.</p>
+<p>Write a short <strong>family outline</strong> as the opening section
+of the Dependency and Integration Map. Show the intended outcome, people
+affected, possible products, owners, shared needs and unanswered
+questions. Mark what the next test includes and what it leaves for
+later.</p>
+<p>Use journey maps for experiences and handoffs, personas for people’s
+needs and context, and concept maps for information dependencies. Label
+untested personas as assumptions.</p>
+<p>Link product intent, concept and evidence rather than copying them.
+The outline stays within the Dependency and Integration Map; the
+optional Pattern below serves a different purpose.</p>
+<p>For a <strong>new family</strong>, agree boundaries and shared
+constraints before authorising its first product commitment. For a
+<strong>new product joining an existing family</strong>, check
+compatibility, capacity and effects on current products. Neither route
+requires completing the family’s whole lifecycle first.</p>
+<p>Use <a href="#part-2-how-to-use-the-guide">How to Use the Guide</a>
+for shared work and <a
+href="#part-3-principles-responsibilities-and-reference">Principles
+&amp; Responsibilities</a> to assign its owners.</p>
+</section>
+</section>
+<section id="part-2-how-to-use-the-guide" class="level2 guide-tab"
+data-number="2" data-tab-label="How to Use the Guide">
+<h2 class="guide-tab" data-number="2"
+data-tab-label="How to Use the Guide"><span
+class="header-section-number">2</span> Part 2 — How to Use the
+Guide</h2><nav class="guide-section-links" aria-label="In this tab"><p class="guide-section-label">In this tab</p><ul><li><a href="#phase-1-validate-show-and-set-boundaries">Phase 1 — Validate, Show, and Set Boundaries</a></li><li><a href="#phase-2-prove-the-end-to-end-evidence-slice">Phase 2 — Prove the End-to-End Evidence Slice</a></li><li><a href="#phase-3-decide-and-operationalise">Phase 3 — Decide and Operationalise</a></li><li><a href="#family-decisions">Record the shared decision</a></li><li><a href="#evidence-and-its-commitments">Artefacts for this guide</a></li></ul></nav>
+<p>Use these phases to decide which products need to work together, test
+their important connections and limit reuse to settings the evidence
+supports. A family decision settles shared work; each product keeps its
+own acceptance responsibility.</p>
+<figure class="po-flow" aria-labelledby="family-use-caption">
+<p class="po-flow-title">
+Agree the connection → Test it → Decide its supported use
+</p>
+<ol class="po-flow-steps">
+<li>
+<strong>Define shared work</strong><span>Map the outcome, boundaries,
+handoffs and next
+test.</span><a href="#phase-1-validate-show-and-set-boundaries">Go to
+this step →</a>
+</li>
+<li>
+<strong>Test across the boundary</strong><span>Check meaning,
+permissions, failure and recovery in named
+settings.</span><a href="#phase-2-prove-the-end-to-end-evidence-slice">Go
+to this step →</a>
+</li>
+<li>
+<strong>Decide the reach of reuse</strong><span>Compare benefit by
+product with shared costs and
+support.</span><a href="#phase-3-decide-and-operationalise">Go to this
+step →</a>
+</li>
+</ol>
+<p class="po-flow-return">
+New evidence can change a shared assumption. Limit or split an approach
+when different settings need different treatment.
+</p>
+<figcaption id="family-use-caption">
+These are shared decisions, not a requirement to finish the family
+lifecycle before product work can begin.
+</figcaption>
+</figure>
+<section id="phase-1-validate-show-and-set-boundaries" class="level3"
+data-number="2.1">
+<h3 data-number="2.1"><span class="header-section-number">2.1</span>
+Phase 1 — Validate, Show, and Set Boundaries<a class="heading-link" href="#phase-1-validate-show-and-set-boundaries" aria-label="Link to this section">#</a></h3>
+<p><strong>Aim:</strong> Decide what must work together before dependent
+product work starts.</p>
+<figure class="po-flow" aria-labelledby="family-phase-1-caption">
+<p class="po-flow-title">
+Validate, Show, and Set Boundaries
+</p>
+<ol class="po-flow-steps">
+<li>
+<strong>Map the whole outcome</strong><span>Name people, possible
+products, owners and the handoffs that matter.</span>
+</li>
+<li>
+<strong>Agree shared boundaries</strong><span>Set required sharing,
+separation, permissions and constraints.</span>
+</li>
+<li>
+<strong>Choose one useful test</strong><span>Name the context, capacity,
+evidence question and stop condition.</span>
+</li>
+</ol>
+<figcaption id="family-phase-1-caption">
+A product evidence slice tests its own use; a family slice tests the
+shared boundary or reuse claim.
+</figcaption>
+</figure>
+<div class="po-gate">
+<p>
+<strong>Gate 1:</strong> The Family owner records which discovery or
+test may proceed, its shared constraints and effort limits. Resolve
+decisions the next commitment depends on; give deferred choices an
+owner, trigger and any work held.
+</p>
+</div>
+<details class="po-detail">
+<summary>
+Working checklist
+</summary>
+<div class="table-scroll" role="region" aria-label="Table 1" tabindex="0"><table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col style="width: 50%" />
+<col style="width: 50%" />
 </colgroup>
 <thead>
 <tr>
-<th>Phase and everyday question</th>
-<th>What the family makes clear</th>
-<th>What returns to product owners</th>
+<th>Use the guide to…</th>
+<th>What to check</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>1 — Validate, Show, and Set Boundaries.</strong> What should work together?</td>
-<td>Outcomes, people, product boundaries, shared constraints, owners and next test.</td>
-<td>Allowed product work, shared expectations, effort limits and review conditions.</td>
+<td>New family</td>
+<td>Agree shared boundaries and constraints before its first product
+commitment.</td>
 </tr>
 <tr>
-<td><strong>2 — Prove the End-to-End Evidence Slice.</strong> Does the connection work?</td>
-<td>A test across a meaningful handoff, including failures and recovery in named settings.</td>
-<td>Results, changes needed and where reuse is or is not supported.</td>
+<td>Product joining a family</td>
+<td>Check compatibility, available capacity and effects on current
+products.</td>
 </tr>
 <tr>
-<td><strong>3 — Decide and Operationalise.</strong> How far should shared use go?</td>
-<td>Benefits by product, shared costs, support and remaining risks.</td>
-<td>Agreed uses, owners, limits, support and next review.</td>
+<td>Record</td>
+<td>Keep the family outline in the Dependency and Integration Map; link
+product intent and evidence.</td>
 </tr>
 </tbody>
 </table></div>
-<p>An <strong>evidence slice</strong> tests a small connected path. A product slice tests its own use; a family slice tests a shared boundary or reuse claim in named contexts, including failure and recovery. “Prove” concerns that question; “operationalise” means prepare for ongoing use and support.</p>
-<p>Before releasing dependent product work, the family gate must settle:</p>
+</details>
+</section>
+<section id="phase-2-prove-the-end-to-end-evidence-slice" class="level3"
+data-number="2.2">
+<h3 data-number="2.2"><span class="header-section-number">2.2</span>
+Phase 2 — Prove the End-to-End Evidence Slice<a class="heading-link" href="#phase-2-prove-the-end-to-end-evidence-slice" aria-label="Link to this section">#</a></h3>
+<p><strong>Aim:</strong> Find out whether a meaningful handoff or reuse
+claim works in its named contexts.</p>
+<figure class="po-flow" aria-labelledby="family-phase-2-caption">
+<p class="po-flow-title">
+Prove the End-to-End Evidence Slice
+</p>
+<ol class="po-flow-steps">
+<li>
+<strong>Trace the handoff</strong><span>Follow the original request,
+source, permissions and limitations.</span>
+</li>
+<li>
+<strong>Test failure and recovery</strong><span>Check missing, unclear
+or wrong information and the correction route.</span>
+</li>
+<li>
+<strong>Compare the contexts</strong><span>Record what transfers, what
+changes and where evidence is absent.</span>
+</li>
+</ol>
+<figcaption id="family-phase-2-caption">
+A product evidence slice tests its own use; a family slice tests the
+shared boundary or reuse claim.
+</figcaption>
+</figure>
+<div class="po-gate">
+<p>
+<strong>Gate 2:</strong> The Family owner decides the next shared step,
+including Limit or Split when appropriate. A working connection does not
+prove sustained benefit or acceptance in every product. Gate 2 cannot
+authorise Scale.
+</p>
+</div>
+<details class="po-detail">
+<summary>
+Working checklist
+</summary>
+<div class="table-scroll" role="region" aria-label="Table 2" tabindex="0"><table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Use the guide to…</th>
+<th>What to check</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bring</td>
+<td>Product evidence slices, source versions, results, costs and
+contrary findings.</td>
+</tr>
+<tr>
+<td>Check</td>
+<td>Whether both sides interpret information correctly and can recover
+when it fails.</td>
+</tr>
+<tr>
+<td>Return</td>
+<td>Required changes, supported uses, remaining questions and limits on
+reuse.</td>
+</tr>
+</tbody>
+</table></div>
+</details>
+</section>
+<section id="phase-3-decide-and-operationalise" class="level3"
+data-number="2.3">
+<h3 data-number="2.3"><span class="header-section-number">2.3</span>
+Phase 3 — Decide and Operationalise<a class="heading-link" href="#phase-3-decide-and-operationalise" aria-label="Link to this section">#</a></h3>
+<p><strong>Aim:</strong> Decide the reach of shared use that products
+and support owners can sustain.</p>
+<figure class="po-flow" aria-labelledby="family-phase-3-caption">
+<p class="po-flow-title">
+Decide and Operationalise
+</p>
+<ol class="po-flow-steps">
+<li>
+<strong>Compare local results</strong><span>Record benefit, burden,
+accessibility and harm for each product.</span>
+</li>
+<li>
+<strong>Check shared support</strong><span>Name maintenance, change,
+recovery and review owners.</span>
+</li>
+<li>
+<strong>Set supported uses</strong><span>Agree adoption, adaptation,
+non-use or wider reuse within clear limits.</span>
+</li>
+</ol>
+<figcaption id="family-phase-3-caption">
+A product evidence slice tests its own use; a family slice tests the
+shared boundary or reuse claim.
+</figcaption>
+</figure>
+<div class="po-gate">
+<p>
+<strong>Gate 3:</strong> Only Gate 3 can authorise Scale. The Family
+owner decides shared status; each product owner accepts its own use.
+Acceptance of a shared approach does not automatically approve more
+spending.
+</p>
+</div>
+<details class="po-detail">
+<summary>
+Working checklist
+</summary>
+<div class="table-scroll" role="region" aria-label="Table 3" tabindex="0"><table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Use the guide to…</th>
+<th>What to check</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bring</td>
+<td>Family benefits, shared cost, supported contexts, risks and
+available support.</td>
+</tr>
+<tr>
+<td>Decide</td>
+<td>Proceed, change, defer, stop, limit, split or scale where
+justified.</td>
+</tr>
+<tr>
+<td>Return</td>
+<td>Named products and uses, owners, support, limits and change or
+review triggers.</td>
+</tr>
+</tbody>
+</table></div>
+</details>
+</section>
+<section id="family-decisions" class="level3" data-number="2.4">
+<h3 data-number="2.4"><span class="header-section-number">2.4</span>
+Record the shared decision<a class="heading-link" href="#family-decisions" aria-label="Link to this section">#</a></h3>
+<p>A gate is the decision by the authorised Family owner at the end of a
+phase. Use existing reviews where they fit. “Prove” concerns the stated
+evidence question; “operationalise” means prepare for ongoing use and
+support. Use <a
+href="https://aipf.ourresilient.world/guides/framework.html#practices" target="_blank" rel="noopener">Framework
+Practices</a> for the common learning loop.</p>
+<p>Before releasing dependent product work, the family gate must
+settle:</p>
 <ul>
-<li>product purposes, boundaries, affected people and important handoffs;</li>
-<li>required sharing and separation, including data permissions and shared architecture, tools and channels;</li>
-<li>owners, work order, capacity, cost, support and review responsibilities;</li>
-<li>the next evidence question, allowed effort, success checks, stop conditions and review trigger.</li>
+<li>product purposes, boundaries, affected people and important
+handoffs;</li>
+<li>required sharing and separation, including data permissions and
+shared architecture, tools and channels;</li>
+<li>owners, work order, capacity, cost, support and review
+responsibilities;</li>
+<li>the next evidence question, allowed effort, success checks, stop
+conditions and review trigger.</li>
 </ul>
-<p>Resolve choices the next commitment depends on. For deferred choices, record an owner, decision trigger and any work held meanwhile. Keep these decisions in the five records; separate stack and roadmap documents are optional. State exactly which product discovery or test may proceed.</p>
-<div class="table-scroll" role="region" aria-label="Scrollable table" tabindex="0"><table>
+<p>Resolve choices the next commitment depends on. For deferred choices,
+record an owner, decision trigger and any work held meanwhile. Keep
+these decisions in the five records; separate stack and roadmap
+documents are optional. State exactly which product discovery or test
+may proceed.</p>
+<div class="table-scroll" role="region" aria-label="Table 4" tabindex="0"><table>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -116,7 +794,8 @@ Figure 1. Understand the complete journey before choosing a small part to test. 
 </tr>
 <tr>
 <td><strong>Stop</strong></td>
-<td>End the shared commitment and assign any remaining responsibilities.</td>
+<td>End the shared commitment and assign any remaining
+responsibilities.</td>
 </tr>
 <tr>
 <td><strong>Limit</strong></td>
@@ -124,19 +803,343 @@ Figure 1. Understand the complete journey before choosing a small part to test. 
 </tr>
 <tr>
 <td><strong>Split</strong></td>
-<td>Use different versions where important differences require them. Name their owners.</td>
+<td>Use different versions where important differences require them.
+Name their owners.</td>
 </tr>
 <tr>
 <td><strong>Scale</strong></td>
-<td>Extend reuse when evidence and support justify it. Available only at Gate 3.</td>
+<td>Extend reuse when evidence and support justify it. Available only at
+Gate 3.</td>
 </tr>
 </tbody>
 </table></div>
-<p>The other decisions are available at every gate. A stop condition may interrupt work at any time. Record the scope, evidence, conditions, owner and next action for each decision.</p>
-<p>Accepting a shared approach does not automatically accept it in every product or approve more spending. Each product still checks its own use. A changed source, AI model, incident, shortage of support or disappointing benefit may require another decision.</p>
-<h2 id="accountabilities">Give shared responsibilities named owners</h2>
-<p>Each product keeps the responsibilities in the Product Guide. Four family responsibilities cover the work between products. <strong>Accountability</strong> means someone remains answerable; it does not require a new job title.</p>
-<div class="table-scroll" role="region" aria-label="Scrollable table" tabindex="0"><table>
+<p>The other decisions are available at every gate. A stop condition may
+interrupt work at any time. Record the scope, evidence, conditions,
+owner and next action for each decision.</p>
+<p>Accepting a shared approach does not automatically accept it in every
+product or approve more spending. Each product still checks its own use.
+A changed source, AI model, incident, shortage of support or
+disappointing benefit may require another decision.</p>
+</section>
+<section id="evidence-and-its-commitments" class="level3"
+data-number="2.5">
+<h3 data-number="2.5"><span class="header-section-number">2.5</span>
+Artefacts for this guide<a class="heading-link" href="#evidence-and-its-commitments" aria-label="Link to this section">#</a></h3>
+<p>Keep five core records so products can share evidence, understand
+dependencies and see local effects. The family outline opens the
+Dependency and Integration Map. Add a Pattern only when a reusable
+approach is useful; it is optional, not a sixth core commitment. Use <a
+href="https://aipf.ourresilient.world/guides/framework.html#artefacts" target="_blank" rel="noopener">Framework
+Artefacts</a> for shared definitions and how the records connect.</p>
+<details class="po-detail">
+<summary>
+Show the artefacts and when to use them
+</summary>
+<div class="table-scroll" role="region" aria-label="Table 5" tabindex="0"><table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>Artefact</th>
+<th>Family use and owner</th>
+<th>Phase 1</th>
+<th>Phase 2</th>
+<th>Phase 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dependency and Integration Map</td>
+<td>Integration: the family outline, handoffs, owners, permissions and
+failure routes.</td>
+<td>Agree boundaries and the next test.</td>
+<td>Trace and test the shared connection.</td>
+<td>Maintain agreed interfaces and change triggers.</td>
+</tr>
+<tr>
+<td>Shared Substrate Map</td>
+<td>Platform and Substrate: common information, tools, models, owners
+and recovery.</td>
+<td>Identify shared needs and constraints.</td>
+<td>Test suitability and recovery.</td>
+<td>Maintain supported uses, cost and capacity.</td>
+</tr>
+<tr>
+<td>Coordination Function Map</td>
+<td>Coordination: who supplies, receives and judges records, including
+waiting decisions.</td>
+<td>Name owners and work limits.</td>
+<td>Track evidence, authority and blockers.</td>
+<td>Keep review and support workable.</td>
+</tr>
+<tr>
+<td>Cross-Product Evidence Ledger</td>
+<td>Coordination maintains the view; source and product owners own
+claims.</td>
+<td>State reuse assumptions and settings.</td>
+<td>Record results, contrary findings and permitted reuse.</td>
+<td>Reassess affected decisions when sources or assumptions change.</td>
+</tr>
+<tr>
+<td>Family Benefits Map</td>
+<td>Integration and product owners: local benefit, shared cost, burden
+and harm.</td>
+<td>Define expected outcomes and measures.</td>
+<td>Record what tests establish.</td>
+<td>Compare observed results; count each shared outcome once.</td>
+</tr>
+<tr>
+<td>Pattern — optional</td>
+<td>Named maintainer, coordinated by Integration: reusable approach,
+context and limits.</td>
+<td>Propose an approach if useful.</td>
+<td>Test its intended range.</td>
+<td>Decide supported uses, adaptations and support.</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="dependency-and-integration-map">
+What must connect — Dependency and Integration Map
+</h4>
+<p>Show which product supplies what to another, and who owns each side.
+Include the information or service, its source and version, permissions
+and the checks needed before it is used. Say what happens if it is
+missing, unclear or wrong. Remove dependencies where you can.</p>
+<p><strong>Owner:</strong> Integration. <strong>Built from:</strong> the
+family outline and each product’s dependencies.</p>
+<h4 id="shared-substrate-map">
+What everyone relies on — Shared Substrate Map
+</h4>
+<p>Show the shared tools, sources, models and checking services. Name
+owners, supported uses, capacity, costs and recovery arrangements.
+Identify changes that require product owners to recheck their use.</p>
+<p><strong>Owner:</strong> Platform and Substrate.
+<strong>Feeds:</strong> the Portfolio’s Model and Vendor Concentration
+Register and Autonomy Boundary Map.</p>
+<h4 id="coordination-function-map">
+Who moves and judges the work — Coordination Function Map
+</h4>
+<p>Show who supplies, updates, receives and judges shared records.
+Identify waiting decisions, available reviewers, active-work limits and
+when an issue needs a different decision-maker. Keep AI’s routing tasks
+separate from human decisions.</p>
+<p><strong>Owner:</strong> Coordination. Board movement or an agent’s
+completion message is not approval. Link dependent work to the recorded
+authority; test that missing or withdrawn authority stops it.</p>
+<h4 id="cross-product-evidence-ledger">
+What reuse is supported — Cross-Product Evidence Ledger
+</h4>
+<p>For each important claim, keep a reference, source, date, method,
+setting, result, uncertainty and permitted reuse. Include contrary
+findings. Distinguish observed results, estimates and AI-generated
+material.</p>
+<p>Keep earlier versions when a source or assumption changes. Mark what
+is no longer current, identify affected decisions and ask their owners
+to reassess. Pause or restrict affected use when its agreed risk rules
+require it. Unaffected work can continue.</p>
+<p><strong>Owner:</strong> Coordination maintains the view; source and
+product owners own claims. <strong>Built from:</strong> product
+Assumption and Evidence Maps, End-to-End Evidence Slices and Learning
+Records. Link Pattern versions to tested contexts and contrary
+findings.</p>
+<h4 id="family-benefits-map">
+Who gains and who pays — Family Benefits Map
+</h4>
+<p>Link the intended outcome to expected and observed benefit in each
+product. Keep the measure, starting position, period, owner and source.
+Show shared costs, local burden, harm and the basis for each product’s
+contribution. Do not add unlike measures or count one outcome
+repeatedly.</p>
+<p><strong>Owner:</strong> Integration; product owners own local
+results. <strong>Built from:</strong> product Acceptance Records and
+benefit measures. <strong>Feeds:</strong> the Portfolio’s Benefits
+Realisation Map.</p>
+<h4 id="pattern">
+What can be reused — Pattern (optional)
+</h4>
+<p>Create a <strong>Pattern</strong> when a recurring problem warrants a
+reusable approach across the family. It may cover experience, workflow,
+information, technology or AI controls. It can serve every product where
+applicable; membership alone never requires adoption. A template or
+component may implement a pattern without describing its reasoning or
+limits.</p>
+<p>Keep a short record of:</p>
+<ul>
+<li>name, identifier, version, maintainer and status;</li>
+<li>problem, intended outcome, context, prerequisites and when not to
+use it;</li>
+<li>approach, what must remain consistent, permitted variations and an
+example;</li>
+<li>alternatives, trade-offs, costs, risks and failure/recovery
+behaviour;</li>
+<li>evidence links, tested product contexts, limitations and permitted
+uses;</li>
+<li>decision owner, review triggers and how to change or retire it.</li>
+</ul>
+<p>Propose it in Phase 1 when useful; test its intended range in Phase
+2; decide supported uses and support in Phase 3. A candidate remains
+unproven outside its tested contexts. Record each product’s adoption,
+adaptation or non-use. Changes must identify affected users, prompt
+rechecking and preserve earlier versions; retirement must name a
+replacement or withdrawal route.</p>
+<p><strong>Owner:</strong> Integration coordinates a named maintainer.
+The Family owner decides shared status; product owners accept their own
+use. Link evidence to the Cross-Product Evidence Ledger and shared
+implementations to the Substrate Map rather than duplicating either.</p>
+<p><strong>Invented example:</strong> a handoff carries the original
+request, supporting source, limitations and a correction route. Products
+may use different forms or systems while preserving that information.
+Its suitability still needs testing.</p>
+</details>
+</section>
+</section>
+<section id="part-3-principles-responsibilities-and-reference"
+class="level2 guide-tab" data-number="3"
+data-tab-label="Principles &amp; Responsibilities">
+<h2 class="guide-tab" data-number="3"
+data-tab-label="Principles &amp; Responsibilities"><span
+class="header-section-number">3</span> Part 3 — Principles &amp;
+Responsibilities</h2><nav class="guide-section-links" aria-label="In this tab"><p class="guide-section-label">In this tab</p><ul><li><a href="#what-family-management-must-protect">Apply the principles across products</a></li><li><a href="#accountabilities">Give shared responsibilities named owners</a></li><li><a href="#shared-ai-controls">Share AI controls safely</a></li><li><a href="#relationship-to-the-other-guides">Send findings up and decisions back</a></li><li><a href="#conclusion">Work with agile methods without adding needless layers</a></li></ul></nav>
+<p>Use these responsibilities to manage the shared changes that growing
+AI capacity creates. The <a
+href="https://aipf.ourresilient.world/guides/framework.html#principles" target="_blank" rel="noopener">Framework
+Principles</a> explain the common foundations; the family applies them
+to connections, reuse and effects across products.</p>
+<figure class="po-flow" aria-labelledby="family-responsibilities-caption">
+<p class="po-flow-title">
+Keep shared and local decisions connected
+</p>
+<ol class="po-flow-steps">
+<li>
+<strong>Product owners supply findings</strong><span>Each owns its local
+evidence, benefit and acceptance.</span>
+</li>
+<li>
+<strong>Family owners judge shared work</strong><span>Integration,
+Coordination and Platform owners make dependencies and limits
+visible.</span>
+</li>
+<li>
+<strong>Return a clear shared decision</strong><span>The Family owner
+sets supported uses; products check their own application.</span>
+</li>
+</ol>
+<figcaption id="family-responsibilities-caption">
+A family is useful when there is a shared decision to make. It is not a
+mandatory reporting layer.
+</figcaption>
+</figure>
+<section id="what-family-management-must-protect" class="level3"
+data-number="3.1">
+<h3 data-number="3.1"><span class="header-section-number">3.1</span>
+Apply the principles across products<a class="heading-link" href="#what-family-management-must-protect" aria-label="Link to this section">#</a></h3>
+<div class="po-principle-grid">
+<div class="po-principle">
+<p>
+<strong>Judge the combined result.</strong> Check the whole experience
+and both sides of a handoff; retain useful differences.
+</p>
+</div>
+<div class="po-principle">
+<p>
+<strong>Test reuse in each setting.</strong> Different people,
+information or consequences may require Limit or Split.
+</p>
+</div>
+<div class="po-principle">
+<p>
+<strong>Count the cost of sharing.</strong> Include adoption, training,
+integration, review and support; past effort does not justify more.
+</p>
+</div>
+<div class="po-principle">
+<p>
+<strong>Protect shared capacity.</strong> Limit active work around the
+people who must integrate and verify it.
+</p>
+</div>
+<div class="po-principle">
+<p>
+<strong>Keep the shared foundation dependable.</strong> Name support and
+recovery owners; recheck products when a common source changes.
+</p>
+</div>
+<div class="po-principle">
+<p>
+<strong>Show who gains and who carries work.</strong> Track local
+benefit, burden, accessibility and harm; count shared outcomes once.
+</p>
+</div>
+</div>
+<details class="po-detail">
+<summary>
+Examples and checks behind the six principles
+</summary>
+<h4 id="coherence-across-products">
+Judge the combined result
+</h4>
+<p>Check the whole experience with users and people on both sides of a
+handoff. Remove avoidable dependencies and duplicate work; retain
+differences that improve access or outcomes. This is
+<strong>Judgement</strong>: assess the combined result.</p>
+<h4 id="reuse-supported-by-transfer-evidence">
+Check before reusing an approach
+</h4>
+<p>A <strong>pattern</strong> describes an approach to a recurring
+problem in a stated context. Different people, information, permissions
+or consequences may require <strong>Limit</strong> or
+<strong>Split</strong>. This is <strong>Evidence</strong>: test reuse in
+each new setting; agreement among AI tools does not establish it.</p>
+<h4 id="commitment-proportionate-to-uncertainty">
+Count the cost of sharing
+</h4>
+<p>Include adoption, training, integration, review and support. Start
+with a small test. Past effort does not justify further investment;
+stopping a shared approach need not stop its products. This is
+<strong>Restraint</strong>: match commitment to evidence.</p>
+<h4 id="capacity-for-integration-and-verification">
+Keep shared work within people’s capacity
+</h4>
+<p><strong>Integration</strong> means making the parts work together.
+Set a work-in-progress limit including checking and waiting decisions.
+Order work around scarce reviewers; coordination can itself become a
+bottleneck. This is <strong>Restraint</strong>: AI output cannot create
+review capacity.</p>
+<h4 id="a-shared-foundation-that-remains-supportable">
+Make the shared foundation dependable
+</h4>
+<p>The <strong>shared substrate</strong> is the common information,
+models, tools and checks. Name owners and recovery arrangements.
+<strong>Transfer drift</strong> means reuse changes meaning, behaviour
+or safeguards. This is <strong>Adaptation</strong>: recheck affected
+products when shared sources change.</p>
+<h4 id="benefits-that-remain-visible-in-each-product">
+Check who benefits and who carries extra work
+</h4>
+<p>Track benefit, cost, accessibility and harm in each product. Count a
+shared outcome once. Adoption or a working connection does not establish
+sustained value. This is <strong>Accountability</strong>: product owners
+answer for local effects; Integration maintains the combined view.</p>
+</details>
+</section>
+<section id="accountabilities" class="level3" data-number="3.2">
+<h3 data-number="3.2"><span class="header-section-number">3.2</span>
+Give shared responsibilities named owners<a class="heading-link" href="#accountabilities" aria-label="Link to this section">#</a></h3>
+<p>Each product keeps the responsibilities in its chosen product guide.
+The <a href="https://aipf.ourresilient.world/guides/product.html" target="_blank" rel="noopener">Agile
+Product Guide</a> serves Agile product teams; the <a
+href="https://aipf.ourresilient.world/guides/product-owners-ai-guide.html" target="_blank" rel="noopener">Product
+Owners AI Guide</a> offers an accessible route for Product Owners. Both
+retain product-specific evidence and acceptance. Four family
+responsibilities cover the work between products.
+<strong>Accountability</strong> means someone remains answerable; it
+does not require a new job title.</p>
+<div class="table-scroll" role="region" aria-label="Table 6" tabindex="0"><table>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -150,77 +1153,235 @@ Figure 1. Understand the complete journey before choosing a small part to test. 
 <tbody>
 <tr>
 <td><strong>Family</strong></td>
-<td>The shared outcome, priorities across products, trade-offs and the family gate decision have one owner.</td>
+<td>The shared outcome, priorities across products, trade-offs and the
+family gate decision have one owner.</td>
 </tr>
 <tr>
 <td><strong>Integration</strong></td>
-<td>The family outline stays clear, the parts fit, dependencies are reduced and the combined benefit is checked.</td>
+<td>The family outline stays clear, the parts fit, dependencies are
+reduced and the combined benefit is checked.</td>
 </tr>
 <tr>
 <td><strong>Coordination</strong></td>
-<td>People can find the work, evidence, decisions and problems; shared work stays within review and integration capacity.</td>
+<td>People can find the work, evidence, decisions and problems; shared
+work stays within review and integration capacity.</td>
 </tr>
 <tr>
 <td><strong>Platform and Substrate</strong></td>
-<td>The common information, AI tools and controls are reliable, supported and safe to change.</td>
+<td>The common information, AI tools and controls are reliable,
+supported and safe to change.</td>
 </tr>
 </tbody>
 </table></div>
-<p>The Family owner holds the family gate decision. Specialists judge matters in their area; the gate decision still has one owner. One person may hold several responsibilities in a small family.</p>
-<p>Record owners are named below. Coordination does not grant spending authority or override product acceptance.</p>
-<h2 id="evidence-and-its-commitments">Keep five core records; add a Pattern when useful</h2>
-<p>AIPF calls these records <strong>artefacts</strong>. Use existing views where suitable and one agreed source per fact. The family outline opens the Dependency and Integration Map. The optional Pattern records a reusable approach when that would help; it is not a sixth core commitment.</p>
-<h3 id="dependency-and-integration-map">What must connect — Dependency and Integration Map</h3>
-<p>Show which product supplies what to another, and who owns each side. Include the information or service, its source and version, permissions and the checks needed before it is used. Say what happens if it is missing, unclear or wrong. Remove dependencies where you can.</p>
-<p><strong>Owner:</strong> Integration. <strong>Built from:</strong> the family outline and each product’s dependencies.</p>
-<h3 id="shared-substrate-map">What everyone relies on — Shared Substrate Map</h3>
-<p>Show the shared tools, sources, models and checking services. Name owners, supported uses, capacity, costs and recovery arrangements. Identify changes that require product owners to recheck their use.</p>
-<p><strong>Owner:</strong> Platform and Substrate. <strong>Feeds:</strong> the Portfolio’s Model and Vendor Concentration Register and Autonomy Boundary Map.</p>
-<h3 id="coordination-function-map">Who moves and judges the work — Coordination Function Map</h3>
-<p>Show who supplies, updates, receives and judges shared records. Identify waiting decisions, available reviewers, active-work limits and when an issue needs a different decision-maker. Keep AI’s routing tasks separate from human decisions.</p>
-<p><strong>Owner:</strong> Coordination. Board movement or an agent’s completion message is not approval. Link dependent work to the recorded authority; test that missing or withdrawn authority stops it.</p>
-<h3 id="cross-product-evidence-ledger">What reuse is supported — Cross-Product Evidence Ledger</h3>
-<p>For each important claim, keep a reference, source, date, method, setting, result, uncertainty and permitted reuse. Include contrary findings. Distinguish observed results, estimates and AI-generated material.</p>
-<p>Keep earlier versions when a source or assumption changes. Mark what is no longer current, identify affected decisions and ask their owners to reassess. Pause or restrict affected use when its agreed risk rules require it. Unaffected work can continue.</p>
-<p><strong>Owner:</strong> Coordination maintains the view; source and product owners own claims. <strong>Built from:</strong> product Assumption and Evidence Maps, End-to-End Evidence Slices and Learning Records. Link Pattern versions to tested contexts and contrary findings.</p>
-<h3 id="family-benefits-map">Who gains and who pays — Family Benefits Map</h3>
-<p>Link the intended outcome to expected and observed benefit in each product. Keep the measure, starting position, period, owner and source. Show shared costs, local burden, harm and the basis for each product’s contribution. Do not add unlike measures or count one outcome repeatedly.</p>
-<p><strong>Owner:</strong> Integration; product owners own local results. <strong>Built from:</strong> product Acceptance Records and benefit measures. <strong>Feeds:</strong> the Portfolio’s Benefits Realisation Map.</p>
-<h3 id="pattern">What can be reused — Pattern (optional)</h3>
-<p>Create a <strong>Pattern</strong> when a recurring problem warrants a reusable approach across the family. It may cover experience, workflow, information, technology or AI controls. It can serve every product where applicable; membership alone never requires adoption. A template or component may implement a pattern without describing its reasoning or limits.</p>
-<p>Keep a short record of:</p>
-<ul>
-<li>name, identifier, version, maintainer and status;</li>
-<li>problem, intended outcome, context, prerequisites and when not to use it;</li>
-<li>approach, what must remain consistent, permitted variations and an example;</li>
-<li>alternatives, trade-offs, costs, risks and failure/recovery behaviour;</li>
-<li>evidence links, tested product contexts, limitations and permitted uses;</li>
-<li>decision owner, review triggers and how to change or retire it.</li>
-</ul>
-<p>Propose it in Phase 1 when useful; test its intended range in Phase 2; decide supported uses and support in Phase 3. A candidate remains unproven outside its tested contexts. Record each product’s adoption, adaptation or non-use. Changes must identify affected users, prompt rechecking and preserve earlier versions; retirement must name a replacement or withdrawal route.</p>
-<p><strong>Owner:</strong> Integration coordinates a named maintainer. The Family owner decides shared status; product owners accept their own use. Link evidence to the Cross-Product Evidence Ledger and shared implementations to the Substrate Map rather than duplicating either.</p>
-<p><strong>Invented example:</strong> a handoff carries the original request, supporting source, limitations and a correction route. Products may use different forms or systems while preserving that information. Its suitability still needs testing.</p>
-<h2 id="shared-ai-controls">Share AI controls safely</h2>
-<p>The shared <strong>AI Model Harness</strong> is the set of rules and checks around AI use. The Platform and Substrate owner looks after common controls. Products check whether those controls are suitable in their own setting. Wider AI permission needs evidence and continuing human oversight.</p>
-<p>Shared prompts, models or sources can repeat the same mistake; repeated agreement is not independent confirmation. Checks must be able to detect failures the producing system misses. AI doing Family routing, coordination or analysis also needs evaluated controls for those tasks, with named owners and stop conditions.</p>
-<h2 id="relationship-to-the-other-guides">Send findings up and decisions back</h2>
-<p>The <a href="portfolio.html">Portfolio Guide</a> sets investment limits. Family translates them into shared expectations; the <a href="product.html">Product Guide</a> governs each product’s evidence and acceptance.</p>
-<p>Products return findings, costs, benefits and uncertainties. Family adds cross-product effects; Portfolio decides further investment. Use original source records. Return decisions with scope, conditions, owner and review point.</p>
-<p>These are connected decisions, not mandatory reporting layers. Products without a useful family decision connect directly to Portfolio. Routine work stays within agreed authority.</p>
-<h2 id="conclusion">Work with agile methods without adding needless layers</h2>
-<p>Keep a short, ordered list of shared work. Review useful increments with users and support people; use existing routines for cross-product decisions.</p>
-<p><a href="https://less.works/less/framework">LeSS</a> and <a href="https://www.scrum.org/resources/nexus-guide">Nexus</a> coordinate teams working on one product. Apply their lessons about whole outcomes and fewer dependencies without treating every team as a product or importing mandatory roles, events or common Sprint lengths.</p>
-<p>Practise <strong>judgement, evidence, restraint, accountability and adaptation</strong>.</p>
-<h2 id="sources">Sources</h2>
-<h3 id="pattern-practice-in-2026">Pattern practice in 2026</h3>
-<p><a href="https://design-system.service.gov.uk/patterns/">GOV.UK</a> describes adaptable task patterns; its <a href="https://design-system.service.gov.uk/community/contribution-criteria/">contribution criteria</a> require evidence of usefulness and tested contexts. <a href="https://www.carbondesignsystem.com/building-blocks/core/patterns/overview">IBM Carbon</a> distinguishes patterns from coded components. <a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/">Microsoft</a> emphasises problem fit and trade-offs; <a href="https://docs.cloud.google.com/architecture/choose-design-pattern-agentic-ai-system">Google Cloud</a> applies contextual selection to AI workflows. These sources, checked in October 2026, inform this proposed AIPF record; they do not prescribe it.</p>
-<h3 id="further-reading">Further reading</h3>
-<p><a href="https://less.works/less/principles">LeSS principles</a> and the <a href="https://www.scrum.org/resources/nexus-guide">Nexus Guide</a> inform the whole-product perspective; this is not their implementation manual.</p>
-<p>For shared information fields and phase handoffs, use the <a href="framework.html#information-specification-and-source-ownership">Framework’s shared information checklist</a>. Further family-specific templates can be developed as needed without duplicating the records.</p>
-<p>Earlier versions also drew on Conway’s Law and Team Topologies to consider communication and the demands placed on teams.</p>
-<h2 id="acknowledgements">Acknowledgements</h2>
-<h3 id="authors">Authors</h3>
+<p>The Family owner holds the family gate decision. Specialists judge
+matters in their area; the gate decision still has one owner. One person
+may hold several responsibilities in a small family.</p>
+<p>Record owners are named below. Coordination does not grant spending
+authority or override product acceptance.</p>
+</section>
+<section id="shared-ai-controls" class="level3" data-number="3.3">
+<h3 data-number="3.3"><span class="header-section-number">3.3</span>
+Share AI controls safely<a class="heading-link" href="#shared-ai-controls" aria-label="Link to this section">#</a></h3>
+<p>The shared <strong>AI Model Harness</strong> is the set of rules and
+checks around AI use. The Platform and Substrate owner looks after
+common controls. Products check whether those controls are suitable in
+their own setting. Wider AI permission needs evidence and continuing
+human oversight.</p>
+<p>Shared prompts, models or sources can repeat the same mistake;
+repeated agreement is not independent confirmation. Checks must be able
+to detect failures the producing system misses. AI doing Family routing,
+coordination or analysis also needs evaluated controls for those tasks,
+with named owners and stop conditions.</p>
+</section>
+<section id="relationship-to-the-other-guides" class="level3"
+data-number="3.4">
+<h3 data-number="3.4"><span class="header-section-number">3.4</span>
+Send findings up and decisions back<a class="heading-link" href="#relationship-to-the-other-guides" aria-label="Link to this section">#</a></h3>
+<p>The <a
+href="https://aipf.ourresilient.world/guides/portfolio.html" target="_blank" rel="noopener">Portfolio
+Guide</a> sets investment limits. Family translates them into shared
+expectations; the <a
+href="https://aipf.ourresilient.world/guides/product.html" target="_blank" rel="noopener">Agile Product
+Guide</a> governs each product’s evidence and acceptance.</p>
+<p>Products return findings, costs, benefits and uncertainties. Family
+adds cross-product effects; Portfolio decides further investment. Use
+original source records. Return decisions with scope, conditions, owner
+and review point.</p>
+<p>These are connected decisions, not mandatory reporting layers.
+Products without a useful family decision connect directly to Portfolio.
+Routine work stays within agreed authority.</p>
+</section>
+<section id="conclusion" class="level3" data-number="3.5">
+<h3 data-number="3.5"><span class="header-section-number">3.5</span>
+Work with agile methods without adding needless layers<a class="heading-link" href="#conclusion" aria-label="Link to this section">#</a></h3>
+<p>Keep a short, ordered list of shared work. Review useful increments
+with users and support people; use existing routines for cross-product
+decisions.</p>
+<p><a href="https://less.works/less/framework">LeSS</a> and <a
+href="https://www.scrum.org/resources/nexus-guide">Nexus</a> coordinate
+teams working on one product. Apply their lessons about whole outcomes
+and fewer dependencies without treating every team as a product or
+importing mandatory roles, events or common Sprint lengths.</p>
+<p>Practise <strong>judgement, evidence, restraint, accountability and
+adaptation</strong>.</p>
+</section>
+</section>
+<section id="sources" class="level2 unnumbered">
+<h2 class="unnumbered">Sources</h2>
+<details class="po-detail">
+<summary>
+Sources and further reading
+</summary>
+<h4 id="pattern-practice-in-2026">
+Pattern practice in 2026
+</h4>
+<p><a href="https://design-system.service.gov.uk/patterns/">GOV.UK</a>
+describes adaptable task patterns; its <a
+href="https://design-system.service.gov.uk/community/contribution-criteria/">contribution
+criteria</a> require evidence of usefulness and tested contexts. <a
+href="https://www.carbondesignsystem.com/building-blocks/core/patterns/overview">IBM
+Carbon</a> distinguishes patterns from coded components. <a
+href="https://learn.microsoft.com/en-us/azure/architecture/patterns/">Microsoft</a>
+emphasises problem fit and trade-offs; <a
+href="https://docs.cloud.google.com/architecture/choose-design-pattern-agentic-ai-system">Google
+Cloud</a> applies contextual selection to AI workflows. These sources,
+checked in October 2026, inform this AIPF record; they do not prescribe
+it.</p>
+<h4 id="further-reading">
+Further reading
+</h4>
+<p><a href="https://less.works/less/principles">LeSS principles</a> and
+the <a href="https://www.scrum.org/resources/nexus-guide">Nexus
+Guide</a> inform the whole-product perspective; this is not their
+implementation manual.</p>
+<p>Use <a
+href="https://aipf.ourresilient.world/guides/framework.html#artefacts" target="_blank" rel="noopener">Framework
+Artefacts</a> for the shared records and their relationships. Keep the
+source, owner, version, context, decision and limits visible in family
+records. Develop family-specific templates only where useful, without
+duplicating those records.</p>
+<p>Earlier versions also drew on Conway’s Law and Team Topologies to
+consider communication and the demands placed on teams.</p>
+</details>
+</section>
+<section id="acknowledgements" class="level2 unnumbered">
+<h2 class="unnumbered">Acknowledgements</h2>
+<section id="authors" class="level3 unnumbered">
+<h3 class="unnumbered">Authors</h3>
 <p>Written by Rick Molony and Ghulam Akbar, with AI assistance.</p>
-<h3 id="licence">Licence</h3>
-<p>This guide is offered under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International licence</a>.</p>
-<section class="article-feedback"><h2>Help improve this page</h2><p>Found a problem or a better way to explain it? <a href="../feedback/index.html?page=https%3A%2F%2Faipf.ourresilient.world%2Fguides%2Fproduct-family.html">Suggest a correction or improvement</a>.</p></section></article></div></main><footer class="site-footer"><div><strong>AI Product Flow</strong><p>Start small. Check results. Decide the next step.</p></div><nav aria-label="Footer"><a href="https://ourresilient.world/">Our Resilient World</a><a href="https://research.ourresilient.world/">AI-Assisted Research</a><a href="../feedback/index.html">Feedback</a><a href="../reuse.html">Reuse and attribution</a></nav><p>Except where otherwise noted, content is licensed <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Cite the named authors, title, edition and source; indicate changes.</p></footer></body></html>
+</section>
+<section id="licence" class="level3 unnumbered">
+<h3 class="unnumbered">Licence</h3>
+<p>This guide is offered under the <a
+href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons
+Attribution-ShareAlike 4.0 International licence</a>.</p>
+</section>
+</section>
+</section>
+        </article></div><section class="article-feedback"><h2>Help improve this page</h2><p>Found a problem or a better way to explain it? <a href="../feedback/index.html?page=https%3A%2F%2Faipf.ourresilient.world%2Fguides%2Fproduct-family.html" target="_blank" rel="noopener">Suggest a correction or improvement</a>.</p></section></main><footer class="site-footer"><div><strong>AI Product Flow</strong><p>Start small. Check results. Decide the next step.</p></div><nav aria-label="Footer"><a href="https://ourresilient.world/">Our Resilient World</a><a href="https://research.ourresilient.world/" target="_blank" rel="noopener">AI-Assisted Research</a><a href="../feedback/index.html" target="_blank" rel="noopener">Feedback</a><a href="../reuse.html" target="_blank" rel="noopener">Reuse and attribution</a></nav><p>This guide is licensed <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. Cite the named authors, title, edition and source; indicate changes.</p></footer><script id="aipf-guide-tabs">
+/* Progressive enhancement for explicitly tabbed AIPF guides. No network access. */
+(() => {
+  'use strict';
+  const nav = document.querySelector('.guide-tabs');
+  const panels = [...document.querySelectorAll('section.guide-tab')];
+  if (!nav || panels.length !== 3) return;
+  const tabs = [...nav.querySelectorAll('a')];
+  const readAll = document.querySelector('.guide-read-all');
+  let all = false;
+  let current = 0;
+  const details = [...document.querySelectorAll('details.po-detail')];
+  let readAllState = null;
+  let printState = null;
+  function expandDetailsFor(target) {
+    for (let node = target; node; node = node.parentElement) {
+      if (node.tagName === 'DETAILS') node.open = true;
+    }
+  }
+  function setReadAll(next) {
+    if (next && !all) {
+      readAllState = details.map(node => node.open);
+      details.forEach(node => { node.open = true; });
+    } else if (!next && all && readAllState) {
+      details.forEach((node, i) => { node.open = readAllState[i]; });
+      readAllState = null;
+    }
+    all = next;
+  }
+  function targetFromHash() {
+    try { return document.getElementById(decodeURIComponent(location.hash.slice(1))); }
+    catch (_) { return null; }
+  }
+  function show(index, focus = false) {
+    current = index;
+    panels.forEach((panel, i) => {
+      panel.hidden = !all && i !== index;
+      if (all) { panel.removeAttribute('role'); panel.removeAttribute('aria-labelledby'); }
+      else { panel.setAttribute('role', 'tabpanel'); panel.setAttribute('aria-labelledby', tabs[i].id); }
+      tabs[i].setAttribute('aria-selected', String(i === index));
+      tabs[i].tabIndex = i === index ? 0 : -1;
+    });
+    readAll.setAttribute('aria-pressed', String(all));
+    readAll.textContent = all ? 'Show one tab' : 'Read all sections';
+    if (focus) tabs[index].focus();
+  }
+  function followHash(focus = false) {
+    const target = targetFromHash();
+    if (target) expandDetailsFor(target);
+    const panel = target && target.closest('section.guide-tab');
+    if (panel) show(panels.indexOf(panel));
+    else if (!location.hash) show(0);
+    if (target && focus) {
+      const destination = target.matches('section.guide-tab') ? target.querySelector('h2') : target;
+      if (!destination.hasAttribute('tabindex')) destination.setAttribute('tabindex', '-1');
+      destination.focus({preventScroll: true});
+      if (destination.scrollIntoView) destination.scrollIntoView({block: 'start'});
+    }
+  }
+  nav.setAttribute('role', 'tablist');
+  tabs.forEach((tab, i) => {
+    tab.id = 'guide-tab-' + i;
+    tab.setAttribute('role', 'tab');
+    tab.setAttribute('aria-controls', panels[i].id);
+    tab.addEventListener('click', event => {
+      event.preventDefault(); setReadAll(false);
+      history.pushState(null, '', tab.getAttribute('href'));
+      show(i, true);
+    });
+    tab.addEventListener('keydown', event => {
+      let index = i;
+      if (event.key === 'ArrowRight') index = (i + 1) % tabs.length;
+      else if (event.key === 'ArrowLeft') index = (i + tabs.length - 1) % tabs.length;
+      else if (event.key === 'Home') index = 0;
+      else if (event.key === 'End') index = tabs.length - 1;
+      else if (event.key === ' ') { event.preventDefault(); tab.click(); return; }
+      else return;
+      event.preventDefault(); tabs[index].click();
+    });
+  });
+  document.addEventListener('click', event => {
+    const link = event.target.closest('a[href^="#"]');
+    if (!link || nav.contains(link)) return;
+    const id = link.getAttribute('href');
+    let target;
+    try { target = document.getElementById(decodeURIComponent(id.slice(1))); } catch (_) { return; }
+    if (!target) return;
+    event.preventDefault(); history.pushState(null, '', id); followHash(true);
+  });
+  readAll.hidden = false;
+  readAll.addEventListener('click', () => { setReadAll(!all); show(current); });
+  window.addEventListener('hashchange', () => followHash(true));
+  window.addEventListener('popstate', () => followHash(true));
+  // CSS also exposes every section for print; events cover print engines using hidden attributes.
+  window.addEventListener('beforeprint', () => {
+    if (!printState) printState = details.map(node => node.open);
+    panels.forEach(panel => { panel.hidden = false; });
+    details.forEach(node => { node.open = true; });
+  });
+  window.addEventListener('afterprint', () => {
+    if (printState) details.forEach((node, i) => { node.open = printState[i]; });
+    printState = null;
+    show(current);
+  });
+  show(0); followHash(Boolean(location.hash));
+})();
+</script></body></html>
