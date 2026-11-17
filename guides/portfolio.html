@@ -1,114 +1,742 @@
-<!doctype html><html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Choose which work receives scarce funding, attention and review capacity."><title>Portfolio Guide · AI Product Flow</title><link rel="stylesheet" href="../assets/site.css"></head><body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="header-inner"><a class="brand" href="../index.html"><img src="../assets/aipf-mark.svg" alt="" width="64" height="48"><span><strong>AI Product Flow</strong><small>Guides and case studies</small></span></a><nav aria-label="Primary"><a href="index.html" aria-current="page">Guides</a><a href="../case-studies/index.html">Case studies</a><a href="../feedback/index.html">Feedback</a></nav></div></header><main id="main"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> <span aria-hidden="true">/</span> <a href="index.html">Guides</a> <span aria-hidden="true">/</span> <span>Portfolio Guide</span></nav><header class="page-intro"><p class="eyebrow">AI Product Flow · Edition 1.0</p><h1>Portfolio Guide</h1><p class="deck">Choose which work receives scarce funding, attention and review capacity.</p><p class="byline">By Rick Molony and Ghulam Akbar · developed with AI assistance</p></header><div class="reading-layout"><aside class="toc"><nav aria-label="On this page"><strong>On this page</strong><ul><li><a href="#purpose-of-the-guide">Choose what deserves your time and money</a></li><li><a href="#definition-of-an-ai-portfolio">What is an AI portfolio?</a></li><li><a href="#the-portfolio-guide-at-a-glance">See the whole set of choices</a></li><li><a href="#what-portfolio-management-must-protect">Six habits that keep investment useful</a></li><li><a href="#portfolio-decisions">Make the next decision clear</a></li><li><a href="#accountabilities">Make each responsibility someone’s job</a></li><li><a href="#evidence-and-its-commitments">Keep five useful records</a></li><li><a href="#relationship-to-the-other-guides">Connect portfolio, family and product decisions</a></li><li><a href="#conclusion">Start with one real choice</a></li><li><a href="#sources">Sources</a></li><li><a href="#acknowledgements">Acknowledgements</a></li></ul></nav></aside><article class="reading"><h2 id="purpose-of-the-guide">Choose what deserves your time and money</h2>
-<p>Your organisation may have many ideas for using AI. It cannot do all of them well at once.</p>
-<p>AI can generate proposals faster than people can judge, fund and absorb them. Protecting that capacity is part of the portfolio’s purpose. Include work created or supported by AI even when the resulting product contains no AI. This guide helps you choose what to support, how much to invest next, and when to change direction.</p>
-<p>Start with three questions: <strong>What would improve? What have we learned? What should we do next?</strong> Use them for new ideas and work already under way.</p>
-<p>This guide is for leaders, sponsors and anyone responsible for a group of AI investments. A small business can use a short shared record. A larger organisation may use its existing investment committee. You do not need a new management layer or software tool.</p>
-<p>For step-by-step help, use the <a href="portfolio-implementation.html">Portfolio Implementation Guide</a>. The <a href="framework.html">AI Product Flow Framework</a> explains their shared principles.</p>
-<h2 id="definition-of-an-ai-portfolio">What is an AI portfolio?</h2>
-<p>An <strong>AI portfolio</strong> is the collection of AI-related work that an organisation funds, oversees or runs. It can include research, services, staff tools, products, shared information and ongoing support. Include required work, such as meeting an obligation, as well as new opportunities. The AI portfolio is a view within your organisation’s wider portfolio. When a choice trades AI work against other work, take it to whoever decides that wider portfolio.</p>
-<p>A <strong>bet</strong> is a limited commitment of time, money or effort to answer a question. Someone owns it. The record says what the limit is and what would cause the work to stop or return for review.</p>
-<p>For example: “Allow two weeks to find out whether AI can help staff prepare accurate answers. Keep a person responsible for checking every answer.” This is a testable request. “Transform customer service with AI” is a direction that still needs a useful next step.</p>
-<p>A bet may support several products. One product may receive several rounds of support. A completed research bet can inform a build decision; it does not grant permission to build. Money already spent is part of the history, not a reason to spend more.</p>
-<h2 id="the-portfolio-guide-at-a-glance">See the whole set of choices</h2>
-<figure class="flow-figure" aria-labelledby="portfolio-figure-caption">
-<p class="figure-label">
-Before you support the next step
+<!doctype html><html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Manage growing AI-enabled capacity by choosing which work to fund, review and support."><title>AI Portfolio Guide · AI Product Flow</title><link rel="stylesheet" href="../assets/site.css">
+<link rel="canonical" href="https://aipf.ourresilient.world/guides/portfolio.html"><meta name="source-sha256" content="60cf720828bdaedc964183047c86f5000f8a41e3603109d959e7ecd06726e543"><style>#po-guide {
+  --ink: #25312c; --muted: #59625b; --paper: #faf8f2; --line: #d4d6cb;
+  --soft: #efeee5; --accent: #a34e32;
+  --serif: Georgia, "Times New Roman", serif;
+  --sans: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+}
+#po-guide[data-guide-scope="product"] { --accent: #375d72; }
+#po-guide[data-guide-scope="family"] { --accent: #376353; }
+#po-guide[data-guide-scope="portfolio"] { --accent: #715237; }
+#po-guide * { box-sizing: border-box; }
+#po-guide { color-scheme: light; scroll-behavior: smooth; }
+#po-guide { margin: 0; color: var(--ink); background: var(--paper); font: 17px/1.75 var(--sans); }
+#po-guide a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em; }
+#po-guide a:hover { color: var(--accent); }
+#po-guide :focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+#po-guide .skip-link { position: absolute; top: 8px; left: 8px; z-index: 100; padding: 10px 16px; background: var(--ink); color: white; transform: translateY(-180%); }
+#po-guide .skip-link:focus { transform: none; }
+#po-guide .header-shell, #po-guide .document-shell, #po-guide .footer-shell { width: min(1180px, calc(100% - 80px)); margin-inline: auto; }
+#po-guide .site-header { border-top: 5px solid var(--ink); border-bottom: 1px solid var(--line); }
+#po-guide .header-shell { min-height: 110px; display: flex; gap: 30px; align-items: center; justify-content: space-between; }
+#po-guide .brand-lockup { display: inline-flex; align-items: center; gap: 15px; text-decoration: none; flex-shrink: 0; }
+#po-guide .flow-mark { width: 58px; height: 44px; }
+#po-guide .brand-text strong { display: block; font: 600 23px/1.2 var(--serif); letter-spacing: -.5px; }
+#po-guide .brand-text small { display: block; margin-top: 5px; font: 11px/1.4 var(--sans); color: var(--muted); }
+#po-guide .series-nav { display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 13px; }
+#po-guide .series-nav a { padding-block: 10px; border-bottom: 2px solid transparent; text-decoration: none; }
+#po-guide .series-nav a[aria-current="page"] { border-color: var(--accent); color: var(--accent); font-weight: 700; }
+#po-guide .publication-banner { display: grid; grid-template-columns: minmax(0, 1fr) 150px; gap: 60px; padding: 66px 0 45px; }
+#po-guide .eyebrow { margin: 0 0 19px; color: var(--accent); font: 600 11px/1.5 var(--sans); text-transform: uppercase; letter-spacing: .14em; }
+#po-guide h1 { max-width: 850px; margin: 0; font: 400 clamp(42px, 4.6vw, 65px)/1.06 var(--serif); letter-spacing: -.045em; text-wrap: balance; }
+#po-guide .guide-deck { max-width: 620px; margin: 25px 0 0; font: 19px/1.55 var(--sans); color: var(--muted); }
+#po-guide .edition { display: flex; flex-direction: column; align-items: flex-start; border-left: 1px solid var(--line); padding-left: 27px; font-size: 11px; line-height: 1.9; color: var(--muted); }
+#po-guide .edition-number { display: block; color: var(--accent); font: 400 76px/1 var(--serif); letter-spacing: -.06em; margin-bottom: 24px; }
+#po-guide .stage-badge { color: var(--ink); font-weight: 700; }
+#po-guide .preview-notice { display: flex; justify-content: space-between; gap: 18px; border-block: 1px solid var(--line); padding: 12px 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
+#po-guide .preview-notice p { margin: 0; }
+#po-guide .preview-notice a { flex-shrink: 0; }
+#po-guide .document-layout { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 64px; align-items: start; padding: 48px 0 80px; }
+#po-guide .desktop-toc { position: sticky; top: 24px; max-height: calc(100vh - 48px); overflow-y: auto; padding-right: 25px; border-right: 1px solid var(--line); scrollbar-width: thin; }
+#po-guide .desktop-toc nav > strong { display: block; margin-bottom: 16px; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+#po-guide .desktop-toc ul, #po-guide .mobile-toc ul { margin: 0; padding: 0; list-style: none; }
+#po-guide .desktop-toc ul ul, #po-guide .mobile-toc ul ul { margin: 6px 0; }
+#po-guide .desktop-toc > nav > ul > li > a, #po-guide .mobile-toc nav > ul > li > a { font-weight: 700; }
+#po-guide .desktop-toc ul ul ul { padding-left: 18px; border-left: 1px solid var(--line); margin-left: 4px; }
+#po-guide .desktop-toc li, #po-guide .mobile-toc li { font-size: 12px; line-height: 1.45; }
+#po-guide .desktop-toc a, #po-guide .mobile-toc a { display: block; padding: 5px 0; color: var(--muted); text-decoration: none; }
+#po-guide .desktop-toc a:hover, #po-guide .mobile-toc a:hover { color: var(--accent); text-decoration: underline; }
+#po-guide .desktop-toc .back-top { margin-top: 22px; font-size: 11px; }
+#po-guide .toc-section-number { display: inline-block; color: var(--accent); font-size: .9em; min-width: 1.6em; font-variant-numeric: tabular-nums; }
+#po-guide .mobile-toc { display: none; }
+#po-guide .document-content { min-width: 0; max-width: 74ch; }
+#po-guide .document-content p { margin: 0 0 1.05em; }
+#po-guide h2, #po-guide h3, #po-guide h4, #po-guide section[id], #po-guide details[id] { scroll-margin-top: 26px; }
+#po-guide h2, #po-guide h3, #po-guide h4 { color: var(--ink); text-wrap: balance; }
+#po-guide h2 { margin: 0 0 22px; padding-top: 25px; border-top: 1px solid var(--line); font: 400 clamp(26px, 2.5vw, 34px)/1.18 var(--serif); letter-spacing: -.025em; }
+#po-guide .document-content section.level2 { margin-bottom: 50px; }
+#po-guide .document-content section.level2:first-of-type > h2 { border-top: 0; padding-top: 0; }
+#po-guide h3 { margin: 30px 0 13px; font: 600 20px/1.35 var(--sans); letter-spacing: -.025em; }
+#po-guide h4 { font: 600 17px/1.4 var(--sans); margin: 25px 0 12px; }
+#po-guide .header-section-number { margin-right: 10px; color: var(--accent); font: 400 12px/1 var(--mono); vertical-align: middle; }
+#po-guide h3 .header-section-number { color: var(--muted); font-size: 10px; }
+#po-guide .heading-link { color: var(--muted); font: 12px var(--sans); margin-left: 8px; opacity: 0; text-decoration: none; }
+#po-guide h2:hover .heading-link, #po-guide h3:hover .heading-link, #po-guide .heading-link:focus-visible { opacity: 1; }
+#po-guide ul, #po-guide ol { padding-left: 24px; margin: 18px 0 24px; }
+#po-guide li { padding-left: 3px; margin-block: 7px; }
+#po-guide li::marker { color: var(--accent); }
+#po-guide strong { font-weight: 650; }
+#po-guide blockquote { margin: 28px 0; border-left: 3px solid var(--accent); padding: 4px 0 4px 22px; font-family: var(--serif); font-size: 21px; }
+#po-guide code, #po-guide pre { font-family: var(--mono); font-size: .86em; }
+#po-guide code { background: var(--soft); padding: 2px 4px; overflow-wrap: anywhere; }
+#po-guide pre { padding: 20px; overflow: auto; background: var(--soft); }
+#po-guide pre code { padding: 0; }
+#po-guide hr { border: 0; border-top: 1px solid var(--line); margin-block: 35px; }
+#po-guide .table-scroll { max-width: 100%; overflow-x: auto; margin: 25px 0; scrollbar-width: thin; }
+#po-guide table { border-collapse: collapse; width: 100%; font-size: 14px; line-height: 1.6; }
+#po-guide th, #po-guide td { padding: 14px 16px 14px 0; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; min-width: 115px; }
+#po-guide th { padding-top: 10px; border-block: 1px solid var(--ink); font-size: 11px; letter-spacing: .035em; color: var(--muted); }
+#po-guide td:first-child { width: 25%; }
+#po-guide tbody tr:nth-child(even) { background: #efeee540; }
+#po-guide img, #po-guide svg { max-width: 100%; height: auto; }
+#po-guide figure { margin: 34px 0; }
+#po-guide figure img { display: block; width: 100%; }
+#po-guide figcaption { padding-top: 12px; margin-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; line-height: 1.6; }
+#po-guide .flow-figure { border-top: 3px solid var(--accent); padding-top: 18px; }
+#po-guide .figure-label { margin: 0 0 18px !important; font: 600 11px/1.4 var(--sans); letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+#po-guide .diagram-columns { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 0; padding: 0; list-style: none; }
+#po-guide .diagram-columns > li { padding: 5px 18px; margin: 0; border-left: 1px solid var(--line); font-size: 13px; line-height: 1.55; }
+#po-guide .diagram-columns > li:first-child { border-left: 0; padding-left: 0; }
+#po-guide .diagram-columns > li:last-child { padding-right: 0; }
+#po-guide .diagram-columns strong { display: block; margin-bottom: 9px; font: 400 23px/1.15 var(--serif); letter-spacing: -.02em; }
+#po-guide .diagram-columns span { display: block; margin-top: 10px; color: var(--muted); font-size: 12px; }
+#po-guide .diagram-band { display: flex; gap: 12px; justify-content: space-between; padding: 12px 0; margin: 18px 0 0; border-block: 1px solid var(--line); font-size: 12px; }
+#po-guide .diagram-band span { color: var(--accent); }
+#po-guide .diagram-route { display: grid; grid-template-columns: 1fr 36px 1fr; align-items: center; margin: 12px 0 20px; font-size: 13px; line-height: 1.5; }
+#po-guide .diagram-route > div { padding: 16px; border: 1px solid var(--line); }
+#po-guide .diagram-route strong { display: block; color: var(--accent); margin-bottom: 4px; }
+#po-guide .diagram-arrow { color: var(--accent); text-align: center; font-size: 24px; }
+#po-guide .diagram-outcomes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; border-top: 1px solid var(--line); padding-top: 18px; }
+#po-guide .diagram-outcomes p { font-size: 12px; line-height: 1.5; margin: 0; }
+#po-guide .diagram-outcomes strong { display: block; color: var(--accent); font-size: 14px; margin-bottom: 5px; }
+#po-guide .evidence-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 26px; }
+#po-guide .evidence-grid div { padding: 15px 0; border-bottom: 1px solid var(--line); }
+#po-guide .evidence-grid strong { display: block; font: 400 23px/1.2 var(--serif); margin-bottom: 7px; }
+#po-guide .evidence-grid p { margin: 0; font-size: 13px; line-height: 1.6; }
+#po-guide .decision-line { margin: 0 !important; padding: 18px 0 2px; text-align: center; font-size: 13px; }
+#po-guide .decision-line strong { display: block; color: var(--accent); font: 400 25px/1.4 var(--serif); }
+#po-guide .practice, #po-guide .framework-rule { margin: 28px 0; padding: 20px; border-left: 3px solid var(--accent); background: var(--soft); }
+#po-guide .site-footer { border-top: 3px solid var(--ink); background: var(--soft); }
+#po-guide .footer-shell { display: grid; grid-template-columns: 1fr 260px; gap: 35px 70px; padding-block: 44px 28px; }
+#po-guide .footer-lead > p { margin: 0; font-size: 12px; color: var(--muted); }
+#po-guide .footer-lead .eyebrow { margin-bottom: 14px; color: var(--accent); font-size: 10px; }
+#po-guide .footer-lead .footer-statement { font: 400 clamp(24px, 3vw, 34px)/1.22 var(--serif); color: var(--ink); margin-bottom: 15px; letter-spacing: -.025em; }
+#po-guide .footer-nav { font-size: 12px; }
+#po-guide .footer-nav strong { display: block; margin-bottom: 12px; color: var(--muted); }
+#po-guide .footer-nav a { display: flex; gap: 18px; padding-block: 5px; text-decoration: none; color: var(--muted); font-size: 11px; }
+#po-guide .footer-nav a span { color: var(--ink); font-size: 13px; }
+#po-guide .footer-nav a:hover span { text-decoration: underline; }
+#po-guide .footer-bottom { grid-column: 1 / -1; display: flex; gap: 20px; justify-content: space-between; border-top: 1px solid var(--line); padding-top: 18px; font-size: 11px; color: var(--muted); }
+#po-guide .footer-bottom p { margin: 0; }
+#po-guide .source-details { grid-column: 1 / -1; margin-top: -15px; font-size: 11px; color: var(--muted); scroll-margin-top: 20px; }
+#po-guide summary { cursor: pointer; }
+#po-guide .source-details p { max-width: 70ch; }
+#po-guide .source-details dl { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 6px 18px; }
+#po-guide .source-details dt, #po-guide .source-details dd { margin: 0; overflow-wrap: anywhere; }
+#po-guide .source-identity { font-family: var(--mono); font-size: 10px; }
+@media (max-width: 1000px) {#po-guide .header-shell, #po-guide .document-shell, #po-guide .footer-shell { width: calc(100% - 48px); }
+#po-guide .header-shell { flex-wrap: wrap; gap: 15px; padding-block: 20px 12px; }
+#po-guide .series-nav { gap: 8px 20px; }
+#po-guide .publication-banner { padding-top: 42px; gap: 28px; }
+#po-guide .document-layout { grid-template-columns: 195px minmax(0, 1fr); gap: 30px; }
+#po-guide .desktop-toc { padding-right: 15px; }
+#po-guide .diagram-columns strong { font-size: 20px; }}
+@media (max-width: 760px) {#po-guide { font-size: 16px; line-height: 1.7; }
+#po-guide .publication-banner { grid-template-columns: 1fr; gap: 25px; padding-bottom: 28px; }
+#po-guide .edition { flex-direction: row; flex-wrap: wrap; gap: 5px 16px; border: 0; padding: 0; align-items: baseline; }
+#po-guide .edition-number { font: 400 21px var(--serif); margin: 0; }
+#po-guide .guide-deck { font-size: 17px; margin-top: 18px; }
+#po-guide .preview-notice { flex-direction: column; gap: 4px; font-size: 11px; }
+#po-guide .document-layout { display: block; padding-block: 30px 35px; }
+#po-guide .desktop-toc { display: none; }
+#po-guide .mobile-toc { display: block; border-bottom: 1px solid var(--line); font-size: 13px; }
+#po-guide .mobile-toc summary { padding-block: 17px; font-weight: 600; }
+#po-guide .mobile-toc nav { padding: 0 5px 20px; }
+#po-guide .mobile-toc ul ul ul { padding-left: 18px; }
+#po-guide .document-content section.level2 { margin-bottom: 36px; }
+#po-guide h2 { font-size: 27px; }
+#po-guide h3 { font-size: 19px; }
+#po-guide .heading-link { opacity: 1; }
+#po-guide th, #po-guide td { min-width: 120px; padding: 12px 14px 12px 0; }
+#po-guide table { font-size: 13px; }
+#po-guide .footer-shell { grid-template-columns: 1fr 180px; gap: 30px; }}
+@media (max-width: 480px) {#po-guide .header-shell, #po-guide .document-shell, #po-guide .footer-shell { width: calc(100% - 36px); }
+#po-guide .header-shell { gap: 17px; }
+#po-guide .brand-text strong { font-size: 22px; }
+#po-guide .series-nav { width: 100%; justify-content: space-between; gap: 5px; font-size: 12px; }
+#po-guide .series-nav a { padding-block: 5px; }
+#po-guide .publication-banner { padding-top: 33px; }
+#po-guide h1 { font-size: 42px; }
+#po-guide .eyebrow { font-size: 10px; }
+#po-guide .diagram-columns { display: block; }
+#po-guide .diagram-columns > li, #po-guide .diagram-columns > li:first-child, #po-guide .diagram-columns > li:last-child { border: 0; padding: 14px 0; border-bottom: 1px solid var(--line); }
+#po-guide .diagram-columns > li:first-child { padding-top: 0; }
+#po-guide .diagram-columns strong { font-size: 23px; }
+#po-guide .diagram-columns span { margin-top: 5px; }
+#po-guide .diagram-band { display: block; }
+#po-guide .diagram-band span { display: block; }
+#po-guide .diagram-route { grid-template-columns: 1fr; gap: 4px; }
+#po-guide .diagram-arrow { transform: rotate(90deg); }
+#po-guide .diagram-outcomes { grid-template-columns: 1fr; gap: 16px; }
+#po-guide .evidence-grid { grid-template-columns: 1fr; }
+#po-guide .footer-shell { grid-template-columns: 1fr; }
+#po-guide .footer-bottom { flex-direction: column; gap: 10px; }
+#po-guide .source-details dl { grid-template-columns: 1fr; gap: 4px; }
+#po-guide .source-details dd { margin-bottom: 10px; }}
+@media print {#po-guide { scroll-behavior: auto; }
+#po-guide { background: white; color: #202820; font-size: 10.5pt; line-height: 1.5; }
+#po-guide .header-shell, #po-guide .document-shell, #po-guide .footer-shell { width: 100%; }
+#po-guide .site-header { border-top-width: 2px; }
+#po-guide .header-shell { min-height: 0; padding-block: 0 10px; }
+#po-guide .brand-text strong { font-size: 17pt; }
+#po-guide .brand-text small { font-size: 8pt; }
+#po-guide .flow-mark { width: 39px; height: 30px; }
+#po-guide .series-nav, #po-guide .desktop-toc, #po-guide .mobile-toc, #po-guide .heading-link, #po-guide .skip-link, #po-guide .preview-notice, #po-guide .footer-nav, #po-guide .footer-bottom a, #po-guide .source-details { display: none; }
+#po-guide .publication-banner { display: grid; grid-template-columns: 1fr 100px; padding: 26px 0 24px; gap: 25px; border-bottom: 1px solid var(--line); }
+#po-guide h1 { font-size: 32pt; max-width: none; }
+#po-guide .eyebrow { font-size: 8pt; margin-bottom: 12px; }
+#po-guide .guide-deck { font-size: 12pt; margin-top: 16px; }
+#po-guide .edition { display: flex; flex-direction: column; padding-left: 18px; border-left: 1px solid var(--line); font-size: 8pt; gap: 0; }
+#po-guide .edition-number { font-size: 42pt; margin-bottom: 12px; }
+#po-guide .document-layout { display: block; padding: 25px 0 0; }
+#po-guide .document-content { max-width: none; padding: 0; }
+#po-guide .document-content section.level2 { margin-bottom: 23px; }
+#po-guide h2 { font-size: 20pt; padding-top: 16px; margin-bottom: 14px; }
+#po-guide h3 { font-size: 12pt; margin: 20px 0 10px; }
+#po-guide h2, #po-guide h3, #po-guide h4 { break-after: avoid; }
+#po-guide p { orphans: 3; widows: 3; break-inside: avoid; }
+#po-guide figure, #po-guide .diagram-route, #po-guide .diagram-outcomes, #po-guide .evidence-grid, #po-guide tr { break-inside: avoid; }
+#po-guide .table-scroll { overflow: visible; margin-block: 16px; }
+#po-guide table { display: table; font-size: 9pt; line-height: 1.45; }
+#po-guide th, #po-guide td { min-width: 0; padding: 8px 12px 8px 0; }
+#po-guide thead { display: table-header-group; }
+#po-guide figure { margin: 22px 0; }
+#po-guide .diagram-columns { display: grid; grid-template-columns: repeat(3, 1fr); }
+#po-guide .diagram-columns > li { font-size: 9pt; }
+#po-guide .diagram-columns strong, #po-guide .evidence-grid strong { font-size: 15pt; }
+#po-guide .diagram-columns span, #po-guide .diagram-band, #po-guide .diagram-outcomes p, #po-guide figcaption { font-size: 8pt; }
+#po-guide .diagram-route, #po-guide .evidence-grid p, #po-guide .decision-line { font-size: 9pt; }
+#po-guide .flow-figure { border-top-width: 2px; }
+#po-guide .footer-shell { display: block; padding: 14px 0 0; }
+#po-guide .site-footer { margin-top: 22px; background: none; border-top-width: 1px; break-inside: avoid; }
+#po-guide .footer-lead .eyebrow, #po-guide .footer-lead > p:last-child { display: none; }
+#po-guide .footer-lead .footer-statement { font-size: 12pt; margin: 0; }
+#po-guide .footer-statement br { display: none; }
+#po-guide .footer-statement br::after { content: " "; }
+#po-guide .footer-bottom { display: block; border: 0; margin: 0; padding-top: 6px; font-size: 8pt; }
+#po-guide a { color: inherit; }}
+@media (prefers-reduced-motion: reduce) {#po-guide { scroll-behavior: auto; }}
+#po-guide .start-page .document-layout { display:block; }
+#po-guide .start-page .desktop-toc, #po-guide .start-page .mobile-toc { display:none; }
+#po-guide .start-page .document-content { max-width:100%; }
+#po-guide .start-page .document-content h2 { font-size:24px; margin-top:24px; }
+#po-guide .start-page .guide-deck { font-size:clamp(22px,3vw,34px); }
+#po-guide .start-page .diagram-columns { margin:30px 0; }
+#po-guide .start-flow { margin:28px 0; padding:20px 24px; background:#eef3ef; border-left:4px solid #315f55; }
+#po-guide .start-flow p { margin:6px 0; }
+#po-guide .start-flow-label { font-size:12px; text-transform:uppercase; letter-spacing:.09em; }
+#po-guide .start-actions { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:26px 0; }
+#po-guide .start-actions a { display:block; padding:18px 22px; border:1px solid #24463f; border-radius:8px; text-decoration:none; }
+#po-guide .start-actions a:first-child { background:#24463f; color:#fff; }
+#po-guide .start-actions strong, #po-guide .start-actions span { display:block; }
+#po-guide .start-actions strong { font-size:20px; }
+#po-guide .start-actions span { margin-top:5px; font-size:14px; }
+#po-guide .start-actions a:hover { outline:2px solid #708e82; outline-offset:2px; }
+@media(max-width:640px) {#po-guide .start-actions { grid-template-columns:1fr; }
+#po-guide .start-flow { padding:16px; }}
+@media print {#po-guide .start-actions { break-inside:avoid; }}
+#po-guide .portfolio-overview { margin:32px 0; padding:24px; background:#f3f5f2; border:1px solid #c5cfc7; border-radius:10px; }
+#po-guide .overview-purpose { text-align:center; padding:8px 12px 22px; border-bottom:1px solid #b8c6be; }
+#po-guide .overview-purpose span { display:block; font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:#526257; margin-bottom:8px; }
+#po-guide .overview-purpose strong { display:block; font:600 24px/1.25 var(--serif); color:#223f35; }
+#po-guide .overview-cycle { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); list-style:none; padding:0; margin:24px 0 0; gap:10px; }
+#po-guide .overview-cycle li { margin:0; background:white; border:1px solid #c5cfc7; border-top:4px solid #326957; border-radius:5px; min-width:0; }
+#po-guide .overview-cycle a { display:block; padding:12px 8px 8px; text-align:center; text-decoration:none; color:#233e34; }
+#po-guide .overview-cycle a:hover { background:#e5eee8; }
+#po-guide .overview-cycle strong { display:block; font-size:17px; margin:5px 0; }
+#po-guide .overview-cycle a>span:last-child { display:block; font-size:13px; line-height:1.4; }
+#po-guide .overview-number { display:inline-flex; align-items:center; justify-content:center; width:27px; height:27px; border-radius:50%; background:#275343; color:white; font-size:14px; font-weight:700; }
+#po-guide .overview-cycle p { padding:10px 8px; margin:0; border-top:1px solid #e0e6e1; color:#536056; text-align:center; font-size:12px; line-height:1.5; }
+#po-guide .overview-return { border-bottom:2px solid #b47b36; padding:12px 0; margin:10px 0 20px; font-size:14px; color:#65491f; text-align:center; }
+#po-guide .overview-return span { font-size:25px; vertical-align:middle; margin-right:5px; }
+#po-guide .overview-connections { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+#po-guide .overview-connections div { background:#e5ece7; border-left:3px solid #658476; padding:13px 15px; }
+#po-guide .overview-connections strong { font-size:15px; }
+#po-guide .overview-connections p { font-size:13px; line-height:1.6; margin:8px 0 0; }
+#po-guide .portfolio-overview figcaption { border-top:1px solid #c5cfc7; margin-top:20px; padding-top:13px; font-size:13px; }
+@media(max-width:700px) {#po-guide .portfolio-overview { padding:16px; }
+#po-guide .overview-cycle { grid-template-columns:1fr; gap:12px; }
+#po-guide .overview-cycle li { display:grid; grid-template-columns:1fr 1fr; border-top:1px solid #c5cfc7; border-left:4px solid #326957; }
+#po-guide .overview-cycle a { text-align:left; padding:12px; }
+#po-guide .overview-cycle p { border-top:0; border-left:1px solid #e0e6e1; display:flex; align-items:center; justify-content:center; font-size:13px; }
+#po-guide .overview-connections { grid-template-columns:1fr; gap:12px; }
+#po-guide .overview-purpose strong { font-size:23px; }}
+@media print {#po-guide .portfolio-overview { padding:15px; break-inside:avoid; }
+#po-guide .overview-cycle { grid-template-columns:repeat(5,minmax(0,1fr)); }
+#po-guide .overview-cycle li { display:block; border-left:1px solid #c5cfc7; border-top:3px solid #326957; }
+#po-guide .overview-cycle a { text-align:center; padding:8px 5px; }
+#po-guide .overview-cycle strong { font-size:11pt; }
+#po-guide .overview-cycle p, #po-guide .overview-cycle a>span:last-child { font-size:8pt; }
+#po-guide .overview-cycle p { display:block; border-left:0; border-top:1px solid #e0e6e1; }
+#po-guide .overview-purpose strong { font-size:16pt; }
+#po-guide .overview-connections { grid-template-columns:1fr 1fr; }
+#po-guide .overview-connections p, #po-guide .portfolio-overview figcaption { font-size:8pt; }}
+#po-guide[data-guide-tabs] .document-layout { display: block; padding: 24px 0 56px; }
+#po-guide[data-guide-tabs] .desktop-toc, #po-guide[data-guide-tabs] .mobile-toc { display: none; }
+#po-guide[data-guide-tabs] .document-content { max-width: 100%; }
+#po-guide .guide-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 14px; border-bottom: 2px solid var(--line); padding-bottom: 12px; }
+#po-guide .guide-tabs a { flex: 1 1 180px; padding: 12px 16px; border: 1px solid var(--line); border-radius: 5px; text-align: center; color: var(--ink); text-decoration: none; font: 600 15px/1.4 var(--sans); }
+#po-guide .guide-tabs a[aria-selected="true"] { color: white; background: var(--accent); border-color: var(--accent); }
+#po-guide .guide-tabs a:hover, #po-guide .guide-tabs a:focus-visible, #po-guide .guide-read-all:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+#po-guide .guide-read-all { border: 1px solid var(--line); background: transparent; color: var(--ink); border-radius: 4px; padding: 8px 12px; font: inherit; cursor: pointer; margin-bottom: 18px; }
+#po-guide section.guide-tab[hidden] { display: none; }
+#po-guide .guide-tab h2 { margin-top: 16px; }
+#po-guide .guide-tab h3, #po-guide .guide-tab [id] { scroll-margin-top: 24px; }
+#po-guide .guide-section-links { padding: 14px 20px; border: 1px solid var(--line); border-radius: 5px; margin: 18px 0 24px; }
+#po-guide .guide-section-links .guide-section-label { font-weight: 600; }
+#po-guide .guide-section-links ul { columns: 2; column-gap: 30px; padding-left: 18px; }
+#po-guide .guide-section-links li { break-inside: avoid; padding: 3px 0; }
+@media(max-width: 640px) {#po-guide .guide-section-links ul { columns: 1; }
+#po-guide .guide-tabs a { flex-basis: 100%; }}
+@media print {#po-guide .guide-tabs, #po-guide .guide-read-all, #po-guide .guide-section-links { display: none !important; }
+#po-guide section.guide-tab[hidden] { display: block !important; }}
+#po-guide .po-flow { margin: 22px 0; padding: 20px; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); }
+#po-guide .po-flow-title { font: 600 20px/1.35 var(--serif); margin-bottom: 18px; }
+#po-guide .po-flow .po-flow-steps { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); gap: 28px; list-style: none; margin: 0; padding: 0; }
+#po-guide .po-flow-steps > li { position: relative; display: flex; flex-direction: column; gap: 8px; padding: 16px; margin: 0; border: 1px solid var(--line); border-radius: 6px; background: var(--soft); min-width: 0; font-size: 15px; line-height: 1.5; }
+#po-guide .po-flow-steps > li:not(:last-child)::after { content: "→"; position: absolute; right: -25px; top: 45%; color: var(--accent); font-size: 24px; font-weight: 700; }
+#po-guide .po-flow-label { font-size: 11px; letter-spacing: .05em; font-weight: 700; color: var(--accent); }
+#po-guide .po-flow-steps strong { font-size: 17px; line-height: 1.35; }
+#po-guide .po-flow-return { margin: 16px 0 0; padding: 10px 12px; border-left: 3px solid var(--accent); background: var(--soft); font-size: 14px; }
+#po-guide .po-flow figcaption { margin-top: 14px; font-size: 14px; line-height: 1.5; }
+#po-guide .po-gate { border-left: 4px solid var(--accent); background: var(--soft); padding: 12px 18px; margin: 18px 0; }
+#po-guide .po-gate p { margin: 0; }
+#po-guide .po-detail { margin: 16px 0 28px; padding: 0 18px; border: 1px solid var(--line); border-radius: 6px; }
+#po-guide .po-detail > summary { cursor: pointer; padding: 14px 0; color: var(--accent); font-weight: 600; line-height: 1.5; }
+#po-guide .po-detail[open] > summary { border-bottom: 1px solid var(--line); margin-bottom: 16px; }
+#po-guide .po-detail > summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+#po-guide .po-principle-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 20px 0; }
+#po-guide .po-principle { padding: 16px 20px; background: var(--soft); border-left: 3px solid var(--accent); }
+#po-guide .po-principle p { margin: 0; }
+@media(max-width: 760px) {#po-guide .po-flow .po-flow-steps { grid-auto-flow: row; grid-template-columns: 1fr; gap: 28px; }
+#po-guide .po-flow-steps > li:not(:last-child)::after { content: "↓"; right: 50%; top: auto; bottom: -29px; }
+#po-guide .po-principle-grid { grid-template-columns: 1fr; }
+#po-guide .po-flow { padding: 14px; }}
+@media print {#po-guide .po-detail { border: 0; padding: 0; }
+#po-guide .po-detail > summary { color: var(--ink); }
+#po-guide .po-detail > :not(summary) { display: block !important; }
+#po-guide .po-detail::details-content { display: block; content-visibility: visible; }
+#po-guide .po-flow { break-inside: avoid; padding: 10px; }
+#po-guide .po-flow .po-flow-steps { gap: 22px; }
+#po-guide .po-flow-steps > li { padding: 10px; font-size: 11px; }
+#po-guide .po-flow-steps strong { font-size: 13px; }
+#po-guide .po-flow-steps > li:not(:last-child)::after { right: -20px; font-size: 18px; }
+#po-guide .po-flow-label { font-size: 9px; }}</style></head><body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="header-inner"><a class="brand" href="../index.html" target="_blank" rel="noopener"><img src="../assets/aipf-mark.svg" alt="" width="64" height="48"><span><strong>AI Product Flow</strong><small>Guides and case studies</small></span></a><nav aria-label="Primary"><a href="index.html" aria-current="page" target="_blank" rel="noopener">Guides</a><a href="../case-studies/index.html" target="_blank" rel="noopener">Case studies</a><a href="../feedback/index.html" target="_blank" rel="noopener">Feedback</a></nav></div></header><main id="main"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../index.html" target="_blank" rel="noopener">Home</a> <span aria-hidden="true">/</span> <a href="index.html" target="_blank" rel="noopener">Guides</a> <span aria-hidden="true">/</span> <span>AI Portfolio Guide</span></nav><header class="page-intro"><p class="eyebrow">AI Product Flow · Edition 1.1</p><h1 id="ai-portfolio-guide">AI Portfolio Guide</h1><p class="deck">Manage growing AI-enabled capacity by choosing which work to fund, review and support.</p><p class="byline">By Rick Molony and Ghulam Akbar · developed with AI assistance</p></header><div id="po-guide" data-guide-tabs="true" data-guide-scope="portfolio"><article class="document-content" id="guide-content" data-source-sha256="60cf720828bdaedc964183047c86f5000f8a41e3603109d959e7ecd06726e543">
+<nav class="guide-tabs" aria-label="Guide sections"><a href="#part-1-understand-the-approach">Understand the Approach</a><a href="#part-2-how-to-use-the-guide">How to Use the Guide</a><a href="#part-3-principles-responsibilities-and-reference">Principles &amp; Responsibilities</a></nav><button class="guide-read-all" type="button" hidden aria-pressed="false">Read all sections</button><section class="guide-body">
+<section id="part-1-understand-the-approach" class="level2 guide-tab"
+data-number="1" data-tab-label="Understand the Approach">
+<h2 class="guide-tab" data-number="1"
+data-tab-label="Understand the Approach"><span
+class="header-section-number">1</span> Part 1 — Understand the
+Approach</h2>
+<section id="purpose-of-the-guide" class="level3" data-number="1.1">
+<h3 data-number="1.1"><span class="header-section-number">1.1</span>
+Choose what deserves your time and money<a class="heading-link" href="#purpose-of-the-guide" aria-label="Link to this section">#</a></h3>
+<p>Your organisation may have many ideas for using AI. It cannot do all
+of them well at once.</p>
+<p>AI rapidly increases the number of proposals and amount of work an
+organisation can generate. Human capacity to judge, fund, absorb and
+support that work does not grow at the same rate. Managing that
+difference is central to the portfolio’s purpose. Include work created
+or supported by AI even when the resulting product contains no AI. This
+guide helps you choose what to support, how much to invest next, and
+when to change direction.</p>
+<p>Start with three questions: <strong>What would improve? What have we
+learned? What should we do next?</strong> Use them for new ideas and
+work already under way.</p>
+<p>This guide is for leaders, sponsors and anyone responsible for a
+group of AI investments. A small business can use a short shared record.
+A larger organisation may use its existing investment committee. You do
+not need a new management layer or software tool.</p>
+<p>For step-by-step help, use the <a
+href="https://aipf.ourresilient.world/guides/portfolio-implementation.html" target="_blank" rel="noopener">Portfolio
+Implementation Guide</a>. The <a
+href="https://aipf.ourresilient.world/guides/framework.html" target="_blank" rel="noopener">AI Product
+Flow Framework</a> explains their shared principles.</p>
+<p>Use the <a
+href="https://aipf.ourresilient.world/guides/framework.html#purpose" target="_blank" rel="noopener">Framework
+Purpose</a> for the shared rationale and the <a
+href="https://aipf.ourresilient.world/guides/framework.html#glossary" target="_blank" rel="noopener">Framework
+Glossary</a> for unfamiliar terms.</p>
+</section>
+<section id="definition-of-an-ai-portfolio" class="level3"
+data-number="1.2">
+<h3 data-number="1.2"><span class="header-section-number">1.2</span>
+What is an AI portfolio?<a class="heading-link" href="#definition-of-an-ai-portfolio" aria-label="Link to this section">#</a></h3>
+<p>An <strong>AI portfolio</strong> is the collection of AI-related work
+that an organisation funds, oversees or runs. It can include research,
+services, staff tools, products, shared information and ongoing support.
+Include required work, such as meeting an obligation, as well as new
+opportunities. The AI portfolio is a view within your organisation’s
+wider portfolio. When a choice trades AI work against other work, take
+it to whoever decides that wider portfolio.</p>
+<p>A <strong>bet</strong> is a limited commitment of time, money or
+effort to answer a question. Someone owns it. The record says what the
+limit is and what would cause the work to stop or return for review.</p>
+<p>For example: “Allow two weeks to find out whether AI can help staff
+prepare accurate answers. Keep a person responsible for checking every
+answer.” This is a testable request. “Transform customer service with
+AI” is a direction that still needs a useful next step.</p>
+<p>A bet may support several products. One product may receive several
+rounds of support. A completed research bet can inform a build decision;
+it does not grant permission to build. Money already spent is part of
+the history, not a reason to spend more.</p>
+</section>
+<section id="the-portfolio-guide-at-a-glance" class="level3"
+data-number="1.3">
+<h3 data-number="1.3"><span class="header-section-number">1.3</span>
+AI Portfolio Flow at a Glance<a class="heading-link" href="#the-portfolio-guide-at-a-glance" aria-label="Link to this section">#</a></h3>
+<p>The portfolio uses three phases and three gates to manage growing
+AI-enabled work. At each gate, the authorised owner decides what the
+evidence justifies next, taking account of money, review capacity and
+competing needs.</p>
+<figure class="po-flow" aria-labelledby="portfolio-figure-caption">
+<div class="overview-purpose">
+<span>Manage growing AI-enabled capacity</span><strong>Which work should
+we fund, and can people judge and support it?</strong>
+</div>
+<ol class="po-flow-steps" style="margin-top:24px">
+<li style="border-top:4px solid var(--accent)">
+<span class="po-flow-label">PHASE
+1</span><strong><a href="#phase-1-validate-show-and-set-boundaries">Validate,
+Show and Set Boundaries</a></strong><span>Clarify the outcome, compare
+alternatives and set limits for a useful test.</span><span
+class="po-flow-label"
+style="border-top:1px solid var(--line); padding-top:12px">GATE
+1</span><strong>Is this worth a limited test?</strong><span>Proceed ·
+Revise · Defer · Stop · Merge · Rebalance</span>
+</li>
+<li style="border-top:4px solid var(--accent)">
+<span class="po-flow-label">PHASE
+2</span><strong><a href="#phase-2-prove-the-end-to-end-evidence-slice">Prove
+the End-to-End Evidence Slice</a></strong><span>Review product and
+family test results, costs, failures and remaining
+uncertainty.</span><span class="po-flow-label"
+style="border-top:1px solid var(--line); padding-top:12px">GATE
+2</span><strong>What investment does the evidence justify
+next?</strong><span>Proceed · Revise · Defer · Stop · Merge ·
+Rebalance</span>
+</li>
+<li style="border-top:4px solid var(--accent)">
+<span class="po-flow-label">PHASE
+3</span><strong><a href="#phase-3-decide-and-operationalise">Decide and
+Operationalise</a></strong><span>Compare observed benefit, shared risks
+and the people needed for ongoing or wider use.</span><span
+class="po-flow-label"
+style="border-top:1px solid var(--line); padding-top:12px">GATE
+3</span><strong>What ongoing or wider use can we
+support?</strong><span>Proceed · Revise · Defer · Stop · Merge ·
+Rebalance · Scale</span>
+</li>
+</ol>
+<p class="overview-return">
+<span aria-hidden="true">↶</span> New evidence or changed conditions →
+return to an earlier phase, review and revise. Stop or pause when
+needed.
 </p>
-<div class="evidence-grid">
+<div class="overview-connections">
 <div>
-<strong>Worth doing?</strong>
+<strong>Evidence comes from the work</strong>
 <p>
-Whose situation improves? What else could we do?
+Products and families supply findings, costs, benefits and limits.
+Finance and specialists check the facts.
 </p>
 </div>
 <div>
-<strong>Worth the cost?</strong>
+<strong>Decisions return to owners</strong>
 <p>
-What have we spent? What will the next step and ongoing use cost?
-</p>
-</div>
-<div>
-<strong>Room to do it?</strong>
-<p>
-Who can do, check and support the work? What would have to wait?
-</p>
-</div>
-<div>
-<strong>Safe to continue?</strong>
-<p>
-What could go wrong across several products? Who can respond?
+State the next allowed work, resources, conditions, owner and review
+point. Funding and release permissions remain distinct.
 </p>
 </div>
 </div>
-<p class="decision-line">
-<span aria-hidden="true">↓</span><strong>Make one clear decision</strong>Name the next action, owner, limits and review point.
-</p>
 <figcaption id="portfolio-figure-caption">
-Figure 1. Look at value, cost, available people and shared risks together. A busy team or a polished demonstration does not answer all four questions.
+The portfolio judges investment using evidence from product and family
+work. It does not build a product evidence slice of its own. Only Gate 3
+can authorise Scale. Select a phase heading for its working guidance.
 </figcaption>
 </figure>
-<p><strong>Example used in these guides:</strong> a service organisation wants people to receive a correct answer without repeating their request. It is considering better intake, a knowledge service and a response service. These are possible product responsibilities, not necessarily three applications. The example is invented to explain the approach.</p>
-<p>At portfolio level, the question is whether this work deserves resources alongside other needs. The family and product guides explain how the parts fit and how to test one part.</p>
-<h2 id="what-portfolio-management-must-protect">Six habits that keep investment useful</h2>
-<h3 id="coherent-investment">Look beyond each team’s result</h3>
-<p>Two teams may each save time while creating more work for a third team. Ask about the whole service. Look for duplicated effort, shared costs and work that is being displaced.</p>
-<p>Products do not have to use the same solution to support the same goal. Compare the choices before paying to standardise them.</p>
-<p>This is Judgement: judge the whole service, not each team’s result.</p>
-<h3 id="commitment-proportionate-to-evidence">Spend in steps as you learn</h3>
-<p>An attractive proposal is a prediction. Start with the smallest useful question that could change your decision. Increase support when the results justify it.</p>
-<p>Value may mean better service, safer work, a stronger policy decision or less risk. Required work does not have to invent revenue. If a proposed solution fails, the obligation may still need another solution.</p>
-<p>This is Restraint: commit enough to answer the next question.</p>
-<h3 id="capacity-for-meaningful-oversight">Leave enough time to check and support the work</h3>
-<p>AI can produce more than people can review. Count the time needed for checking, specialist advice, joining work together and ongoing support.</p>
-<p>Agree how much work can be active at once. This is a <strong>work-in-progress limit</strong>. Show what is waiting and why. Adjust the limit with the people doing the work. A full queue is a reason to make a choice, not to approve work without checking it.</p>
-<p>This is Restraint: keep active work within the capacity to judge it.</p>
-<h3 id="value-that-survives-contact-with-operation">Check the benefit after work starts</h3>
-<p>Keep <strong>expected benefit</strong> separate from <strong>observed benefit</strong>. Faster draft writing may help, but extra checking can consume the time saved. Include training, adoption, AI usage charges, maintenance and support.</p>
-<p>Research can be useful when it changes a decision or rules out an unsuitable idea. A report alone does not prove a saving. Nor does time released automatically become a cash saving.</p>
-<p>This is Evidence: compare what was promised with what happened.</p>
-<h3 id="exposure-across-the-whole-portfolio">Notice risks that several products share</h3>
-<p>Several products may rely on the same supplier, AI model, source information or checking tool. One failure could then affect all of them. This shared reliance is called <strong>concentration</strong>.</p>
-<p>Find out who owns each important dependency, which products rely on it and what happens if it changes or fails. A good local test may leave this wider risk unresolved.</p>
-<p>This is Accountability: name an owner for each shared dependency.</p>
-<h3 id="human-judgement-that-remains-capable">Keep people able to question the result</h3>
-<p>People need the time, skills and authority to challenge AI-assisted work. They must also be able to intervene and recover from mistakes.</p>
-<p>AI can help prepare comparisons and summaries. Its answers still need sources and suitable checks. Two AI tools agreeing may reflect the same underlying mistake. Review whether automation is also removing opportunities for staff to develop the skills they will need later.</p>
-<p>This is Adaptation: keep people able to notice problems and change course.</p>
-<h2 id="portfolio-decisions">Make the next decision clear</h2>
-<p>AIPF uses three phases to ask different questions. A <strong>gate</strong> is the decision at the end of a phase. It can happen within an existing review; it does not require another meeting.</p>
-<div class="table-scroll" role="region" aria-label="Scrollable table" tabindex="0"><table>
+<p>Across all three phases, ask: <strong>Is it worth doing? Is it worth
+the whole cost? Do people have room to deliver, check and support it?
+What could fail across several products?</strong></p>
+<p><strong>Example used in these guides:</strong> a service organisation
+wants people to receive a correct answer without repeating their
+request. It is considering better intake, a knowledge service and a
+response service. These are possible product responsibilities, not
+necessarily three applications. The example is invented to explain the
+approach.</p>
+<p>At portfolio level, the question is whether this work deserves
+resources alongside other needs. The family and product guides explain
+how the parts fit and how to test one part.</p>
+<p>Use <a href="#part-2-how-to-use-the-guide">How to Use the Guide</a>
+for the next investment decision and <a
+href="#part-3-principles-responsibilities-and-reference">Principles
+&amp; Responsibilities</a> for the people and checks it needs.</p>
+</section>
+</section>
+<section id="part-2-how-to-use-the-guide" class="level2 guide-tab"
+data-number="2" data-tab-label="How to Use the Guide">
+<h2 class="guide-tab" data-number="2"
+data-tab-label="How to Use the Guide"><span
+class="header-section-number">2</span> Part 2 — How to Use the
+Guide</h2><nav class="guide-section-links" aria-label="In this tab"><p class="guide-section-label">In this tab</p><ul><li><a href="#phase-1-validate-show-and-set-boundaries">Phase 1 — Validate, Show, and Set Boundaries</a></li><li><a href="#phase-2-prove-the-end-to-end-evidence-slice">Phase 2 — Prove the End-to-End Evidence Slice</a></li><li><a href="#phase-3-decide-and-operationalise">Phase 3 — Decide and Operationalise</a></li><li><a href="#portfolio-decisions">Record the next decision</a></li><li><a href="#evidence-and-its-commitments">Artefacts for this guide</a></li></ul></nav>
+<p>Use the three phases to manage the amount of work that AI makes
+possible. Fund a useful next step only when people can deliver, review
+and support it. Start with the evidence you have, using an existing
+investment review where appropriate.</p>
+<figure class="po-flow" aria-labelledby="portfolio-use-caption">
+<p class="po-flow-title">
+Use evidence to choose the next investment
+</p>
+<ol class="po-flow-steps">
+<li>
+<strong>Frame the choice</strong><span>Find the outcome, alternatives
+and capacity for a small
+test.</span><a href="#phase-1-validate-show-and-set-boundaries">Go to
+this step →</a>
+</li>
+<li>
+<strong>Review the test</strong><span>Compare findings, cost and what
+would have to
+wait.</span><a href="#phase-2-prove-the-end-to-end-evidence-slice">Go to
+this step →</a>
+</li>
+<li>
+<strong>Decide ongoing support</strong><span>Judge actual benefit,
+operating cost and readiness for wider
+use.</span><a href="#phase-3-decide-and-operationalise">Go to this step
+→</a>
+</li>
+</ol>
+<p class="po-flow-return">
+Results can reopen an earlier choice. A stop condition can interrupt
+work at any time.
+</p>
+<figcaption id="portfolio-use-caption">
+The phases organise investment questions. They are not three meetings or
+a mandatory sequence of documents.
+</figcaption>
+</figure>
+<section id="phase-1-validate-show-and-set-boundaries" class="level3"
+data-number="2.1">
+<h3 data-number="2.1"><span class="header-section-number">2.1</span>
+Phase 1 — Validate, Show, and Set Boundaries<a class="heading-link" href="#phase-1-validate-show-and-set-boundaries" aria-label="Link to this section">#</a></h3>
+<p><strong>Aim:</strong> Choose whether a small test deserves
+resources.</p>
+<figure class="po-flow" aria-labelledby="portfolio-phase-1-caption">
+<p class="po-flow-title">
+Validate, Show, and Set Boundaries
+</p>
+<ol class="po-flow-steps">
+<li>
+<strong>Explain the outcome</strong><span>Name the people or obligation
+served and compare real alternatives.</span>
+</li>
+<li>
+<strong>Show the proposal</strong><span>Make the intended change
+understandable; label predictions and unknowns.</span>
+</li>
+<li>
+<strong>Check room to act</strong><span>Name the reviewers, effort
+limit, next question and stop condition.</span>
+</li>
+</ol>
+<figcaption id="portfolio-phase-1-caption">
+Use existing source records; do not create a new pack for every step.
+</figcaption>
+</figure>
+<div class="po-gate">
+<p>
+<strong>Gate 1:</strong> The authorised Portfolio owner decides the next
+limited commitment. A useful concept supports understanding; it does not
+establish benefit or permission for wider use.
+</p>
+</div>
+<details class="po-detail">
+<summary>
+Working checklist
+</summary>
+<div class="table-scroll" role="region" aria-label="Table 1" tabindex="0"><table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col style="width: 50%" />
+<col style="width: 50%" />
 </colgroup>
 <thead>
 <tr>
-<th>Phase and everyday question</th>
-<th>What you need to see</th>
-<th>What the decision sends back</th>
+<th>Use the guide to…</th>
+<th>What to check</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>1 — Validate, Show, and Set Boundaries.</strong> Is this worth a small test?</td>
-<td>The need, an understandable example, alternatives, uncertainties, proposed limits and available reviewers.</td>
-<td>The question to test, owner, time or money allowed, AI limits and next review.</td>
+<td>Bring</td>
+<td>Need or obligation, concept, alternatives, source links,
+uncertainties and a cost estimate.</td>
 </tr>
 <tr>
-<td><strong>2 — Prove the End-to-End Evidence Slice.</strong> What did the small test show?</td>
-<td>Results from a narrow path through the work; failures, costs and what remains unknown.</td>
-<td>The next allowed step, changes needed, conditions and evidence still due.</td>
+<td>Compare</td>
+<td>Existing commitments, required work, scarce reviewers and what would
+be delayed.</td>
 </tr>
 <tr>
-<td><strong>3 — Decide and Operationalise.</strong> Should we continue, change, stop or expand investment?</td>
-<td>Evidence of value, costs, risks and people able to run and support it.</td>
-<td>The agreed use, owners, support, limits and triggers for another review.</td>
+<td>Return to owners</td>
+<td>The test question, allowed scope, owner, money or effort limit, AI
+permissions and review point.</td>
 </tr>
 </tbody>
 </table></div>
-<p>“Prove” in Phase 2 means gather evidence for the specific question. It does not mean prove the whole product will succeed. “Operationalise” means make ongoing use workable, with people and support in place.</p>
-<div class="table-scroll" role="region" aria-label="Scrollable table" tabindex="0"><table>
+</details>
+</section>
+<section id="phase-2-prove-the-end-to-end-evidence-slice" class="level3"
+data-number="2.2">
+<h3 data-number="2.2"><span class="header-section-number">2.2</span>
+Phase 2 — Prove the End-to-End Evidence Slice<a class="heading-link" href="#phase-2-prove-the-end-to-end-evidence-slice" aria-label="Link to this section">#</a></h3>
+<p><strong>Aim:</strong> Decide what the small connected test justifies
+next.</p>
+<figure class="po-flow" aria-labelledby="portfolio-phase-2-caption">
+<p class="po-flow-title">
+Prove the End-to-End Evidence Slice
+</p>
+<ol class="po-flow-steps">
+<li>
+<strong>Inspect the results</strong><span>Include failures, recovery,
+contrary findings and remaining uncertainty.</span>
+</li>
+<li>
+<strong>Check the whole cost</strong><span>Separate actual spending,
+commitments and future estimates; include review and support.</span>
+</li>
+<li>
+<strong>Choose the next step</strong><span>Compare a smaller step, a
+different sequence, deferral or stopping.</span>
+</li>
+</ol>
+<figcaption id="portfolio-phase-2-caption">
+Use existing source records; do not create a new pack for every step.
+</figcaption>
+</figure>
+<div class="po-gate">
+<p>
+<strong>Gate 2:</strong> The authorised Portfolio owner decides the next
+investment within stated conditions. A completed test does not grant
+build or release authority, and Gate 2 cannot authorise Scale.
+</p>
+</div>
+<details class="po-detail">
+<summary>
+Working checklist
+</summary>
+<div class="table-scroll" role="region" aria-label="Table 2" tabindex="0"><table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Use the guide to…</th>
+<th>What to check</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bring</td>
+<td>Product evidence and family handoff findings where relevant, with
+sources and limits.</td>
+</tr>
+<tr>
+<td>Compare</td>
+<td>What the test answered, what remains untested, cost to continue and
+competing demands.</td>
+</tr>
+<tr>
+<td>Return to owners</td>
+<td>Next permitted work, changes, conditions, evidence still due and the
+next review.</td>
+</tr>
+</tbody>
+</table></div>
+</details>
+</section>
+<section id="phase-3-decide-and-operationalise" class="level3"
+data-number="2.3">
+<h3 data-number="2.3"><span class="header-section-number">2.3</span>
+Phase 3 — Decide and Operationalise<a class="heading-link" href="#phase-3-decide-and-operationalise" aria-label="Link to this section">#</a></h3>
+<p><strong>Aim:</strong> Decide continued, changed or wider investment
+that the organisation can sustain.</p>
+<figure class="po-flow" aria-labelledby="portfolio-phase-3-caption">
+<p class="po-flow-title">
+Decide and Operationalise
+</p>
+<ol class="po-flow-steps">
+<li>
+<strong>Compare promises and results</strong><span>Use observed benefit
+and include local burdens and harm.</span>
+</li>
+<li>
+<strong>Check operating support</strong><span>Confirm owners, adoption,
+workforce capability, cost and shared risk.</span>
+</li>
+<li>
+<strong>Set the supported use</strong><span>Record conditions, limits,
+monitoring and triggers to reconsider.</span>
+</li>
+</ol>
+<figcaption id="portfolio-phase-3-caption">
+Use existing source records; do not create a new pack for every step.
+</figcaption>
+</figure>
+<div class="po-gate">
+<p>
+<strong>Gate 3:</strong> Only Gate 3 can authorise Scale. Wider
+investment still needs evidence, spending authority and workable
+support; a funding decision and permission to release remain distinct.
+</p>
+</div>
+<details class="po-detail">
+<summary>
+Working checklist
+</summary>
+<div class="table-scroll" role="region" aria-label="Table 3" tabindex="0"><table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Use the guide to…</th>
+<th>What to check</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bring</td>
+<td>Observed benefit, costs, accepted scope, incidents, dependencies and
+support capacity.</td>
+</tr>
+<tr>
+<td>Compare</td>
+<td>Useful ongoing outcomes against other needs; count shared benefits
+once.</td>
+</tr>
+<tr>
+<td>Return to owners</td>
+<td>Agreed use, resources, support owners, limits and stop or review
+triggers.</td>
+</tr>
+</tbody>
+</table></div>
+</details>
+</section>
+<section id="portfolio-decisions" class="level3" data-number="2.4">
+<h3 data-number="2.4"><span class="header-section-number">2.4</span>
+Record the next decision<a class="heading-link" href="#portfolio-decisions" aria-label="Link to this section">#</a></h3>
+<p>A gate is an authorised decision at the end of a phase; it can use an
+existing review. “Prove” means gather evidence for the stated question,
+and “operationalise” means make ongoing use workable. Use the <a
+href="https://aipf.ourresilient.world/guides/framework.html#practices" target="_blank" rel="noopener">Framework
+Practices</a> for the shared learning loop.</p>
+<div class="table-scroll" role="region" aria-label="Table 4" tabindex="0"><table>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -122,15 +750,18 @@ Figure 1. Look at value, cost, available people and shared risks together. A bus
 <tbody>
 <tr>
 <td><strong>Proceed</strong></td>
-<td>Support the next step within stated limits, which may be smaller than requested.</td>
+<td>Support the next step within stated limits, which may be smaller
+than requested.</td>
 </tr>
 <tr>
 <td><strong>Revise</strong></td>
-<td>Change the idea, scope or approach before continuing as proposed.</td>
+<td>Change the idea, scope or approach before continuing as
+proposed.</td>
 </tr>
 <tr>
 <td><strong>Defer</strong></td>
-<td>Wait for a named condition, with someone responsible for checking it.</td>
+<td>Wait for a named condition, with someone responsible for checking
+it.</td>
 </tr>
 <tr>
 <td><strong>Stop</strong></td>
@@ -138,23 +769,324 @@ Figure 1. Look at value, cost, available people and shared risks together. A bus
 </tr>
 <tr>
 <td><strong>Merge</strong></td>
-<td>Combine overlapping bets under one owner, keeping their histories.</td>
+<td>Combine overlapping bets under one owner, keeping their
+histories.</td>
 </tr>
 <tr>
 <td><strong>Rebalance</strong></td>
-<td>Move money, people or scope between bets; show who gains and what waits.</td>
+<td>Move money, people or scope between bets; show who gains and what
+waits.</td>
 </tr>
 <tr>
 <td><strong>Scale</strong></td>
-<td>Support wider use when results and operating support justify it. This is available only at Gate 3.</td>
+<td>Support wider use when results and operating support justify it.
+This is available only at Gate 3.</td>
 </tr>
 </tbody>
 </table></div>
-<p>All the other decisions can be made at any gate. A stop condition can interrupt work at any time. A disappointing result, incident, cost increase or changed AI behaviour can reopen an earlier decision.</p>
-<p>Write down the decision, reasons, disagreements, owner, exact scope, limits, next review and which gate it belongs to. Keep the Framework’s <a href="framework.html#one-evidence-loop-applied-where-the-decision-belongs">decision states</a> distinct; in particular, a recommendation, a funding commitment and release are separate permissions. One decision may cover more than one of these when the decision-maker has the authority and records it clearly.</p>
-<h2 id="accountabilities">Make each responsibility someone’s job</h2>
-<p>An <strong>accountability</strong> means someone remains answerable for the result. Assign the five responsibilities below through existing roles. They do not require five new posts.</p>
-<div class="table-scroll" role="region" aria-label="Scrollable table" tabindex="0"><table>
+<p>All the other decisions can be made at any gate. A stop condition can
+interrupt work at any time. A disappointing result, incident, cost
+increase or changed AI behaviour can reopen an earlier decision.</p>
+<p>Write down the decision, reasons, disagreements, owner, exact scope,
+limits, next review and which gate it belongs to. Keep the Framework’s
+<a
+href="https://aipf.ourresilient.world/guides/framework.html#practices" target="_blank" rel="noopener">decision
+states</a> distinct; in particular, a recommendation, a funding
+commitment and release are separate permissions. One decision may cover
+more than one of these when the decision-maker has the authority and
+records it clearly.</p>
+</section>
+<section id="evidence-and-its-commitments" class="level3"
+data-number="2.5">
+<h3 data-number="2.5"><span class="header-section-number">2.5</span>
+Artefacts for this guide<a class="heading-link" href="#evidence-and-its-commitments" aria-label="Link to this section">#</a></h3>
+<p>Keep five linked records to compare bets, reviewer capacity, shared
+risks, benefits and AI permissions. Use existing spreadsheets, notes or
+systems, with one agreed source for each fact. The table shows what each
+record contributes at each phase. Use <a
+href="https://aipf.ourresilient.world/guides/framework.html#artefacts" target="_blank" rel="noopener">Framework
+Artefacts</a> for the shared definitions and relationships.</p>
+<details class="po-detail">
+<summary>
+Show the five artefacts and when to use them
+</summary>
+<div class="table-scroll" role="region" aria-label="Table 5" tabindex="0"><table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>Artefact</th>
+<th>Portfolio use</th>
+<th>Phase 1</th>
+<th>Phase 2</th>
+<th>Phase 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI Bet Ledger</td>
+<td>Purpose, owner, evidence, spending, commitments, request and
+decision.</td>
+<td>Define the bet and limits.</td>
+<td>Record test findings and next request.</td>
+<td>Track ongoing support, results and closure.</td>
+</tr>
+<tr>
+<td>Decision-Capacity Ledger</td>
+<td>Skills, reviewer time, active-work limits, waiting items and support
+demand.</td>
+<td>Reserve capacity for a test.</td>
+<td>Expose bottlenecks and displaced work.</td>
+<td>Confirm capacity for ongoing or wider use.</td>
+</tr>
+<tr>
+<td>Model and Vendor Concentration Register</td>
+<td>Shared suppliers, models, information and checking tools; owners and
+response options.</td>
+<td>Identify common dependencies.</td>
+<td>Check failures affecting several bets.</td>
+<td>Monitor changes and recovery readiness.</td>
+</tr>
+<tr>
+<td>Benefits Realisation Map</td>
+<td>Expected versus observed benefit, source, measure, starting point,
+period and owner.</td>
+<td>State expected improvement.</td>
+<td>Record what the test establishes and does not.</td>
+<td>Compare actual benefit, shared cost, added burden and harm.</td>
+</tr>
+<tr>
+<td>Autonomy Boundary Map</td>
+<td>Permitted AI actions, permission owner, checks and human
+intervention.</td>
+<td>Set permission for the test.</td>
+<td>Use evaluated controls for the actual task.</td>
+<td>Review ongoing permissions and changed AI behaviour.</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="ai-bet-ledger">
+The list of bets — AI Bet Ledger
+</h4>
+<p>Show what each bet is for, its reference, spending owner, related
+products or family, decision and next request. Include the evidence,
+limits, expected and observed benefit, costs and stop or review
+condition.</p>
+<p>Separate money already spent, money already promised and estimates of
+future cost. Keep the decision states distinct: “test finished” does not
+mean “build approved”. Mark missing information as unknown, not
+zero.</p>
+<p><strong>Example:</strong> BET-017 is approved for a small test. Its
+wider service rollout remains a proposal.</p>
+<h4 id="decision-capacity-ledger">
+Who can review the work — Decision-Capacity Ledger
+</h4>
+<p>Show the reviews needed, skills required, time available, active-work
+limits and waiting items. Distinguish waiting for evidence from waiting
+for someone to judge it. Include support demand when it affects what the
+organisation can sustain.</p>
+<p><strong>Example:</strong> two bets need the same specialist. Choose
+their order instead of assuming both can start.</p>
+<h4 id="model-and-vendor-concentration-register">
+Shared points of failure — Model and Vendor Concentration Register
+</h4>
+<p>Show common suppliers, AI models, information and checking
+arrangements. Link each to affected bets, owners and response options.
+Several reports based on one source are still one source, not
+independent confirmation. <strong>Built from:</strong> each family’s
+Shared Substrate Map and product dependencies; collect only what those
+maps do not already hold.</p>
+<p><strong>Example:</strong> three services rely on one knowledge
+source. A change to that source needs review by all three owners.</p>
+<h4 id="benefits-realisation-map">
+Promises compared with results — Benefits Realisation Map
+</h4>
+<p>For each benefit, keep an identifier, owner, measure, starting
+position, observation period and result. Explain which products
+contributed. Include added work and harm as well as gains. Count a
+shared outcome once. <strong>Built from:</strong> Family Benefits Maps
+and product Acceptance Records.</p>
+<p><strong>Example:</strong> fewer repeated requests is one service
+outcome, even if intake, knowledge and response products all helped
+achieve it.</p>
+<h4 id="autonomy-boundary-map">
+What AI may do — Autonomy Boundary Map
+</h4>
+<p>Show permitted AI actions, who owns the permission, required checks
+and when a person must intervene. Link to the tested controls in the
+Agile Product Guide’s <strong>AI Model Harness</strong>, explained there
+as the working rules and checks around AI use, and to common controls in
+each family’s Shared Substrate Map.</p>
+<p><strong>Example:</strong> AI may prepare a response; a trained person
+checks it before it reaches the customer. Permission to draft is not
+permission to send.</p>
+<p>The same applies to AI doing Portfolio work: summaries need source
+checks, calculations need testing, and actions need explicit permissions
+and human review. Linking to a Product’s harness evidence does not by
+itself validate a Portfolio assistant’s different task.</p>
+</details>
+</section>
+</section>
+<section id="part-3-principles-responsibilities-and-reference"
+class="level2 guide-tab" data-number="3"
+data-tab-label="Principles &amp; Responsibilities">
+<h2 class="guide-tab" data-number="3"
+data-tab-label="Principles &amp; Responsibilities"><span
+class="header-section-number">3</span> Part 3 — Principles &amp;
+Responsibilities</h2><nav class="guide-section-links" aria-label="In this tab"><p class="guide-section-label">In this tab</p><ul><li><a href="#what-portfolio-management-must-protect">Apply the principles to investment choices</a></li><li><a href="#accountabilities">Make each responsibility someone’s job</a></li><li><a href="#relationship-to-the-other-guides">Connect portfolio, family and product decisions</a></li><li><a href="#conclusion">Start with one real choice</a></li></ul></nav>
+<p>Use these portfolio responsibilities to keep growing AI output within
+the organisation’s ability to judge, fund and support it. The <a
+href="https://aipf.ourresilient.world/guides/framework.html#principles" target="_blank" rel="noopener">Framework
+Principles</a> explain the common foundations; this tab applies them to
+investment decisions.</p>
+<figure class="po-flow" aria-labelledby="portfolio-responsibilities-caption">
+<p class="po-flow-title">
+Make the investment decision answerable to evidence
+</p>
+<ol class="po-flow-steps">
+<li>
+<strong>Owners bring evidence</strong><span>Product, family, Finance and
+benefit owners supply sources and limits.</span>
+</li>
+<li>
+<strong>Specialists challenge the choice</strong><span>Capacity, risk
+and workforce owners test whether it is workable.</span>
+</li>
+<li>
+<strong>Portfolio owner decides</strong><span>One accountable owner
+records the authorised investment and conditions.</span>
+</li>
+</ol>
+<figcaption id="portfolio-responsibilities-caption">
+Preparing a report or recommending an option does not confer spending
+authority.
+</figcaption>
+</figure>
+<section id="what-portfolio-management-must-protect" class="level3"
+data-number="3.1">
+<h3 data-number="3.1"><span class="header-section-number">3.1</span>
+Apply the principles to investment choices<a class="heading-link" href="#what-portfolio-management-must-protect" aria-label="Link to this section">#</a></h3>
+<div class="po-principle-grid">
+<div class="po-principle">
+<p>
+<strong>Judge the whole service.</strong> Include effects on other
+teams, duplicate effort and useful differences between products.
+</p>
+</div>
+<div class="po-principle">
+<p>
+<strong>Spend in steps.</strong> Match the next commitment to evidence;
+required work need not invent revenue.
+</p>
+</div>
+<div class="po-principle">
+<p>
+<strong>Protect review capacity.</strong> Count checking, integration,
+adoption and support when limiting active work.
+</p>
+</div>
+<div class="po-principle">
+<p>
+<strong>Check benefit in use.</strong> Separate expected and observed
+benefit; time released is not automatically cash saved.
+</p>
+</div>
+<div class="po-principle">
+<p>
+<strong>Own shared risks.</strong> Name the dependencies that could
+cause several bets to fail together.
+</p>
+</div>
+<div class="po-principle">
+<p>
+<strong>Keep people able to challenge.</strong> Maintain the skills and
+authority to question, intervene and recover.
+</p>
+</div>
+</div>
+<details class="po-detail">
+<summary>
+Examples and checks behind the six principles
+</summary>
+<h4 id="coherent-investment">
+Look beyond each team’s result
+</h4>
+<p>Two teams may each save time while creating more work for a third
+team. Ask about the whole service. Look for duplicated effort, shared
+costs and work that is being displaced.</p>
+<p>Products do not have to use the same solution to support the same
+goal. Compare the choices before paying to standardise them.</p>
+<p>This is Judgement: judge the whole service, not each team’s
+result.</p>
+<h4 id="commitment-proportionate-to-evidence">
+Spend in steps as you learn
+</h4>
+<p>An attractive proposal is a prediction. Start with the smallest
+useful question that could change your decision. Increase support when
+the results justify it.</p>
+<p>Value may mean better service, safer work, a stronger policy decision
+or less risk. Required work does not have to invent revenue. If a
+proposed solution fails, the obligation may still need another
+solution.</p>
+<p>This is Restraint: commit enough to answer the next question.</p>
+<h4 id="capacity-for-meaningful-oversight">
+Leave enough time to check and support the work
+</h4>
+<p>AI can produce more than people can review. Count the time needed for
+checking, specialist advice, joining work together and ongoing
+support.</p>
+<p>Agree how much work can be active at once. This is a
+<strong>work-in-progress limit</strong>. Show what is waiting and why.
+Adjust the limit with the people doing the work. A full queue is a
+reason to make a choice, not to approve work without checking it.</p>
+<p>This is Restraint: keep active work within the capacity to judge
+it.</p>
+<h4 id="value-that-survives-contact-with-operation">
+Check the benefit after work starts
+</h4>
+<p>Keep <strong>expected benefit</strong> separate from <strong>observed
+benefit</strong>. Faster draft writing may help, but extra checking can
+consume the time saved. Include training, adoption, AI usage charges,
+maintenance and support.</p>
+<p>Research can be useful when it changes a decision or rules out an
+unsuitable idea. A report alone does not prove a saving. Nor does time
+released automatically become a cash saving.</p>
+<p>This is Evidence: compare what was promised with what happened.</p>
+<h4 id="exposure-across-the-whole-portfolio">
+Notice risks that several products share
+</h4>
+<p>Several products may rely on the same supplier, AI model, source
+information or checking tool. One failure could then affect all of them.
+This shared reliance is called <strong>concentration</strong>.</p>
+<p>Find out who owns each important dependency, which products rely on
+it and what happens if it changes or fails. A good local test may leave
+this wider risk unresolved.</p>
+<p>This is Accountability: name an owner for each shared dependency.</p>
+<h4 id="human-judgement-that-remains-capable">
+Keep people able to question the result
+</h4>
+<p>People need the time, skills and authority to challenge AI-assisted
+work. They must also be able to intervene and recover from mistakes.</p>
+<p>AI can help prepare comparisons and summaries. Its answers still need
+sources and suitable checks. Two AI tools agreeing may reflect the same
+underlying mistake. Review whether automation is also removing
+opportunities for staff to develop the skills they will need later.</p>
+<p>This is Adaptation: keep people able to notice problems and change
+course.</p>
+</details>
+</section>
+<section id="accountabilities" class="level3" data-number="3.2">
+<h3 data-number="3.2"><span class="header-section-number">3.2</span>
+Make each responsibility someone’s job<a class="heading-link" href="#accountabilities" aria-label="Link to this section">#</a></h3>
+<p>An <strong>accountability</strong> means someone remains answerable
+for the result. Assign the five responsibilities below through existing
+roles. They do not require five new posts.</p>
+<div class="table-scroll" role="region" aria-label="Table 6" tabindex="0"><table>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -168,19 +1100,25 @@ Figure 1. Look at value, cost, available people and shared risks together. A bus
 <tbody>
 <tr>
 <td><strong>Portfolio</strong></td>
-<td>The choices serve the organisation, priorities are clear, trade-offs are made, the overall risk is accepted and the portfolio gate decision has one owner.</td>
+<td>The choices serve the organisation, priorities are clear, trade-offs
+are made, the overall risk is accepted and the portfolio gate decision
+has one owner.</td>
 </tr>
 <tr>
 <td><strong>Financial, Value, and Benefits</strong></td>
-<td>Spending and ongoing costs can be checked, and claimed benefits are compared with what happened.</td>
+<td>Spending and ongoing costs can be checked, and claimed benefits are
+compared with what happened.</td>
 </tr>
 <tr>
 <td><strong>Concentration and Risk</strong></td>
-<td>Risks from shared suppliers, sources and AI controls are identified and reported across bets, so the Portfolio owner can accept or reduce them.</td>
+<td>Risks from shared suppliers, sources and AI controls are identified
+and reported across bets, so the Portfolio owner can accept or reduce
+them.</td>
 </tr>
 <tr>
 <td><strong>Decision-Capacity</strong></td>
-<td>Enough skilled people can review the work, and the active-work limit is respected.</td>
+<td>Enough skilled people can review the work, and the active-work limit
+is respected.</td>
 </tr>
 <tr>
 <td><strong>Workforce and Competence</strong></td>
@@ -188,30 +1126,20 @@ Figure 1. Look at value, cost, available people and shared risks together. A bus
 </tr>
 </tbody>
 </table></div>
-<p>Name an owner for each responsibility. In a small organisation, one person may hold several. Product and family owners still answer for their own work. The Portfolio owner, or a portfolio board acting under that accountability, holds the portfolio gate decision.</p>
-<p>The <strong>expenditure owner</strong> is the person answerable for spending under the organisation’s existing rules. This may be someone other than the product owner. Preparing a portfolio report does not give anyone spending authority.</p>
-<h2 id="evidence-and-its-commitments">Keep five useful records</h2>
-<p>AIPF calls these <strong>artefacts</strong>: records or views that help people decide. They can be tabs in a spreadsheet, linked notes or views in an existing system. They need not be five new documents.</p>
-<p>Keep each fact in one agreed source and link to it. When a summary is updated, keep the source, date and important limits visible. Use the Framework’s <a href="framework.html#information-specification-and-source-ownership">shared information checklist</a> for detailed fields.</p>
-<h3 id="ai-bet-ledger">The list of bets — AI Bet Ledger</h3>
-<p>Show what each bet is for, its reference, spending owner, related products or family, decision and next request. Include the evidence, limits, expected and observed benefit, costs and stop or review condition.</p>
-<p>Separate money already spent, money already promised and estimates of future cost. Keep the decision states distinct: “test finished” does not mean “build approved”. Mark missing information as unknown, not zero.</p>
-<p><strong>Example:</strong> BET-017 is approved for a small test. Its wider service rollout remains a proposal.</p>
-<h3 id="decision-capacity-ledger">Who can review the work — Decision-Capacity Ledger</h3>
-<p>Show the reviews needed, skills required, time available, active-work limits and waiting items. Distinguish waiting for evidence from waiting for someone to judge it. Include support demand when it affects what the organisation can sustain.</p>
-<p><strong>Example:</strong> two bets need the same specialist. Choose their order instead of assuming both can start.</p>
-<h3 id="model-and-vendor-concentration-register">Shared points of failure — Model and Vendor Concentration Register</h3>
-<p>Show common suppliers, AI models, information and checking arrangements. Link each to affected bets, owners and response options. Several reports based on one source are still one source, not independent confirmation. <strong>Built from:</strong> each family’s Shared Substrate Map and product dependencies; collect only what those maps do not already hold.</p>
-<p><strong>Example:</strong> three services rely on one knowledge source. A change to that source needs review by all three owners.</p>
-<h3 id="benefits-realisation-map">Promises compared with results — Benefits Realisation Map</h3>
-<p>For each benefit, keep an identifier, owner, measure, starting position, observation period and result. Explain which products contributed. Include added work and harm as well as gains. Count a shared outcome once. <strong>Built from:</strong> Family Benefits Maps and product Acceptance Records.</p>
-<p><strong>Example:</strong> fewer repeated requests is one service outcome, even if intake, knowledge and response products all helped achieve it.</p>
-<h3 id="autonomy-boundary-map">What AI may do — Autonomy Boundary Map</h3>
-<p>Show permitted AI actions, who owns the permission, required checks and when a person must intervene. Link to the tested controls in the Product Guide’s <strong>AI Model Harness</strong>, explained there as the working rules and checks around AI use, and to common controls in each family’s Shared Substrate Map.</p>
-<p><strong>Example:</strong> AI may prepare a response; a trained person checks it before it reaches the customer. Permission to draft is not permission to send.</p>
-<p>The same applies to AI doing Portfolio work: summaries need source checks, calculations need testing, and actions need explicit permissions and human review. Linking to a Product’s harness evidence does not by itself validate a Portfolio assistant’s different task.</p>
-<h2 id="relationship-to-the-other-guides">Connect portfolio, family and product decisions</h2>
-<div class="table-scroll" role="region" aria-label="Scrollable table" tabindex="0"><table>
+<p>Name an owner for each responsibility. In a small organisation, one
+person may hold several. Product and family owners still answer for
+their own work. The Portfolio owner, or a portfolio board acting under
+that accountability, holds the portfolio gate decision.</p>
+<p>The <strong>expenditure owner</strong> is the person answerable for
+spending under the organisation’s existing rules. This may be someone
+other than the product owner. Preparing a portfolio report does not give
+anyone spending authority.</p>
+</section>
+<section id="relationship-to-the-other-guides" class="level3"
+data-number="3.3">
+<h3 data-number="3.3"><span class="header-section-number">3.3</span>
+Connect portfolio, family and product decisions<a class="heading-link" href="#relationship-to-the-other-guides" aria-label="Link to this section">#</a></h3>
+<div class="table-scroll" role="region" aria-label="Table 7" tabindex="0"><table>
 <colgroup>
 <col style="width: 33%" />
 <col style="width: 33%" />
@@ -228,34 +1156,200 @@ Figure 1. Look at value, cost, available people and shared risks together. A bus
 <tr>
 <td><a href="#portfolio-decisions">Portfolio</a></td>
 <td>Where should we put our resources next?</td>
-<td>Purpose, spending and work limits, decision authority and evidence needed.</td>
+<td>Purpose, spending and work limits, decision authority and evidence
+needed.</td>
 </tr>
 <tr>
-<td><a href="product-family.html">Product Family</a></td>
+<td><a
+href="https://aipf.ourresilient.world/guides/product-family.html" target="_blank" rel="noopener">Product
+Family</a></td>
 <td>How should related products work together?</td>
-<td>Shared needs, handoffs, costs, test results and limits on reuse.</td>
+<td>Shared needs, handoffs, costs, test results and limits on
+reuse.</td>
 </tr>
 <tr>
-<td><a href="product.html">Product</a></td>
+<td><a href="https://aipf.ourresilient.world/guides/product.html" target="_blank" rel="noopener">Agile
+Product</a></td>
 <td>Does this product help, and is it fit to use?</td>
-<td>User findings, tests, costs, benefits, accepted scope and remaining uncertainty.</td>
+<td>User findings, tests, costs, benefits, accepted scope and remaining
+uncertainty.</td>
 </tr>
 </tbody>
 </table></div>
-<p>Results move towards the decisions they inform. Decisions return to the people who must act on them. Keep the same source links and qualifications in both directions.</p>
-<p>For example, the portfolio allows one further service test and requires human review of every response. The family identifies which handoffs are affected. The product owner updates the work list and acceptance checks. No one quietly drops the human-review condition.</p>
-<p>Use a family only when there is a useful shared decision. A product can connect directly to the portfolio. Work within an existing delegation can continue without a second approval merely because leaders can see it.</p>
-<h2 id="conclusion">Start with one real choice</h2>
-<p>Take a decision that is already due. Name the outcome, next question, resource limit and person responsible. Find the evidence that could change the choice. Record what was decided and return to the result.</p>
-<p>Use short learning cycles and finish important work before starting more. Improve the process when it adds effort without helping a decision. The five shared AIPF values are <strong>judgement, evidence, restraint, accountability and adaptation</strong>: think carefully, check what happened, limit the next commitment, name the owner and change course when needed.</p>
-<h2 id="sources">Sources</h2>
-<h3 id="further-reading">Further reading</h3>
-<p><a href="https://www.atlassian.com/agile">Atlassian’s Agile guide</a> provides an accessible introduction to small steps, feedback and adapting plans. Its <a href="https://www.atlassian.com/agile/kanban/wip-limits/">work-in-progress explainer</a> explains limits on active work. AIPF applies these ideas to the choices and review capacity described here.</p>
-<p><a href="https://less.works/">LeSS</a> and <a href="https://www.scrum.org/resources/scaling-scrum">Scrum.org’s Scaling Scrum material</a> inform the companion guides’ treatment of work across teams. They do not supply AIPF’s portfolio funding rules. The <a href="portfolio-implementation.html">Portfolio Implementation Guide</a> shows how to put this guide into practice.</p>
-<p>Earlier versions used P3M3 to distinguish investment oversight from delivery, without adopting its maturity model.</p>
-<h2 id="acknowledgements">Acknowledgements</h2>
-<h3 id="authors">Authors</h3>
+<p>The <a
+href="https://aipf.ourresilient.world/guides/product-owners-ai-guide.html" target="_blank" rel="noopener">Product
+Owners AI Guide</a> provides another product-level route for a different
+audience. Use the product guide suited to the people doing the work; the
+approaches do not conflict.</p>
+<p>Results move towards the decisions they inform. Decisions return to
+the people who must act on them. Keep the same source links and
+qualifications in both directions.</p>
+<p>For example, the portfolio allows one further service test and
+requires human review of every response. The family identifies which
+handoffs are affected. The product owner updates the work list and
+acceptance checks. No one quietly drops the human-review condition.</p>
+<p>Use a family only when there is a useful shared decision. A product
+can connect directly to the portfolio. Work within an existing
+delegation can continue without a second approval merely because leaders
+can see it.</p>
+</section>
+<section id="conclusion" class="level3" data-number="3.4">
+<h3 data-number="3.4"><span class="header-section-number">3.4</span>
+Start with one real choice<a class="heading-link" href="#conclusion" aria-label="Link to this section">#</a></h3>
+<p>Take a decision that is already due. Name the outcome, next question,
+resource limit and person responsible. Find the evidence that could
+change the choice. Record what was decided and return to the result.</p>
+<p>Use short learning cycles and finish important work before starting
+more. Improve the process when it adds effort without helping a
+decision. The five shared AIPF values are <strong>judgement, evidence,
+restraint, accountability and adaptation</strong>: think carefully,
+check what happened, limit the next commitment, name the owner and
+change course when needed.</p>
+</section>
+</section>
+<section id="sources" class="level2 unnumbered">
+<h2 class="unnumbered">Sources</h2>
+<details class="po-detail">
+<summary>
+Further reading
+</summary>
+<h4 id="further-reading">
+Further reading
+</h4>
+<p><a href="https://www.atlassian.com/agile">Atlassian’s Agile guide</a>
+provides an accessible introduction to small steps, feedback and
+adapting plans. Its <a
+href="https://www.atlassian.com/agile/kanban/wip-limits/">work-in-progress
+explainer</a> explains limits on active work. AIPF applies these ideas
+to the choices and review capacity described here.</p>
+<p><a href="https://less.works/">LeSS</a> and <a
+href="https://www.scrum.org/resources/scaling-scrum">Scrum.org’s Scaling
+Scrum material</a> inform the companion guides’ treatment of work across
+teams. They do not supply AIPF’s portfolio funding rules. The <a
+href="https://aipf.ourresilient.world/guides/portfolio-implementation.html" target="_blank" rel="noopener">Portfolio
+Implementation Guide</a> shows how to put this guide into practice.</p>
+<p>Earlier versions used P3M3 to distinguish investment oversight from
+delivery, without adopting its maturity model.</p>
+</details>
+</section>
+<section id="acknowledgements" class="level2 unnumbered">
+<h2 class="unnumbered">Acknowledgements</h2>
+<section id="authors" class="level3 unnumbered">
+<h3 class="unnumbered">Authors</h3>
 <p>Written by Rick Molony and Ghulam Akbar, with AI assistance.</p>
-<h3 id="licence">Licence</h3>
-<p>This guide is offered under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International licence</a>.</p>
-<section class="article-feedback"><h2>Help improve this page</h2><p>Found a problem or a better way to explain it? <a href="../feedback/index.html?page=https%3A%2F%2Faipf.ourresilient.world%2Fguides%2Fportfolio.html">Suggest a correction or improvement</a>.</p></section></article></div></main><footer class="site-footer"><div><strong>AI Product Flow</strong><p>Start small. Check results. Decide the next step.</p></div><nav aria-label="Footer"><a href="https://ourresilient.world/">Our Resilient World</a><a href="https://research.ourresilient.world/">AI-Assisted Research</a><a href="../feedback/index.html">Feedback</a><a href="../reuse.html">Reuse and attribution</a></nav><p>Except where otherwise noted, content is licensed <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Cite the named authors, title, edition and source; indicate changes.</p></footer></body></html>
+</section>
+<section id="licence" class="level3 unnumbered">
+<h3 class="unnumbered">Licence</h3>
+<p>This guide is offered under the <a
+href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons
+Attribution-ShareAlike 4.0 International licence</a>.</p>
+</section>
+</section>
+</section>
+        </article></div><section class="article-feedback"><h2>Help improve this page</h2><p>Found a problem or a better way to explain it? <a href="../feedback/index.html?page=https%3A%2F%2Faipf.ourresilient.world%2Fguides%2Fportfolio.html" target="_blank" rel="noopener">Suggest a correction or improvement</a>.</p></section></main><footer class="site-footer"><div><strong>AI Product Flow</strong><p>Start small. Check results. Decide the next step.</p></div><nav aria-label="Footer"><a href="https://ourresilient.world/">Our Resilient World</a><a href="https://research.ourresilient.world/" target="_blank" rel="noopener">AI-Assisted Research</a><a href="../feedback/index.html" target="_blank" rel="noopener">Feedback</a><a href="../reuse.html" target="_blank" rel="noopener">Reuse and attribution</a></nav><p>This guide is licensed <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. Cite the named authors, title, edition and source; indicate changes.</p></footer><script id="aipf-guide-tabs">
+/* Progressive enhancement for explicitly tabbed AIPF guides. No network access. */
+(() => {
+  'use strict';
+  const nav = document.querySelector('.guide-tabs');
+  const panels = [...document.querySelectorAll('section.guide-tab')];
+  if (!nav || panels.length !== 3) return;
+  const tabs = [...nav.querySelectorAll('a')];
+  const readAll = document.querySelector('.guide-read-all');
+  let all = false;
+  let current = 0;
+  const details = [...document.querySelectorAll('details.po-detail')];
+  let readAllState = null;
+  let printState = null;
+  function expandDetailsFor(target) {
+    for (let node = target; node; node = node.parentElement) {
+      if (node.tagName === 'DETAILS') node.open = true;
+    }
+  }
+  function setReadAll(next) {
+    if (next && !all) {
+      readAllState = details.map(node => node.open);
+      details.forEach(node => { node.open = true; });
+    } else if (!next && all && readAllState) {
+      details.forEach((node, i) => { node.open = readAllState[i]; });
+      readAllState = null;
+    }
+    all = next;
+  }
+  function targetFromHash() {
+    try { return document.getElementById(decodeURIComponent(location.hash.slice(1))); }
+    catch (_) { return null; }
+  }
+  function show(index, focus = false) {
+    current = index;
+    panels.forEach((panel, i) => {
+      panel.hidden = !all && i !== index;
+      if (all) { panel.removeAttribute('role'); panel.removeAttribute('aria-labelledby'); }
+      else { panel.setAttribute('role', 'tabpanel'); panel.setAttribute('aria-labelledby', tabs[i].id); }
+      tabs[i].setAttribute('aria-selected', String(i === index));
+      tabs[i].tabIndex = i === index ? 0 : -1;
+    });
+    readAll.setAttribute('aria-pressed', String(all));
+    readAll.textContent = all ? 'Show one tab' : 'Read all sections';
+    if (focus) tabs[index].focus();
+  }
+  function followHash(focus = false) {
+    const target = targetFromHash();
+    if (target) expandDetailsFor(target);
+    const panel = target && target.closest('section.guide-tab');
+    if (panel) show(panels.indexOf(panel));
+    else if (!location.hash) show(0);
+    if (target && focus) {
+      const destination = target.matches('section.guide-tab') ? target.querySelector('h2') : target;
+      if (!destination.hasAttribute('tabindex')) destination.setAttribute('tabindex', '-1');
+      destination.focus({preventScroll: true});
+      if (destination.scrollIntoView) destination.scrollIntoView({block: 'start'});
+    }
+  }
+  nav.setAttribute('role', 'tablist');
+  tabs.forEach((tab, i) => {
+    tab.id = 'guide-tab-' + i;
+    tab.setAttribute('role', 'tab');
+    tab.setAttribute('aria-controls', panels[i].id);
+    tab.addEventListener('click', event => {
+      event.preventDefault(); setReadAll(false);
+      history.pushState(null, '', tab.getAttribute('href'));
+      show(i, true);
+    });
+    tab.addEventListener('keydown', event => {
+      let index = i;
+      if (event.key === 'ArrowRight') index = (i + 1) % tabs.length;
+      else if (event.key === 'ArrowLeft') index = (i + tabs.length - 1) % tabs.length;
+      else if (event.key === 'Home') index = 0;
+      else if (event.key === 'End') index = tabs.length - 1;
+      else if (event.key === ' ') { event.preventDefault(); tab.click(); return; }
+      else return;
+      event.preventDefault(); tabs[index].click();
+    });
+  });
+  document.addEventListener('click', event => {
+    const link = event.target.closest('a[href^="#"]');
+    if (!link || nav.contains(link)) return;
+    const id = link.getAttribute('href');
+    let target;
+    try { target = document.getElementById(decodeURIComponent(id.slice(1))); } catch (_) { return; }
+    if (!target) return;
+    event.preventDefault(); history.pushState(null, '', id); followHash(true);
+  });
+  readAll.hidden = false;
+  readAll.addEventListener('click', () => { setReadAll(!all); show(current); });
+  window.addEventListener('hashchange', () => followHash(true));
+  window.addEventListener('popstate', () => followHash(true));
+  // CSS also exposes every section for print; events cover print engines using hidden attributes.
+  window.addEventListener('beforeprint', () => {
+    if (!printState) printState = details.map(node => node.open);
+    panels.forEach(panel => { panel.hidden = false; });
+    details.forEach(node => { node.open = true; });
+  });
+  window.addEventListener('afterprint', () => {
+    if (printState) details.forEach((node, i) => { node.open = printState[i]; });
+    printState = null;
+    show(current);
+  });
+  show(0); followHash(Boolean(location.hash));
+})();
+</script></body></html>
