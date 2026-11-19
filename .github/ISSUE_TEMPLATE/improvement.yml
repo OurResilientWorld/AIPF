@@ -1,5 +1,5 @@
 name: Improvement proposal
-description: Propose clearer guidance, a useful case study or a test of an AIPF gap.
+description: Tell us what needs improving in AIPF and why.
 title: 'Improvement proposal: '
 labels:
 - improvement
@@ -7,50 +7,50 @@ labels:
 body:
 - type: markdown
   attributes:
-    value: Issues are public. Do not include confidential, sensitive or personal information.
-- type: input
-  id: gap
-  attributes:
-    label: Guide, case study or gap
-    description: Give the page URL, edition and heading, or describe the missing guidance.
-  validations:
-    required: true
+    value: >-
+      Tell us what needs improving and why. You do not need to propose a solution
+      or design a test. The other text fields are optional. Issues are public;
+      do not include confidential, sensitive or personal information.
+      Submission does not imply endorsement, funding or acceptance.
 - type: textarea
   id: question
   attributes:
-    label: What should become clearer or more useful?
-    description: Describe the user task or question this proposal addresses.
+    label: What needs improving, and why?
+    description: Describe what is unclear, missing or difficult, and how it affects you.
   validations:
     required: true
+- type: input
+  id: gap
+  attributes:
+    label: Guide, case study or page
+    description: Optional. Add a page link or heading if you know it; leave blank for a general suggestion.
+  validations:
+    required: false
 - type: textarea
   id: design
   attributes:
-    label: Proposed change and how to test it
-    description: Explain the change, who would use it and a practical way to check
-      it.
+    label: Your suggestion, if you have one
+    description: Optional. Share an idea or example. You do not need to explain how to build or test it.
   validations:
-    required: true
+    required: false
 - type: textarea
   id: outcomes
   attributes:
-    label: Expected outcome
-    description: Describe a useful outcome for readers, not just an activity count.
+    label: What would be better for you?
+    description: Optional. Explain the benefit if it is not already clear from your main answer.
   validations:
-    required: true
+    required: false
 - type: textarea
   id: adverse
   attributes:
-    label: What would show the change does not help?
-    description: Include limitations, possible harms and results that would leave
-      the proposal unresolved.
+    label: Anything else we should consider?
+    description: Optional. Add limitations, concerns or reasons your suggestion might not help.
   validations:
-    required: true
+    required: false
 - type: checkboxes
   id: checks
   attributes:
-    label: Submission checks
+    label: Public submission acknowledgement
     options:
     - label: I have not included confidential, sensitive or personal information.
-      required: true
-    - label: I understand submission does not imply endorsement, funding or acceptance.
       required: true
